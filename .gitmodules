@@ -1,0 +1,3 @@
+[submodule "csharp-swift"]
+	path = csharp-swift
+	url = git://github.com/edwardt/csharp-swift.git
