@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Bindings
+END
+FactoryBindingElement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Bindings/FactoryBindingElement.cs
+END
+FactoryBinding.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Bindings/FactoryBinding.cs
+END
+FactoryBindingAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Bindings/FactoryBindingAttribute.cs
+END

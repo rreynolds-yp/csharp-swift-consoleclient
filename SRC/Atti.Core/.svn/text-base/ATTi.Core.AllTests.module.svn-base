@@ -1,0 +1,7 @@
+<!-- Used by TeamCity to build just the tests in our system -->
+<Project ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MetaBuildBinDir)\MetaBuild.Module.targets" />
+
+  <ItemGroup>
+  </ItemGroup>
+</Project>

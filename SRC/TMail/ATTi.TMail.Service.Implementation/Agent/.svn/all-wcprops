@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent
+END
+AgentRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/AgentRecord.cs
+END
+Delegates.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/Delegates.cs
+END
+IMessageSender.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/IMessageSender.cs
+END
+MessageBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/MessageBase.cs
+END
+AgentProtocol.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/AgentProtocol.cs
+END
+ResponseTracking.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/ResponseTracking.cs
+END
+Enums.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/Enums.cs
+END
+QueueListener.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/QueueListener.cs
+END

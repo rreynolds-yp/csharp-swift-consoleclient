@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests/StrongMail
+END
+MessageStudioTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests/StrongMail/MessageStudioTests.cs
+END
+EasBatchApiTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests/StrongMail/EasBatchApiTests.cs
+END
+TransactionalMailTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests/StrongMail/TransactionalMailTests.cs
+END

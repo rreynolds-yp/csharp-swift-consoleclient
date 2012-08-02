@@ -1,0 +1,27 @@
+﻿<soap:Header xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<wsa:Action xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing"></wsa:Action>
+	<wsa:MessageID xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing">uuid:15bce4d3-2147-4201-8346-01bd208212e8</wsa:MessageID>
+	<wsa:ReplyTo xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing">
+		<wsa:Address>http://schemas.xmlsoap.org/ws/2004/03/addressing/role/anonymous</wsa:Address>
+	</wsa:ReplyTo>
+	<wsa:To xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing">https://mailhub1.yellowpages.com/sm/services/mailing/2009/03/02</wsa:To>
+	<wsse:Security soap:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+		<wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="SecurityToken-e91e53c4-e37d-4c8a-87c8-2f0e3bf6a43b">
+			<wsse:Username>apiuser</wsse:Username>
+			<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">*********</wsse:Password>
+			<wsse:Nonce>aGQxkcoelzZeLeEWl4ibOQ==</wsse:Nonce>
+			<wsu:Created>2010-04-26T21:57:06Z</wsu:Created>
+		</wsse:UsernameToken>
+		<OrganizationToken xmlns="http://www.strongmail.com/services/2009/03/02/schema">
+			<organizationName>dev</organizationName>
+			<subOrganizationId>
+				<id>504</id>
+			</subOrganizationId>
+		</OrganizationToken>
+	</wsse:Security>
+</soap:Header>
+<soap:Body xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<list xmlns="http://www.strongmail.com/services/2009/03/02/schema">
+		<filter xsi:type="MailingFilter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+	</list>
+</soap:Body>

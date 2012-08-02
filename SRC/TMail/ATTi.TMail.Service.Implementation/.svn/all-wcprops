@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/KeenDev/!svn/ver/80336/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation
+END
+RecipientListExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/RecipientListExtensions.cs
+END
+TMailService.AgentLogic.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/KeenDev/!svn/ver/80336/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/TMailService.AgentLogic.cs
+END
+ATTi.TMail.Service.Implementation.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/KeenDev/!svn/ver/80247/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.csproj
+END
+TMailService.IDisposable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/TMailService.IDisposable.cs
+END
+LocalWireupCommand.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/LocalWireupCommand.cs
+END
+TMailService.DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/KeenDev/!svn/ver/80332/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/TMailService.DAL.cs
+END
+Enums.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Enums.cs
+END
+TMailService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/KeenDev/!svn/ver/80229/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/TMailService.cs
+END

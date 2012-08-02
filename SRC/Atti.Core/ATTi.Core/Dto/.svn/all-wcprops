@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Dto
+END
+DataTransfer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Dto/DataTransfer.cs
+END
+DataTransfer_1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Dto/DataTransfer_1.cs
+END
+IDataTransferObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Dto/IDataTransferObject.cs
+END
+DataTransferObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Dto/DataTransferObject.cs
+END
+DtoAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Dto/DtoAttribute.cs
+END

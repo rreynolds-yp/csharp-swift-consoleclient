@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Mementos
+END
+IMemento.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Mementos/IMemento.cs
+END
+IMementoHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Mementos/IMementoHelper.cs
+END
+Exceptions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Mementos/Exceptions.cs
+END
+IMementoContext.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Mementos/IMementoContext.cs
+END
+Memento.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Mementos/Memento.cs
+END
+MementosConfigurationSection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Mementos/MementosConfigurationSection.cs
+END

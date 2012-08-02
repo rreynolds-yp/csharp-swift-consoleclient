@@ -1,0 +1,120 @@
+10
+
+dir
+82219
+http://svn.keencorp.keen.com/KeenDev/TMail/trunk/SRC/TMail
+http://svn.keencorp.keen.com/KeenDev
+
+
+
+2010-09-09T23:38:09.022936Z
+81924
+yellowpages\x5ckcollins
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+297e714a-58fb-944e-8b4c-49b0049cc633
+
+Deployment
+dir
+
+TMail.sln
+file
+
+
+
+
+2010-08-11T19:25:17.719881Z
+81c914a762539cf9f8d74a06a15b8aed
+2010-08-11T01:48:06.626000Z
+80132
+yellowpages\x5cjbalfantz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22223
+
+TMailAgentWinService
+dir
+
+3rd Party Libraries
+dir
+
+TMailRestService
+dir
+
+TMailRestService.Tests
+dir
+
+TMail.vsmdi
+file
+
+
+
+
+2010-08-11T19:25:17.735482Z
+e70a89e0e4e0805e5acdb7a503f35f1c
+2010-08-11T01:48:06.626000Z
+80132
+yellowpages\x5cjbalfantz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+499
+
+ATTi.TMail.Service.Implementation
+dir
+
+Common Items
+dir
+
+ATTi.TMail.Common
+dir
+

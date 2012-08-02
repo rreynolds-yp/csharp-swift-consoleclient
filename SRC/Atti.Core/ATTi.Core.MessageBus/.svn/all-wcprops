@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/KeenDev/!svn/ver/80297/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus
+END
+MessageBusConsumerEndpoint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/MessageBusConsumerEndpoint.cs
+END
+IMessageBusProducerEndpoint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/IMessageBusProducerEndpoint.cs
+END
+MessageBus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/MessageBus.cs
+END
+MessageBusConnection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/MessageBusConnection.cs
+END
+ATTi.Core.MessageBus.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/KeenDev/!svn/ver/80297/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/ATTi.Core.MessageBus.csproj
+END
+MessageProperties.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/MessageProperties.cs
+END
+IMessageBusConsumerEndpoint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/IMessageBusConsumerEndpoint.cs
+END
+MessageDeliveryInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/MessageDeliveryInfo.cs
+END
+Enums.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/Enums.cs
+END
+IMessageBusConnection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/IMessageBusConnection.cs
+END

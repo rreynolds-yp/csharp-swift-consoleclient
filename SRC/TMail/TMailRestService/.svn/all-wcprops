@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/KeenDev/!svn/ver/81924/TMail/trunk/SRC/TMail/TMailRestService
+END
+Global.asax.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Global.asax.cs
+END
+404missing.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/KeenDev/!svn/ver/81924/TMail/trunk/SRC/TMail/TMailRestService/404missing.aspx.cs
+END
+Web.config
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/KeenDev/!svn/ver/81923/TMail/trunk/SRC/TMail/TMailRestService/Web.config
+END
+health.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/health.txt
+END
+TMailRestService.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/KeenDev/!svn/ver/81924/TMail/trunk/SRC/TMail/TMailRestService/TMailRestService.csproj
+END
+TMailRestService.Publish.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/TMailRestService.Publish.xml
+END
+Global.asax
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Global.asax
+END
+404missing.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/KeenDev/!svn/ver/81923/TMail/trunk/SRC/TMail/TMailRestService/404missing.aspx
+END
+404missing.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/KeenDev/!svn/ver/81923/TMail/trunk/SRC/TMail/TMailRestService/404missing.aspx.designer.cs
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/Adapters
+END
+ErrorSourceAdapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/Adapters/ErrorSourceAdapter.cs
+END
+CriticalSourceAdapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/Adapters/CriticalSourceAdapter.cs
+END
+NullSourceAdapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/Adapters/NullSourceAdapter.cs
+END
+InformationSourceAdapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/Adapters/InformationSourceAdapter.cs
+END
+VerboseSourceAdapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/Adapters/VerboseSourceAdapter.cs
+END
+WarningSourceAdapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/Adapters/WarningSourceAdapter.cs
+END
+AllSourceAdapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/Adapters/AllSourceAdapter.cs
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Wireup
+END
+WireupCoordinator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Wireup/WireupCoordinator.cs
+END
+IWireupCommand.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Wireup/IWireupCommand.cs
+END
+WireupCommandBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Wireup/WireupCommandBase.cs
+END
+WireupConfigurationSection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Wireup/WireupConfigurationSection.cs
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/KeenDev/!svn/ver/80297/TMail/trunk/SRC/Atti.Core/ATTi.Core
+END
+MemoryBoundary.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/MemoryBoundary.cs
+END
+Delegates.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Delegates.cs
+END
+ExtensionMethods.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/ExtensionMethods.cs
+END
+Utils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Utils.cs
+END
+CleanupScope.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/CleanupScope.cs
+END
+Status.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Status.cs
+END
+ATTi.Core.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/KeenDev/!svn/ver/80297/TMail/trunk/SRC/Atti.Core/ATTi.Core/ATTi.Core.csproj
+END

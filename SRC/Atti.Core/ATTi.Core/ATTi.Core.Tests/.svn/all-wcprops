@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/KeenDev/!svn/ver/80297/TMail/trunk/SRC/Atti.Core/ATTi.Core/ATTi.Core.Tests
+END
+PreconditionContractTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/ATTi.Core.Tests/PreconditionContractTests.cs
+END
+MemoryBoundaryTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/ATTi.Core.Tests/MemoryBoundaryTests.cs
+END
+ATTi.Core.Tests.dll.config
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/ATTi.Core.Tests/ATTi.Core.Tests.dll.config
+END
+ATTi.Core.Tests.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/KeenDev/!svn/ver/80297/TMail/trunk/SRC/Atti.Core/ATTi.Core/ATTi.Core.Tests/ATTi.Core.Tests.csproj
+END

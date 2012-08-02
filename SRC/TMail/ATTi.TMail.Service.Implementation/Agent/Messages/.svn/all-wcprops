@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/Messages
+END
+DelayedMailingMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/Messages/DelayedMailingMessage.cs
+END
+MailingMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/Messages/MailingMessage.cs
+END
+PausedMailingMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/Agent/Messages/PausedMailingMessage.cs
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/KeenDev/!svn/ver/80215/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/ATTi.Core.Data.Tests
+END
+ATTi.Core.Data.Tests.dll.config
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/ATTi.Core.Data.Tests/ATTi.Core.Data.Tests.dll.config
+END
+ATTi.Core.Data.Tests.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/KeenDev/!svn/ver/80215/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/ATTi.Core.Data.Tests/ATTi.Core.Data.Tests.csproj
+END
+DbContextTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/ATTi.Core.Data.Tests/DbContextTests.cs
+END
+DbConnectionExtensionsTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/ATTi.Core.Data.Tests/DbConnectionExtensionsTests.cs
+END

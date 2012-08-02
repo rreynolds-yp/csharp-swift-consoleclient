@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/CallContext/Config
+END
+ServerListenerConfigElement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/CallContext/Config/ServerListenerConfigElement.cs
+END
+ContextUtilConfigSection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/CallContext/Config/ContextUtilConfigSection.cs
+END
+ClientListenerConfigElement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/CallContext/Config/ClientListenerConfigElement.cs
+END

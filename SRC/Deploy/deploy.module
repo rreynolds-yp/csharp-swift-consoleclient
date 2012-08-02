@@ -1,0 +1,23 @@
+<Project ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MetaBuildBinDir)\MetaBuild.Module.targets" />
+
+  <Target Name="BeforeImage">
+    <ItemGroup>
+      <!-- The binaries for deploy come from the common external link -->
+      <File Include="..\..\common\deploy\bin\**\*" Exclude="..\..\common\deploy\bin\**\.svn\**">
+        <ImagePath>deploy\bin</ImagePath>
+      </File>
+
+			<!--
+			While the common folder is moving to BuildAndDeploy\Common, support both paths temporarily
+			-->
+			<File Include="..\..\BuildAndDeploy\Common\deploy\bin\**\*" Exclude="..\..\BuildAndDeploy\Common\deploy\bin\**\.svn\**">
+				<ImagePath>deploy\bin</ImagePath>
+			</File>
+
+			<File Include="data\**\*" Exclude="data\**\.svn\**">
+        <ImagePath>deploy\data</ImagePath>
+      </File>
+    </ItemGroup>
+  </Target>
+</Project>

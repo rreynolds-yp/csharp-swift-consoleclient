@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code
+END
+GuidRouteConstraint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/GuidRouteConstraint.cs
+END
+BaseController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/BaseController.cs
+END
+PerformanceMonitorActionFilterAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/PerformanceMonitorActionFilterAttribute.cs
+END
+ControllerExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/ControllerExtensions.cs
+END
+Int32RouteConstraint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/Int32RouteConstraint.cs
+END
+ResultEncoding.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/ResultEncoding.cs
+END
+DownloadResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/DownloadResult.cs
+END
+PerformanceMonitoring.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/PerformanceMonitoring.cs
+END
+Static.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/Static.cs
+END
+Int64RouteConstraint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/Int64RouteConstraint.cs
+END
+RequestExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/RequestExtensions.cs
+END
+RequiresSsoAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/TMailRestService/Code/RequiresSsoAttribute.cs
+END

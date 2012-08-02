@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/StrongMail
+END
+MailingService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/StrongMail/MailingService.cs
+END
+MailingServiceExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/StrongMail/MailingServiceExtensions.cs
+END
+InjectOrganizationInWsseSecurity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/StrongMail/InjectOrganizationInWsseSecurity.cs
+END
+EasBatchApi.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/StrongMail/EasBatchApi.cs
+END
+EasTransactionalApi.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/StrongMail/EasTransactionalApi.cs
+END

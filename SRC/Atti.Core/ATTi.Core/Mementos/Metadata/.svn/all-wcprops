@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Mementos/Metadata
+END
+MementoCaptureAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Mementos/Metadata/MementoCaptureAttribute.cs
+END
+MementoIgnoreAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Mementos/Metadata/MementoIgnoreAttribute.cs
+END
+MementoRestoreAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Mementos/Metadata/MementoRestoreAttribute.cs
+END

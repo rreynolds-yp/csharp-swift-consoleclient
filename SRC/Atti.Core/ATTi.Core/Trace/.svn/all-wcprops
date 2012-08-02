@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace
+END
+ITraceable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/ITraceable.cs
+END
+TraceConfigurationSection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/TraceConfigurationSection.cs
+END
+Traceable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/Traceable.cs
+END
+ITraceSourceAdapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Trace/ITraceSourceAdapter.cs
+END

@@ -1,0 +1,2 @@
+# SMPT server;Account name to send from
+ASHIMS01.YELLOWPAGES.LOCAL;SFODeploymentTeam@attinteractive.com

@@ -1,0 +1,1670 @@
+# ID of the Environment
+ENVIRONMENT_ID=3
+
+# Connection string for primary DB
+DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_KAUser; Pwd=box417stage; Database=keen
+MONTECITO_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_RTRUser; Pwd=whe5rGG; Database=Montecito
+MONTECITO_DB_CONNECTION_SQL2005=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb01.stage.keen.com; Uid=Stage_RTRUser; Pwd=whe5rGG; Database=Montecito
+
+# Connection string for mail DB
+MAIL_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb03.stage.keen.com; Uid=Stage_MailUser; Pwd=wddiUss377; Database=Mail
+MAIL_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb03.stage.keen.com; Uid=Stage_MailUser; Pwd=wddiUss377; Database=Mail
+
+# Connection string for SOL DB
+SOL_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb05.stage.keen.com; Uid=Stage_SOLUser; Pwd=verysecret; Database=SOL
+SOL_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb05.stage.keen.com; Uid=Stage_SOLUser; Pwd=verysecret; Database=SOL
+
+# Connection string for Oracle LiveAdvice DB
+DB_LA_CONNECTION=Provider=MSDASQL;DRIVER={Microsoft ODBC for Oracle};SERVER=LA_QA;UID=phone_owner;PWD=phone_owner;
+
+# Same as primary DB - but different format for .net apps (Driver not supported)
+DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_KAUser; Pwd=box417stage; Database=keen
+USEREVENTS_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_KAUser; Pwd=box417stage; Database=userevents
+SPEAKEREVENTS_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_KAUser; Pwd=box417stage; Database=keenspeakerevents
+WC1.COMMERCE_DB_CONNECTION_NET=Network=DBMSSOCN; Server=irvstgccdb01.stage.keen.com; Uid=Stage_CommerceUser; Pwd=ges91$1h%; Database=Commerce
+EV1.COMMERCE_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgccdb01.stage.keen.com; Uid=stage_commerceuser; Pwd=23dhCcCcw2$$; Database=Commerce
+SUB_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_AdsYPUser; Pwd=box417stage; Database=AdsYP
+LISTING_STATS_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb05.stage.keen.com; Uid=Stage_ListingStatsUser; Pwd=dummy; Database=ListingStats
+CHAT_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstagedb03.stage.keen.com; Database=Chat;Uid=stage_svc_Chat_User;Pwd=???
+
+ADREPORTING_DB_CONNECTION_NET=Data Source=Ashstgadrdb01.stage.keen.com;Initial Catalog=AdReporting;Trusted_Connection=True
+
+
+# Connection string for .NET access to AFrontier Oracle DB
+SUB_AF_DB_CONNECTION_NET=SERVER=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=irvqaafdb3.flight.yellowpages.com)(PORT=1521))(CONNECT_DATA=(SID=IYP10G)));uid=AF_SOLO;pwd=AF_SOLO;
+SUB_AF_DB_CONNECTION_NET_V2=SERVER=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=qaafdb1.wc1.yellowpages.com)(PORT=1521))(CONNECT_DATA=(SID=qa2iyp)));uid=AF_SOLO;pwd=AF_SOLOQA2;
+
+
+# Connection string for Mail Server DB
+MAILSERVER_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb03.stage.keen.com;Uid=Stage_MailUser; Pwd=wddiUss377; Database=Mail
+
+# Connection string for Montecito DB - contains CTD related tables.
+MONTECITO_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_RTRUser; Pwd=whe5rGG; Database=Montecito
+MONTECITO_DB_CONNECTION_NET_SQL2005=Network=DBMSSOCN; Server=ashstgdb01.stage.keen.com; Uid=Stage_RTRUser; Pwd=whe5rGG; Database=Montecito
+
+# Forum db
+FORUMS_DB_CONNECTION_NET=server=ashstgdb04.stage.keen.com;database=CommunityServer;uid=Stage_CSUser;pwd=rdom3aino0ef;
+
+# Special trusted connection - uses a service account that the DB knows about, has expanded set of permissions
+DB_TRUSTED_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Database=keen; Trusted_Connection=true
+
+# Connection string for the Content DB where the tool should point
+# For dev, test, and stage this should be the same as CONTENT_DB_CONNECTION, but
+# on live it needs to point to the content DB on standby
+CONTENT_TOOL_DB_CONNECTION=$(CONTENT_DB_CONNECTION)
+
+# Connection string for Content DB
+CONTENT_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_CAUser; Pwd=ctrj601stage; Database=keencontent
+
+# Same as Content DB - but different format for .net apps (Driver not supported)
+CONTENT_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_CAUser; Pwd=ctrj601stage; Database=keencontent
+
+# Connection string for Segmentation DB
+SEGMENTATION_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb04.stage.keen.com; Uid=Stage_ACTUser; Pwd=tri828stage; Database=segmentation
+
+# Connection string for standby DB
+STANDBY_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_KAUser; Pwd=box417stage; Database=keen
+
+# Connection string for search DB
+SEARCH_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=search.stage.keen.com; Uid=StageKSearchUser; Pwd=performance; Database=keensearch
+LD_SEARCH_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=localhost; Uid=StageKSearchUser; Pwd=performance; Database=keensearch
+
+# Connection string for site manager DB
+SITEMNGR_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=sitemngr; Pwd=site; Database=keen
+
+# Connection string for activities DB
+ACTIVITIES_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb04.stage.keen.com; Uid=Stage_ACTUser; Pwd=tri828stage; Database=keenactivity
+
+# DB Connection for OLEDB (Name and Greeting Tool)
+OLEDB_CONNECTION=provider=SQLOLEDB; data source=ashstgdb02.stage.keen.com; Uid=Stage_KAUser; Pwd=box417stage; Database=keen
+
+# Connection string for TSFraudTool
+TSTOOL_CONNECTION=Server=ashstgdb02.stage.keen.com; Uid=Stage_KAUser; Pwd=box417stage; Database=keen
+
+# Connection string for the CQ bug database - used by the Bug Count Tool
+CQ_DB_CONNECTION=server=keen03.keencorp.keen.com; database=CQ2002Issues; uid=CQUser; pwd=Quality#1
+
+# Connection string for the stagingdb
+STAGING_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_BCPUser; Pwd=tiiemp56data3; Database=Stagingdb
+
+# Connection string for the stagingdb for auditing specific purposes
+STAGING_AUDIT_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=AUD_User; Pwd=R@c00n$$; Database=Stagingdb
+
+# Connection string for the auditmart db
+AUDITMART_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=AUD_User; Pwd=R@c00n$$; Database=AuditMart
+
+# Connection string for corpmail
+CORPMAIL_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashmaildb01.nca.keen.com; Uid=KeenMassEmail_New; Pwd=Passw0rd; Database=MassEmail
+
+
+#Connection string for Number Manager Db
+NUMBERMANAGER_DB_CONNECTION_NET=Data Source=Ashstgdb06.stage.keen.com;Initial Catalog=NumberManager;Trusted_Connection=True
+
+
+#Connection string for OPM Db
+OPM_DB_CONNECTION_NET=Data Source=Ashstgdb06.stage.keen.com;Initial Catalog=OPM;Trusted_Connection=True
+
+# Tools base Url path
+TOOLS_BASEPATH=http://dashboard.stage.keen.com
+
+#QA Test Automation Settings for PlayPrompt INFO
+PLAY_PROMPT_START_INFO=PLAY_PROMPT_START
+PLAY_PROMPT_END_INFO=PLAY_PROMPT_END
+PLAY_PROMPT_DIGIT_START_INFO=PLAY_PROMPT_DIGIT_START
+PLAY_PROMPT_DIGIT_END_INFO=PLAY_PROMPT_DIGIT_END
+PLAY_PROMPT_INFO_TO_PLAY=true
+TEST_AUTOMATION_ANI_SUFFIX=TestAutomation
+
+
+# For some reason, KeenMailJobComplete need both of these
+TEST_ACTIVITIES_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashtestdb02.test.keen.com; Uid=Test_ACTUser; Pwd=tri828test; Database=keenactivity
+LIVE_ACTIVITIES_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashdb06sql02.nca.keen.com\ashdb06sql02; Uid=Live_ACTUser; Pwd=ba1smooke; Database=keenactivity
+
+# Connection string for listing DB
+LISTING_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=NoLongerUsed; Uid=Stage_KLAuser; Pwd=circle417stage; Database=Keenlisting
+
+# Connection string for 800p DB
+PREDICT_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashdb06sql02.nca.keen.com\ashdb06sql02; Uid=Predict; Pwd=collect88; Database=800Predict_db
+
+# Connection string for 800p DB
+PREDICT_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashdb06sql02.nca.keen.com\ashdb06sql02; Uid=Predict; Pwd=collect88; Database=800Predict_db
+
+# Connection string for Omnifone DB
+OMNIFONE_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb02; Uid=OFone1; Pwd=albel; Database=omnifone
+# Connection string for Omnifone DB, .net format
+OMNIFONE_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=OFone1; Pwd=albel; Database=omnifone
+
+# Connection string for BizDev DB
+BIZDEV_DB_CONNECTION=Driver={SQL Server}; Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=bizdev1; Pwd=b12dev; Database=keen
+
+# ToolDB Connection string
+TOOLDB_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb04.Stage.keen.com; Uid=Stage_ToolUser; Pwd=filesystem; Database=ToolDB
+
+# Service Broker Connection String
+MESSAGING_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb03.stage.keen.com; Uid=Stage_MsgUser; Pwd=johnQueueQ; Database=Messaging
+
+# RepIngenio Connection String
+REPINGENIO_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb05.stage.keen.com; Uid=Stage_RepIng_User; Pwd=tingDat3port; Database=RepIngenio
+
+# Connection string for Log Parser
+PRIMARY_LOG_DB_CONNECTION_NET=Unspecified
+PRIMARY_LOG_DB_BCP_CONNECTION_NET=Unspecified
+
+# Mail server
+REMOTE_MAIL_SERVER=ASHIMS01.YELLOWPAGES.LOCAL
+
+# Recipient for monitor failure mails
+EVENT_MAIL_RECIPIENT=
+
+# Identity and password for user used to create COMPLUS applications
+COMPLUS_IDENTITY=STAGE\svc_comService
+COMPLUS_PASSWORD=password
+
+# Folder for KeenMail attachments
+KEENMAIL_ATTACHMENT_FOLDER=\\ashstgfs.stage.keen.com\files\email
+
+# Folder for Service audio ad files
+SERVICE_AUDIOAD_FOLDER=\\ashstgfs.stage.keen.com\files\audioads
+
+#Folder for ppc bulk management excel files
+PPC_BULK_MANAGEMENT_FOLDER=\\ashstgfs.stage.keen.com\files\ppcbulkmanagement
+PPC_BULK_MANAGEMENT_AD_FILE_NAME=AdCreation_v3.xls
+PPC_BULK_MANAGEMENT_AD_TEMPLATE_NAME=AdCreation_v3_Template.xls
+PPC_BULK_MANAGEMENT_FILE_ACCESS_METHOD=Xml
+
+PPC_BULK_MANAGEMENT_SERVICE_IDENTITY=stage\svc_bulkmgmt
+PPC_BULK_MANAGEMENT_SERVICE_PASSWORD=Ulkb657
+
+#Folder for marketing audio ad files
+AUDIOAD_MARKETING_SHARE=\\glnfp01.yellowpages.local\public$\Marketing\Marketing from keen01\Voice Prompts\Ingenio Pay Per Call Recordings
+AUDIOAD_MARKETING_SERVICE_IDENTITY=Yellowpages\svc_sfo-cs-upload
+AUDIOAD_MARKETING_SERVICE_PASSWORD=i-y5I-oZpBGviiQ
+
+#Folder for mass email content management excel files
+MASS_EMAIL_CONTENT_FOLDER=\\ashstgfs.stage.keen.com\files\MassEmail
+
+#Folder for temp files.
+TEMP_FOLDER=\\ashstgfs.stage.keen.com\files\temp
+
+# Wav share
+WAV_SHARE=\\ashstgfs.stage.keen.com\files\upload
+
+# 800p PLID
+800_PLID=0
+
+# ActiveBatch
+ABAT_SERVER=STAGEAB.stage.keen.com
+ABAT_USERNAME_MASSEMAIL=stage\svc_massemailsched
+ABAT_PASSWORD_MASSEMAIL=Ma1lSch3d
+
+# ActiveBatch Scheduled Jobs
+ABAT_USERNAME_SCHEDJOB=stage\svc_Schedule
+ABAT_PASSWORD_SCHEDJOB=stage!Sched
+ABAT_ALERT_SCHEDJOB=soc@keen.com
+ABAT_TASK_STARTMODE=start
+
+# Schedule for ActiveBatch job that recomputes impression values
+IMPRESSION_VALUE_CALC_SCHEDULE=<schedule time-spec="exact" timelist="1:15" day-spec="daily" interval="1" />
+
+# Schedule for ActiveBatch job that recomputes PPC call through rates
+PPC_CALL_THROUGH_RATES_CALC_SCHEDULE=<schedule time-spec="exact" timelist="1:45" day-spec="daily" interval="1" />
+
+# Schedule for ActiveBatch job that updates the rolling window used for ppc conversion management
+UPDATE_ROLLING_WINDOW_SCHEDULE=<schedule time-spec="exact" timelist="23:30" day-spec="daily" interval="1" />
+
+# Charge Account mode
+CHARGEACCT_MODE=1
+
+# Image Server
+# For dev, test, and stage, IMAGE_SERVER_URL is the same as IMAGE_SERVER
+# But on live it needs to point to i.keen.com instead of img.keen.com
+IMAGE_SERVER_URL=$(IMAGE_SERVER)
+IMAGE_SERVER=ashstgfs.stage.keen.com
+IMAGE_SHARE=\\ashstgfs.stage.keen.com\WebImages
+FILESHARE_USERNAME=stage\SVC_imgupload
+FILESHARE_PASSWORD=Givemefiles!
+
+# MemberUploads website
+MEMBERUPLOADS_WEBSITE_PATH=\\ashstgfs.stage.keen.com\webimages
+MEMBERUPLOADS_IMAGESERVER_PATH=C:\Inetpub\wwwroot\ImageServer
+MEMBERUPLOADS_PORT=80
+
+# Log directory
+DEBUG_DIR=C:\keen\log\
+
+# Mail recipient for CJ Process
+CJ_MAIL_RECIPIENT=affiliatereports-stage@ingenio.com
+CJ_PARTNER_ENTITYID=7090
+DT_PARTNER_ENTITYID=1262861
+KB_PARTNER_ENTITYID=2797891
+KB_PARTNER_FTPFOLDER=C:\keen\Task\CJProcess\
+
+# Credential test mode
+CREDENTIAL_TESTMODE=1
+
+# VOS Record path
+VOS_RECORDPATH=\\ashstgfs.stage.keen.com\files\production\
+
+# VOS Speaker Name and Greetings path
+VOS_NAMESGREETINGSPATH=\\ashstgfs.stage.keen.com\files\NamesGreetings\
+
+# VOS Platform prompts root directory
+IVR_PROMPT_PATH_ROOT=c:\keen\Ivr\Prompts\
+
+# Communication port used between KeenCall and VOS
+KEENCALL_VOS_PORT=2220
+
+#Socket Port used between TelcoRefresh and VOS to refresh flows
+IVR_REFRESH_PORT=2222
+
+# VOS log file path
+IVR_LOG_FILE_PATH=C:\Keen\Log\MediaServer
+
+# Keencall(Ether) log file path (note that this value is used by LogDataService not KeenCall)
+ETHER_LOG_FILE_PATH=C:\Keen\Log\Session
+
+# Keencall(Framework) log file path (note that this value is used by LogDataService not KeenCall)
+FRAMEWORK_LOG_FILE_PATH=C:\Keen\Log\Framework
+
+# KeenCallAdmin
+KEENCALLADMIN_ADULTLISTING=0
+KEENCALLADMIN_APPOINTMENTDEPOSIT=0
+KEENCALLADMIN_ASSOCIATEDCALLID=-1
+KEENCALLADMIN_BUYERBALANCE=1
+KEENCALLADMIN_BUYERCONNECTION=0
+KEENCALLADMIN_BUYERCURRENCY=1
+KEENCALLADMIN_BUYERDOMAIN=32
+KEENCALLADMIN_BUYEREXTENSION=
+KEENCALLADMIN_BUYERNAMERECORDED=0
+KEENCALLADMIN_BUYERUSERID=16103662
+KEENCALLADMIN_CALLDOMAIN=32
+KEENCALLADMIN_CALLSOURCE=0
+KEENCALLADMIN_CALLTYPE=0
+KEENCALLADMIN_CHATCALL=0
+KEENCALLADMIN_CHECKONFILE=0
+KEENCALLADMIN_CONTEXTID=480778
+KEENCALLADMIN_DONTRATESELLER=0
+KEENCALLADMIN_EXPERIENCEDSELLER=1
+KEENCALLADMIN_FIRSTTIMER=0
+KEENCALLADMIN_FIRSTTIMESEEKERSPEAKER=0
+KEENCALLADMIN_FREEMINUTES=0
+KEENCALLADMIN_GLOBALENTITYID=0
+KEENCALLADMIN_LECBILLING=0
+KEENCALLADMIN_MAXRATINGSREACHED=0
+KEENCALLADMIN_MENTIONTAFOFFER=0
+KEENCALLADMIN_MINORRANK=9
+KEENCALLADMIN_OPERATORONLINE=0
+KEENCALLADMIN_RECHARGEDBEFORE=1
+KEENCALLADMIN_SEEKERALSOSPEAKER=0
+KEENCALLADMIN_SELLERCONNECTION=0
+KEENCALLADMIN_SELLERCURRENCY=1
+KEENCALLADMIN_SELLERDOMAIN=32
+KEENCALLADMIN_SELLEREXTENSION=
+KEENCALLADMIN_SELLERRATE=0
+KEENCALLADMIN_SELLERSERVICEID=7004368
+KEENCALLADMIN_SELLERUSERID=16103663
+KEENCALLADMIN_VERIFYADULT=1
+
+# Email Client Proc
+KEENMAIL_RESPONSE_FOLDER=\\ashlsmtp03.nca.keen.com\stagenotes
+KEENMAIL_RESPONSE_BACKUP_FOLDER=\\ashlsmtp04.nca.keen.com\stagenotes
+EMAILCLIENTPROC_USER=nca\svc_schedule
+EMAILCLIENTPROC_PWD=not1more
+KEENMAIL_RESPONSE_SUBDOMAIN=stagenotes
+
+# Folders where the Emails sent to us as a result of recipients using "this is spam" feature of their mail service
+# Delimit the folder full path name with ";"
+# Leave it empty because there is no stage environment data to process
+UNWANTED_EMAIL_FOLDERS=
+
+# Thrownet
+THROWNET_CONTEXT_NEW=Keen-Stage
+
+# Voice store
+VOICE_STORE=\\ashstgfs.stage.keen.com\files\production
+
+# ListServ
+LISTSERV_DB_SERVER=(Server=STAGE)
+LISTSERV_JOBCOMPLETE_EMAIL=StageNotify@listserv.keen.com
+
+# Debug flag
+DEBUG_FLAG=1
+
+# Default mode for service startup
+SERVICE_STARTUP=auto
+
+# Default mode for service deployment
+SERVICE_DEPLOYMODE=start
+
+# Separate control for listing server service startup
+LISTING_SERVER_SERVICE_STARTUP=manual
+
+# Separate control for listing server service startup on deployment
+LISTING_SERVER_SERVICE_DEPLOYMODE=nostart
+
+# Identity and password for services
+SERVICE_IDENTITY=none
+SERVICE_PASSWORD=none
+
+# Identity for ConfertFileReceiver service
+CONVERT_SERVICE_IDENTITY=stage\svc_convertfile
+CONVERT_SERVICE_PASSWORD=C0nverF1le
+
+# Address(es) of Summa switches
+SUMMA_ADDRESS=
+
+# Name directory (Name and greeting tool)
+NAME_DIRECTORY=http://ashstgfs.stage.keen.com:82/Names/
+SERVICE_DIRECTORY=http://ashstgfs.stage.keen.com:82/Greetings/
+RECORDINGS_DIRECTORY=http://ashstgfs.stage.keen.com:82/Recordings/
+
+#Log Parser tool
+KEEN_APP_SERVERS=ASHSTGSIP01|ASHSTGSIP02
+KEEN_DL_SERVERS=ASHSTGHMP01|ASHSTGHMP02
+LOG_PARSER_SERVICE_PORT=8085
+LOG_PARSER_SERVICE_URI=LogDataParser
+#The set of SIP Servers
+KEEN_SIP_SERVERS=ashstgsip01|ashstgsip02
+KEEN_HMP_SERVERS=ASHSTGHMP01|ASHSTGHMP02
+
+# Platform.Web.Commerce configuration
+WC1.PLATFORM.COMMERCE.SERVICES_URL=https://stage-ccap-svc.g.int.atti.com/
+EV1.PLATFORM.COMMERCE.SERVICES_URL=https://stage-ccap-svc.g.int.atti.com/
+PLATFORM.COMMERCE.FULL_INFO_GROUP=CCAP_ViewFullPaymentInfo
+
+# Mode in which to stop KeenCall during deploy - either now or warn
+KEENCALL_STOPMODE=warn
+
+# Domain mappings
+DOMAINMAPPING_DASHBOARD_SERVERMATCH=.*dashboard.*
+DOMAINMAPPING_DASHBOARD_LOCALSERVERPREFIX=dashboard
+DOMAINMAPPING_DEVELOPERS_SERVERMATCH=.*developers.*
+DOMAINMAPPING_DEVELOPERS_LOCALSERVERPREFIX=developers
+DOMAINMAPPING_ETHER_SERVERMATCH=.*ether.*
+DOMAINMAPPING_ETHER_LOCALSERVERPREFIX=ether
+DOMAINMAPPING_LIVETRACKING.CALL_SERVERMATCH=.*livetracking.call.*
+DOMAINMAPPING_LIVETRACKING.CALL_LOCALSERVERPREFIX=livetracking.call
+DOMAINMAPPING_LIVETRACKING_SERVERMATCH=.*livetracking.*
+DOMAINMAPPING_LIVETRACKING_LOCALSERVERPREFIX=livetracking
+DOMAINMAPPING_YELLOWPAGESCA.CALL_SERVERMATCH=.*yellowpagesca.call.*
+DOMAINMAPPING_YELLOWPAGESCA.CALL_LOCALSERVERPREFIX=yellowpagesca.call
+DOMAINMAPPING_PAGESJAUNESCA_SERVERMATCH=.*pagesjaunesca.call.*
+DOMAINMAPPING_PAGESJAUNESCA_LOCALSERVERPREFIX=pagesjaunesca.call
+DOMAINMAPPING_YELLOWPGESCA_SERVERMATCH=.*yellowpagesca.*
+DOMAINMAPPING_YELLOWPAGESCA_LOCALSERVERPREFIX=yellowpagesca
+DOMAINMAPPING_SWITCHBOARD.CALL_SERVERMATCH=.*switchboard.call.*
+DOMAINMAPPING_SWITCHBOARD.CALL_LOCALSERVERPREFIX=switchboard.call
+DOMAINMAPPING_SWITCHBOARD_SERVERMATCH=.*switchboard.*
+DOMAINMAPPING_SWITCHBOARD_LOCALSERVERPREFIX=switchboard
+DOMAINMAPPING_CHICAGOB2BRHD.CALL_SERVERMATCH=.*chicagob2brhd.call.*
+DOMAINMAPPING_CHICAGOB2BRHD.CALL_LOCALSERVERPREFIX=chicagob2brhd.call
+DOMAINMAPPING_RHDONNELLEY_SERVERMATCH=.*rhdonnelley.*
+DOMAINMAPPING_RHDONNELLEY_LOCALSERVERPREFIX=rhdonnelley
+DOMAINMAPPING_WPSMARTPAGES.YP_SERVERMATCH=.*wpsmartpages.yp.*
+DOMAINMAPPING_WPSMARTPAGES.YP_LOCALSERVERPREFIX=wpsmartpages.yp
+DOMAINMAPPING_SMARTPAGES.YP_SERVERMATCH=.*smartpages.yp.*
+DOMAINMAPPING_SMARTPAGES.YP_LOCALSERVERPREFIX=smartpages.yp
+DOMAINMAPPING_SMARTPAGES_SERVERMATCH=.*smartpages.*
+DOMAINMAPPING_SMARTPAGES_LOCALSERVERPREFIX=smartpages
+DOMAINMAPPING_LISTINGS.YELLOWPAGES_SERVERMATCH=.*listings.yellowpages.*
+DOMAINMAPPING_LISTINGS.YELLOWPAGES_LOCALSERVERPREFIX=listings.yellowpages
+DOMAINMAPPING_BSC_SERVERMATCH=.*bsc.*
+DOMAINMAPPING_BSC_LOCALSERVERPREFIX=bsc
+DOMAINMAPPING_BILLING.YELLOWPAGES_SERVERMATCH=.*billing.yellowpages.*
+DOMAINMAPPING_BILLING.YELLOWPAGES_LOCALSERVERPREFIX=billing.yellowpages
+DOMAINMAPPING_ADS.YELLOWPAGES_SERVERMATCH=.*ads.yellowpages.*
+DOMAINMAPPING_ADS.YELLOWPAGES_LOCALSERVERPREFIX=ads.yellowpages
+DOMAINMAPPING_WPYELLOWPAGES.YP_SERVERMATCH=.*wpyellowpages.yp.*
+DOMAINMAPPING_WPYELLOWPAGES.YP_LOCALSERVERPREFIX=wpyellowpages.yp
+DOMAINMAPPING_AWYELLOWPAGES.YP_SERVERMATCH=.*awyellowpages.yp.*
+DOMAINMAPPING_AWYELLOWPAGES.YP_LOCALSERVERPREFIX=awyellowpages.yp
+DOMAINMAPPING_YELLOWPAGES.YP_SERVERMATCH=.*yellowpages.yp.*
+DOMAINMAPPING_YELLOWPAGES.YP_LOCALSERVERPREFIX=yellowpages.yp
+DOMAINMAPPING_YELLOWPAGES_SERVERMATCH=.*yellowpages.*
+DOMAINMAPPING_YELLOWPAGE_LOCALSERVERPREFIX=yellowpages
+DOMAINMAPPING_PAYPERCALL_SERVERMATCH=.*paypercall.*
+DOMAINMAPPING_PAYPERCALL_LOCALSERVERPREFIX=paypercall
+DOMAINMAPPING_KEENUK_SERVERMATCH=.*keen.*uk.*
+DOMAINMAPPING_KEENUK_LOCALSERVERPREFIX=keenuk
+DOMAINMAPPING_MATCH_SERVERMATCH=.*liveadvice.*
+DOMAINMAPPING_MATCH_LOCALSERVERPREFIX=match
+DOMAINMAPPING_INGENIO_SERVERMATCH=.*ingenio.*
+DOMAINMAPPING_INGENIO_LOCALSERVERPREFIX=ingenio
+DOMAINMAPPING_LOCAL_SERVERMATCH=.*local\..*
+DOMAINMAPPING_LOCAL_LOCALSERVERPREFIX=local
+DOMAINMAPPING_ATTITVYELLOWPAGES.YP_SERVERMATCH=.*attitvyellowpages.yp.*
+DOMAINMAPPING_ATTITVYELLOWPAGES.YP_LOCALSERVERPREFIX=attitvyellowpages.yp
+DOMAINMAPPING_KEEN_SERVERMATCH=.*keen.*
+DOMAINMAPPING_KEEN_LOCALSERVERPREFIX=keen
+DOMAINMAPPING_ASCP_SERVERMATCH=.*adsolutions.*
+DOMAINMAPPING_ASCP_LOCALSERVERPREFIX=adsolutions
+DOMAINMAPPING_ADSOLUTIONS_REPORTS_SERVERMATCH=.*reports.adsolutions.*
+DOMAINMAPPING_ADSOLUTIONS_REPORTS_LOCALSERVERPREFIX=reports.adsolutions
+
+# ASP.NET DefaultAppPool Identity
+# -1 means "leave unchanged"
+DEFAULTAPPPOOL_IDENTITYTYPE=-1
+DEFAULTAPPPOOL_USERNAME=
+DEFAULTAPPPOOL_PASSWORD=
+
+# IIS Port assignments for web sites
+IIS_KEENSITE_PORT=80
+IIS_KEENUKSITE_PORT=87
+IIS_INGENIO_PORT=89
+IIS_AOL_PORT=90
+IIS_MSN_PORT=92
+IIS_LYCOS_PORT=93
+IIS_ASTROLOGY_PORT=94
+IIS_HARVEST_PORT=95
+
+IIS_LIVEOP_PORT=100
+IIS_LIVEOP_EXTERNAL_PORT=80
+IIS_LIVETOOLS_PORT=101
+IIS_CONTENTTOOLS_PORT=102
+IIS_CMS_PORT=103
+IIS_MATCH_PORT=106
+IIS_PAYPERCALL_PORT=107
+IIS_PLATFORM.WEB_PORT=108
+IIS_ETHER_PORT=114
+IIS_DEVELOPERSING_PORT=115
+IIS_PLATFORM.WEB.PARTNERS_PORT=116
+IIS_PARTNERSINGCOM_PORT=117
+IIS_LOCAL_PORT=118
+IIS_WEB_SERVICES=7000
+IIS_COMMERCE_SERVICES.WEBPORT=7005
+IIS_COMMERCE_SERVICES.SSLPORT=17005
+IIS_COMMERCE_TRANSIENTSERVICES.WEBPORT=7005
+IIS_COMMERCE_TRANSIENTSERVICES.SSLPORT=17005
+IIS_PLATFORM.WEBSERVICE_PORT=7000
+IIS_PLATFORM.WEB.FORUMS_PORT=7001
+IIS_PLATFORM.COMMERCE.WEB_PORT=6001
+IIS_PPC_SERVICES_PORT=7026
+IIS_PPC_SERVICES_PORT_SSL=17026
+IIS_EPC_SERVICES_PORT=7027
+IIS_EPC_SERVICES_PORT_SSL=17027
+IIS_CHAT_SERVICES_PORT=7028
+IIS_CHAT_SERVICES_PORT_SSL=17028
+
+IIS_SUBSCRIPTIONS.WEB_PORT=6102
+IIS_SUBSCRIPTIONS.WEB_SSLPORT=16102
+IIS_SUBSCRIPTIONS.WEBSERVICES_PORT=7006
+IIS_SUBSCRIPTIONS.WEBSERVICES_SSLPORT=17006
+IIS_SUBSCRIPTIONS.WEBSERVICES.SALESFORCE.MESSAGING_PORT=7007
+IIS_SUBSCRIPTIONS.WEBSERVICES.SALESFORCE.MESSAGING_SSLPORT=17007
+
+IIS_DEPLOYMASTER.WEB_PORT=6110
+IIS_DEPLOYMASTER.WEB_SSLPORT=16110
+
+IIS_ASCP.WEB_PORT=6104
+IIS_ASCP.WEB_SSLPORT=16104
+
+IIS_ADREPORTS.SERVICES_PORT=6106
+IIS_ADREPORTS.SERVICES_SSLPORT=16106
+
+IIS_ASCP.SERVICES_PORT=6107
+IIS_ASCP.SERVICES_SSLPORT=16107
+
+IIS_ASCP.PARTNER_SERVICES_PORT=6108
+IIS_ASCP.PARTNER_SERVICES_SSLPORT=16108
+
+IIS_SOLO_PORT=7008
+IIS_SOLO_SSLPORT=17008
+
+IIS_PROPOSALMAKER_PORT=7011
+IIS_PROPOSALMAKER_SSLPORT=17011
+
+IIS_WEBLEAD_PORT=7010
+IIS_WEBLEAD_SSLPORT=17010
+
+IIS_TMAIL_PORT=6780
+IIS_TMAIL.WEB_SSLPORT=16780
+
+IIS_KEENSITE_SSLPORT=443
+IIS_KEENUKSITE_SSLPORT=444
+# SSL PORT 445 conflicts with IIS - do not use
+IIS_INGENIO_SSLPORT=446
+IIS_MATCH_SSLPORT=448
+IIS_PAYPERCALL_SSLPORT=449
+IIS_PLATFORM.WEB_SSLPORT=450
+IIS_LIVETOOLS_SSLPORT=452
+IIS_ETHER_SSLPORT=455
+IIS_DEVELOPERSING_SSLPORT=456
+IIS_PLATFORM.WEB.PARTNERS_SSLPORT=457
+IIS_PARTNERSINGCOM_SSLPORT=458
+IIS_LOCAL_SSLPORT=459
+IIS_PLATFORM.WEB.FORUMS_SSLPORT=470
+IIS_WEB_LAUNCHPAD=9000
+IIS_PLATFORM.COMMERCE.WEB_SSLPORT=16001
+
+IIS_PLATFORM.WEB.CORE.TESTS_PORT=9001
+IIS_PLATFORM.WEB.CORE.TESTS_SSLPORT=9002
+IIS_WEBTESTUNIT.TESTS_PORT=9003
+IIS_WEBTESTUNIT.TESTS_SSLPORT=9004
+IIS_PLATFORM.WEB.TESTS_PORT=9005
+IIS_PLATFORM.WEB.TESTS_SSLPORT=9006
+IIS_PLATFORM.TOOLS.TESTS_PORT=9007
+IIS_PLATFORM.TOOLS.TESTS_SSLPORT=9008
+IIS_PLATFORM.WEBSERVICE.TESTS_PORT=9009
+IIS_PLATFORM.WEBSERVICE.TESTS_SSLPORT=9010
+
+IIS_ODIN.DASHBOARD_PORT=9090
+IIS_ODIN.DASHBOARD_SSLPORT=9091
+
+IIS_OOS_MATCH_VOICE=1095
+
+IIS_OOS_KEEN=1080
+IIS_OOS_KEENUK=1087
+IIS_OOS_INGENIO=1089
+IIS_OOS_ASTRO_AOL=1090
+IIS_OOS_ASTRO_MSN=1092
+IIS_OOS_ASTRO_LYCOS=1093
+IIS_OOS_ASTRO_KEEN=1094
+
+IIS_OOS_MATCH=1106
+IIS_OOS_PAYPERCALL=1107
+IIS_OOS_ETHER=1109
+IIS_OOS_DEVELOPERSING=1110
+IIS_OOS_PARTNERSING=1111
+
+IIS_ATT.Services.CentralMedia.WebServices_PORT=7025
+IIS_ATT.Services.CentralMedia.WebServices_SSLPORT=17025
+
+IIS_ATT.IRWS.UI_PORT=6024
+IIS_ATT.IRWS.UI_SSLPORT=16024
+IIS_ATT.IRWS.SERVICES_PORT=7024
+IIS_ATT.IRWS.SERVICES_SSLPORT=17024
+
+IIS_NUMBERMANAGER_SERVICE.WEBSERVICES_PORT=4399
+IIS_NUMBERMANAGER_SERVICE.WEBSERVICES_SSLPORT=14399
+
+# Virtual IP domain name for hitting the sites as a farm for this environment
+VIP_KEENSITE=http://keen.stage.keen.com
+VIP_KEENUKSITE=http://keenuk.stage.keen.com
+VIP_INGENIO=http://ingenio.stage.keen.com
+VIP_MATCH=http://match.stage.keen.com
+VIP_MSN=http://msn.stage.keen.com
+VIP_AOL=http://aol.stage.keen.com
+VIP_LYCOS=http://lycos.stage.keen.com
+VIP_ASTROLOGY=http://astrology.stage.keen.com
+VIP_API=http://api.stage.keen.com
+VIP_TOOLS=http://dashboard.stage.keen.com/tools/default.aspx
+VIP_CONTENTTOOLS=http://contenttools.stage.keen.com
+VIP_ETHER=http://ether.stage.keen.com
+VIP_DEVELOPERSING=http://developers.stage.keen.com
+VIP_PARTNERSING=http://dashboard.stage.keen.com
+
+# IIS Logging Options
+GENERIC_IIS_LOGGING_OPTIONS=LogType="1" LogExtFileTimeTaken="true" LogExtFileComputerName="true" LogExtFileServerPort="true" LogExtFileHost="true"
+
+# Default Composite ID for Voice Portal customizations
+IVR_DEFAULT_COMPOSITE_ID=554446
+
+#default IVR Call flow entity ID
+BRANDING_TOOL_DEFAULT_IVRCALLFLOW_ID=1241369
+
+#branding too default TID
+BRANDING_TOOL_DEFAULT_TID=REY1QThB
+
+# File locations for uploaded partner prompts
+BRANDING_TOOL_PARTNER_PROMPT_URL=http://ashstgfs.stage.keen.com:82/customprompts/
+
+#File location for uploaded IVR custom prompts
+IVR_CUSTOM_PROMPTS_PATH=\\ashstgfs.stage.keen.com\Files\CustomPrompts\
+
+# File location for Intro greetings (match type intro greetings)
+IVR_INTRO_GREETING_PATH=\\ashstgfs.stage.keen.com\introgreetings\
+
+# Login for IVR custom prompts share
+IVR_SHARE_USER_ID=svc_ivraccess
+
+# Password for IVR custom prompts share
+IVR_SHARE_USER_PWD=1vrF1les
+
+# Master domain URL for sharing KeenUID
+MASTER_DOMAIN_URL=www.stage.keen.com
+
+# Directory to host the .net web pages for the email templates
+SYSTEM_EMAIL_TEST_TEMPLATE_DIR=C:\test\
+
+# Directory that contains the assemblies required by the webpages
+# in the test template directory
+SYSTEM_EMAIL_SHARED_ASSEMBLIES_FOLDER=Assemblies
+SYSTEM_EMAIL_SHARED_ASSEMBLIES_ENVPATH=KEEN
+
+# Session state server connection string
+# Use for substituting this value into the stateConnectionString attribute
+# Example: <sessionState stateConnectionString="tcpip=127.0.0.1:42424" />
+SESSION_STATE_CONNECTION=tcpip=sstate.stage.keen.com:42424
+
+# Powered By URL
+POWEREDBY_URL=http://ingenio.stage.keen.com/documents/corpinfo/poweredby.asp
+
+# Use by System Email Event receiver to request the Platform.Cms website for email template content.
+# TODO: This is likely wrong...
+Platform_Cms_EmailTemplates_UrlPath=http://platformcms.stage.keen.com:103/EmailTemplates/
+
+# On live and stage we have the following 3 groups of listing servers
+# - ash/advice, ash/ppc, irv/ppc
+# On test and dev we have the following 2 groups of listing servers (advice and ppc are not distinguished on ash)
+# - ash, irv/ppc
+
+# Address of listing server farm for advice, possibly behind load balancer
+LISTING_SERVER_FARM_URL=tcp://mem.stage.keen.com:8080/ListingServer
+
+# Address of listing server farm for ppc, possibly behind load balancer
+EV1.PPC_LISTING_SERVER_FARM_URL=tcp://ppcmem.ev1.stage.keen.com:8080/ListingServer
+WC1.PPC_LISTING_SERVER_FARM_URL=tcp://ppcmem.wc1.stage.keen.com:8080/ListingServer
+
+# Addresses of individual listing servers, separated by semicolons
+# This variable is overwritten on all stage boxes so the values specified here are meaningless
+LISTING_SERVER_URLS=tcp://ashstgmem01.stage.keen.com:8080/ListingServer;tcp://ashstgmem02.stage.keen.com:8080/ListingServer
+
+# Enable sending of asynchronous availability/busy updates to listing server
+# from keenvb. 0 for no, 1 for yes.
+LISTING_SERVER_NOTIFY_ENABLED=1
+
+# comma separated list to restrict list of domains handled by listing
+# server, or "*" for all domains. ('^' before comma separated list will
+# restrict to all domains not in the list).
+# This is intended to be overridden on individual servers
+LISTING_SERVER_DOMAIN_FILTER=1,2,3,5,10,32,33,43,14,16,42
+
+# Specifies the flavor of listing server to initialize (All, Advice or PPC)
+LISTING_SERVER_TYPE=All
+
+# Specifies the number of times per day that the listing server will perform dynamic cache compression
+LISTING_SERVER_NUM_COMPRESSIONS_PER_DAY=48
+
+# Specifies the number of minutes after which a sort bucket is eligible to be pruned
+LISTING_SERVER_SEARCH_INACTIVITY_THRESHOLD_MINS=30
+
+# Timeout/retry values used by clients for listing server getlisting calls
+LISTING_SERVER_ADVICE_REQUEST_TIMEOUT=2000
+LISTING_SERVER_ADVICE_FINAL_REQUEST_TIMEOUT=5000
+LISTING_SERVER_ADVICE_REQUEST_NUM_RETRIES=3
+LISTING_SERVER_PPC_REQUEST_TIMEOUT=2000
+LISTING_SERVER_PPC_FINAL_REQUEST_TIMEOUT=5000
+LISTING_SERVER_PPC_REQUEST_NUM_RETRIES=2
+
+# RServices endpoint used by U-API to retrieve YPC Listings
+YPC_RSERVICES_URL=http://prod2.wc1.yellowpages.com:7000/u_api/search_listings
+#YPC_RSERVICES_URL=http://qasvc2.flight.yellowpages.com:7000/u_api/search_listings
+
+# Redirect URL used for click tracking on YPC More Info Pages
+YPC_REDIRECT_URL=http://qa1-www.wc1.yellowpages.com/xmlapi_clicks
+
+# Base URL for image logging requests
+YPC_IMAGE_LOGGING_BASE_URL=http://www.yellowpages.com/images
+
+# Default Entity Ids using by internal web service for creating/managing TIDs
+DEFAULT_PARTNER_ENTITY=2194807
+CALL_FLOW_ENTITY_WITH_PROMPTS=3967171
+CALL_FLOW_ENTITY_WITHOUT_PROMPTS=2469421
+DEFAULT_IVR_ENTITY=1823049
+
+# Address of report manager, possibly behind load balancer
+REPORT_MANAGER_FARM_URL=tcp://repmgr.stage.keen.com:8081/ReportManager
+REPORT_MANAGER_SHARE=\\ashstgfs.stage.keen.com\files\Reports
+REPORT_MANAGER_SERVICE_IDENTITY=stage\svc_reports
+REPORT_MANAGER_SERVICE_PASSWORD=stgRep0r1s
+
+#Login information for Report Server Webservice
+REPORT_SERVICE_WEBSERVICE_URLROOT=http://mrs.stage.keen.com/ReportServer/
+REPORT_SERVICE_WEBSERVICE_USERNAME=ReportServiceWS
+REPORT_SERVICE_WEBSERVICE_PASSWORD=RS1234ws
+REPORT_SERVICE_WEBSERVICE_DOMAIN=stage
+MASTER_REPORT_SERVICE_WEBSERVICE_URLROOT=http://mrs.ashstgpweb01.stage.keen.com/ReportServer/
+
+# Data Sources used in the Reporting Service server.  Note format is different than other connection strings!
+REPORTING_USER=Stage_YPUser
+REPORTING_PASS=gett1ngthere
+REPORTING_CONNECTION=data source=ashstgdb04.stage.keen.com;initial catalog=RepYP
+# Use this connection string for accessing Reporting DB via .Net
+REPORTING_DB_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb04.stage.keen.com; Uid=Stage_YPUser; Pwd=gett1ngthere; Database=RepYP
+REPORTING_DB_BCP_CONNECTION_NET=Network=DBMSSOCN; Server=ashstgdb04.stage.keen.com; Uid=RepYPbcp; Pwd=uoiCCe88; Database=RepYP
+
+# Impression Tracking Server.
+IMPRESSION_TRACKING_SERVER_URL=tcp://imptracking.stage.keen.com:8083/ImpressionTrackingServer
+IMPRESSION_TRACKING_MINUTES_BETWEEN_REMOTE_IMPRESSION_COMMITS=2
+IMPRESSION_TRACKING_MINUTES_BETWEEN_CONVERSION_RATE_UPDATES=5
+TRAFFIC_TRACKING_MINUTES_BETWEEN_PERIODIC_DATABASE_UPDATES=5
+
+# Asynchronous Event Processor - Outbid Alerts
+OUTBID_ALERTS_SHORT_PAUSE_DURATION=14400
+OUTBID_ALERTS_MIN_ALERT_FREQUENCY=1440
+OUTBID_ALERTS_MAXIMUM_POSITION=25
+
+DB_MAIN_USER=Stage_KAUser
+DB_MAIN_PASS=box417stage
+DB_MAIN_CONNECTION=data source=ashstgdb02.stage.keen.com; initial catalog=keen
+
+# Machine Key for Tools site.  This key is used in the Web.Config to
+# define the encryption key for the login cookie.
+TOOLS_MACHINE_KEY=<machineKey validationKey="6A1007D63DA74405B1499AB0712DC428EAD14EFB" decryptionKey="1EB738926AD657FB" validation="SHA1"/>
+
+# true if we want to compile ASPX files with debugging info
+ASP.NET_DEBUG=true
+
+# Custom error mode for ASP.NET: Off means show detailed errors (for debugging), RemoteOnly means show debugging stuff only to local hits
+ASP.NET_CUSTOM_ERR_MODE=On
+
+# true if we want to send ASP script errors to the browser
+ASP_SCRIPT_ERROR_SENT_TO_BROWSER=false
+
+# Web services port - tells the WSDL generator the actual port a web service is coming in on.  This
+# values is different on STAGE and LIVE where port mapping occurs
+WEB_SERVICE_PORT=80
+
+# Machine Key for machines running ASP.Net web site
+WEB_MACHINE_KEY=<machineKey validationKey="DD826E172561FF119F46D97BD58E34637FC9FE0712925337F2595A4A74D2BD8035C27C50848D1243E1A1DD7AF0D0A3464CD8FCBF2CB894C4BC9411ACC2126028" decryptionKey="F9111E1240FA0485B5EE5103E62DC65C0BD1426E9A5C805B" validation="SHA1"/>
+
+#Machine keys for forums
+FORUMS_MACHINE_KEY=<machineKey validationKey="DD826E172561FF119F46D97BD58E34637FC9FE0712925337F2595A4A74D2BD8035C27C50848D1243E1A1DD7AF0D0A3464CD8FCBF2CB894C4BC9411ACC2126028" decryptionKey="F9111E1240FA0485B5EE5103E62DC65C0BD1426E9A5C805B" validation="SHA1"/>
+FORUMS_VALIDATION_KEY=DD826E172561FF119F46D97BD58E34637FC9FE0712925337F2595A4A74D2BD8035C27C50848D1243E1A1DD7AF0D0A3464CD8FCBF2CB894C4BC9411ACC2126028
+FORUMS_DECRYPTION_KEY=F9111E1240FA0485B5EE5103E62DC65C0BD1426E9A5C805B
+
+# Any msgbatch below this id cannot be cloned are enabled.
+MSGBATCH_CLONE_THRESHOLD=1
+
+#Branding tool location to link from number management tool for Tid lookup
+BRANDING_TOOL_LOCATION=http://ashstgweb01.stage.keen.com:102/Tools/Enhanced/Sections/Branding/
+
+# We have inconsistently named ppc number allocator machines...
+# live: ashppcnum, irvppcnum
+# stage: ashstgppcnum, irvstgppcnum
+# test: ashtestppc, irvtestppcnum
+# dev: ashdevppc, irvdevppcnum
+
+#Number allocation URI
+EV1.NUMBER_ALLOCATION_URI=tcp://ppcnum.ev1.stage.keen.com:8100/INumberAllocator
+WC1.NUMBER_ALLOCATION_URI=tcp://ppcnum.wc1.stage.keen.com:8100/INumberAllocator
+
+# Number allocator management URI
+EV1.NUMBER_ALLOCATION_MGMT_URL=tcp://ppcnum.ev1.stage.keen.com:8100/INumberAllocatorManagement
+WC1.NUMBER_ALLOCATION_MGMT_URL=tcp://ppcnum.wc1.stage.keen.com:8100/INumberAllocatorManagement
+NUMBER_ALLOCATION_MGMT_URL_IRV=tcp://ppcnum.wc1.stage.keen.com:8100/INumberAllocatorManagement
+
+# Number allocator diagnostic URI
+EV1.NUMBER_ALLOCATION_DIAG_URL=tcp://ppcnum.ev1.stage.keen.com:8100/INumberAllocatorDiagnostics
+WC1.NUMBER_ALLOCATION_DIAG_URL=tcp://ppcnum.wc1.stage.keen.com:8100/INumberAllocatorDiagnostics
+
+#Number allocation primary and standby locations -- semicolon ; separated, have to be two, and do not use FQDN
+EV1.NUMBER_ALLOCATION_PRIMARY_STANDBY_URI=tcp://ashstgppcnum01:8101;tcp://ashstgppcnum02:8102
+WC1.NUMBER_ALLOCATION_PRIMARY_STANDBY_URI=tcp://irvstgppcnum01:8101;tcp://irvstgppcnum02:8102
+
+# Number allocation other colo URI
+EV1.NUMBER_ALLOCATION_OTHER_COLO_URI=tcp://ppcnum.wc1.stage.keen.com:8100/
+WC1.NUMBER_ALLOCATION_OTHER_COLO_URI=tcp://ppcnum.ev1.stage.keen.com:8100/
+
+# Number allocation id of this colo
+EV1.NUMBER_ALLOCATION_ALLOCATOR_COLO_ID=1
+WC1.NUMBER_ALLOCATION_ALLOCATOR_COLO_ID=2
+
+# Enable MultiColo or not
+NUMBER_ALLOCATION_ENABLE_MULTI_COLO=false
+
+#Network share used to dump temp data files
+NUMBER_ALLOCATION_SHARENAME=ashstgdb02.stage.keen.com\AllocationData
+
+#Periodic time interval to update the other colo (in seconds)
+NUMBER_ALLOCATION_UPDATECOLO_TIMEOUT=15
+
+#Periodic time interval to update the standby side (in seconds)
+NUMBER_ALLOCATION_UPDATEPROVIDER_TIMEOUT=70
+
+#Periodic time interval to update the database (in seconds)
+NUMBER_ALLOCATION_UPDATEDATABASE_TIMEOUT=90
+
+#Periodic time interval to retry the standby side on connection failure(in seconds)
+NUMBER_ALLOCATION_STANDBYFAILURE_TIMEOUT=25
+
+#Minimum time to wait before an Allocator that became standby can become primary again(in seconds)
+NUMBER_ALLOCATION_MIN_TIME_BEFORESWITCHBACK=20
+
+#Allow number allocator to break rules for minimum call and display period before reassociations
+NUMBER_ALLOCATION_ALLOW_BREAKING_RULES=true
+NUMBER_ALLOCATION_CHECK_FOR_DIRTINESS_DAYS=30
+NUMBER_ALLOCATION_CHECK_FOR_DIRTINESS_CALLS=3
+
+# Timeout value used by client with number allocator calls made as well as for server waiting to acquire the exclusive lock inside Allocator
+NUMBER_ALLOCATION_GETNUMBERFORLISTING_TIMEOUT=50
+
+
+#Username for the trusted service account
+TRUSTED_SERVICE_IDENTITY=sql_stagednis
+
+TRUSTED_SERVICE_PASSWORD=none
+
+# Login info for talking to the JIRA Web Service API
+JIRA_USER=attidashboard
+JIRA_PASS=password
+JIRA_URL=http://jira.attinteractive.com/rpc/soap/jirasoapservice-v2
+
+# Dashboard (Partner Center) Access manager Jira specific Info
+ACCESS_MANAGER_JIRA_REPORTER_NAME=attidashboard
+ACCESS_MANAGER_JIRA_ASSIGNEE_NAME=dchen
+ACCESS_MANAGER_JIRA_PROJECT_KEY=DAR
+ACCESS_MANAGER_JIRA_ISSUE_TYPE=ATTi Dashboard Access Request
+ACCESS_MANAGER_JIRA_COMPONENTS=???
+ACCESS_MANAGER_SMTP_RELAY=mta.net.keen.com
+ACCESS_REQUEST_EMAIL_FROM=accessrequest-noreply@attinteractive.com
+ACCESS_REQUEST_EMAIL_LIST=toolsecurity@attinteractive.com
+ACCESS_REQUEST_USE_EMAIL_NOTIFICATIONS=false
+ACCESS_REQUEST_USE_JIRA_NOTIFICATIONS=false
+ACCESS_REQUEST_USE_SALESFORCE_NOTIFICATIONS=true
+
+# Login info for talking to the SalesForce Web Service API
+SALES_FORCE_USER=sadmin@ingenio.com.stage
+# To force a password change enter the current password in the SALESFORCE_PREVIOUS_PASS field and a new password in the SALES_FORCE_PASS field.
+SALES_FORCE_PASS=sadMpwD614
+SALESFORCE_PREVIOUS_PASS=SadmPwd814
+SALES_FORCE_URL=https://test.salesforce.com/services/Soap/
+SALES_FORCE_SITEURL=https://tapp0.salesforce.com
+
+# Salesforce SSO
+YP_SSO_PATH=https://sso.yellowpages.com/login
+YP_SSO_PATH_LOGOUT=https://sso.yellowpages.com/logout
+YP_SSO_COOKIE_NAME=SSO
+YP_SSO_KEY=SSO_PublicKey.xml
+SALESFORCE_SSO_PATH=https://cs2.salesforce.com
+SALESFORCE_SSO_TARGET=https://saml.salesforce.com/
+SALESFORCE_SSO_SAML_ISSUER=http://www.yellowpages.com/saml
+SALESFORCE_SSO_CERT_PATH=salesforcestage.pfx
+SALESFORCE_SSO_SAML_CERTPWD=cmr
+
+# PartnerCenter SSO
+PRIC_SSO_PATH=https://sso.yellowpages.com/login
+PRIC_SSO_PATH_LOGOUT=https://sso.yellowpages.com/logout
+PRIC_SSO_PATH_CSP_LOGOUT=https://www.e-access.att.com/empsvcs/hrpinmgt/pagLogout/
+PRIC_SSO_COOKIE_NAME=SSO
+PRIC_SSO_KEY=SSO_PublicKey.xml
+
+# UFT SSO
+UFT_SSO_PATH=https://sso.yellowpages.com/login
+UFT_SSO_PATH_LOGOUT=https://sso.yellowpages.com/logout
+UFT_SSO_COOKIE_NAME=SSO
+
+# Salesforce object path
+SALESFORCE_OBJECT_PATH=https://cs2.salesforce.com
+
+# Web Service Url for Payment Cener
+WC1.PAYMENT_CENTER_URL=https://stage-ccap-svc.g.int.atti.com/PaymentCenterWS.asmx
+EV1.PAYMENT_CENTER_URL=https://stage-ccap-svc.g.int.atti.com/PaymentCenterWS.asmx
+
+# True if we need to use the local prefix to form urls
+USE_LOCAL_URL_PREFIX=true
+
+#Login info for talking to the MapPoint Web Service API
+MAPPOINT_SERVICE_WEBSERVICE_USERNAME=39959
+MAPPOINT_SERVICE_WEBSERVICE_PASSWORD=4E7(4glE)F1g
+
+# Recurrence Processor Settings
+RECURRENCE_SIMULTANEOUS_WORKERS=1
+RECURRENCE_BATCH_SIZE=50
+
+# Number of days to look back to find successful contact between PPC advertiser and caller
+DAYS_FOR_PPC_CALL_BACKTRACK=180
+
+#Calls to this DNIS will get a special prompt asking caller to enter 800 number to call.
+# Used for testing on stage and test enviroinments only
+IVR_PPC_TESTING_DNIS=811443
+
+# Prefix for IP addresses of servers in this domain
+SERVER_IP_PREFIX=10.3.
+
+# URL and login info for the BigIP IControl web service
+ICONTROL_URL=https://bip01-ntt.net.keen.com/iControl/iControlPortal.cgi
+ICONTROL_USERNAME=markh
+ICONTROL_PASSWORD=markh
+
+# app domain manager service URL
+EV1.APP_DOMAIN_MANAGER_URL=tcp://appdomain.ev1.stage.keen.com:8082/RemoteRegistration
+WC1.APP_DOMAIN_MANAGER_URL=tcp://appdomain.wc1.stage.keen.com:8082/RemoteRegistration
+
+# MapQuest access info
+MAPQUEST_SERVICE_CLIENTID=30521
+MAPQUEST_SERVICE_PASSWORD=WhEuU4dE
+MAPQUEST_SERVICE_MAPPINGSERVER_NAME=map.access.mapquest.com
+MAPQUEST_SERVICE_MAPPINGSERVER_PATH=mq
+MAPQUEST_SERVICE_MAPPINGSERVER_PORT=80
+
+# Max processes allowed for IIS default app pool
+DEFAULT_APP_POOL_MAX_PROCESSES=1
+
+# Payout Directory Path
+PAYOUT_DIRECTORY=\\ashstgfdc01.stage.keen.com\payouts
+
+# Payouts authentication
+PAYOUT_USERNAME=stage\svc_Schedule
+PAYOUT_PASSWORD=stage!Sched
+
+# Address of machine generated query detector server farm, possibly behind load balancer
+MGQ_DETECTOR_URL=tcp://qd.stage.keen.com:1580/MGQDetector
+
+# Enable detection of machine generated traffic in the web services
+MGQ_DETECTOR_ENABLED=true
+
+#Number of IP ports on the media server
+IP_MEDIASERVER_PORTS=20
+
+#PPC off hour start and end times
+OFF_HOUR_START_TIME=23
+OFF_HOUR_END_TIME=4
+
+# MSMQ path to InitiateCall queue
+MSMQ_INITIATECALL_PATH=Label:InitiateCall_ash
+
+# MSMQ path to InitiateCallRecording queue
+MSMQ_INITIATECALLRECORDING_PATH=Label:InitiateCallRecording_ash
+
+# MSMQ path to TerminateCall queue
+MSMQ_TERMINATECALL_PATH=Label:TerminateCall_ash
+
+# MSMQ server that hosts the mail queues (use for direct access during queue discovery)
+MSMQ_MAIL_SERVER=ashstgmsmq.stage.keen.com
+
+# Determines whether to use private MSMQs for receivers.
+#   when 0: Uses public queues.
+#   when 1: Uses private queues.
+MSMQ_USE_PRIVATE_QUEUES=0
+
+# Determines whether disconnected messaging is used in this environment.
+# (currently used in KeenVB setting
+#   when 0: Queue discovery is done by the MQ site controller (for local machines)
+#   when 1: Queue discovery is done via direct access, referencing the server that hosts the queue (for production machines)
+USE_DIRECT_QUEUE_ACCESS=0
+
+# When set to 1, disables an extra security check for loopback connections
+# that can interfere with integrated windows authentication during
+# local debugging.
+# See http://support.microsoft.com/?kbid=896861.
+#
+# On local machines:      Set to 1
+# On production machines: Set to 0.
+DISABLE_LOOPBACK_CHECK=0
+
+# Session agent group name on the SBC
+SBC_AGENT_GROUP=stage-servers
+SBC_REALM=sbc03-ntt
+SBC_PASSWORD=G1zm0!!
+SBC_IP_ADDRESS=10.3.221.21
+
+# Connection strings for Odin database
+ODIN_DB_APPUSER_CONNECTION=server=ashstgodindb01.stage.keen.com; database=OdinStage; uid=OdinAppUser_Stage; pwd=rowrowhehe;
+ODIN_DB_SQLDEPENDENCYSTARTER_CONNECTION=server=ashstgodindb01.stage.keen.com; database=OdinStage; uid=OdinSqlDependencyStarter_Stage; pwd=ehehworwor;
+
+# External host name and port
+ODIN_LOADBALANCED_HOSTNAME=odin.stage.keen.com
+ODIN_LOADBALANCED_HEADER=LOADBALANCED
+
+# Odin Agent service startup option and action to perform on deployment.
+ODIN_AGENT_SERVICE_STARTUP=manual
+ODIN_AGENT_SERVICE_DEPLOYMODE=nostart
+ODIN_HEALTHCHECK_WCFSERVICE_ADDRESS=http://deploy.stage.keen.com:7110/DeployService/DeployServer
+
+# Odin Server service startup option and action to perform on deployment.
+ODIN_SERVER_SERVICE_STARTUP=manual
+ODIN_SERVER_SERVICE_DEPLOYMODE=nostart
+
+# Odin Email configuration
+ODIN_MAIL_USERNAME=yellowpages\svc_emailer
+ODIN_MAIL_PASSWORD=3yARvI01fjA9a8k
+ODIN_MAIL_SENDER=Odin STAGE &lt;monitor@attinteractive.com&gt;
+ODIN_MAIL_SUBJECT_PREFIX=STAGE
+ODIN_REPORT_EMAILTO=AdvertiserEngineering@attinteractive.com,SFOCoreSystemsQA@attinteractive.com,odin-reports@lists.yellowpages.com
+
+# AppServer registry entries
+APP_SERVER_RESOURCE_GROUP=7
+APP_SERVER_DOMESTIC_COUNTRY_CODE=1
+APP_SERVER_VOCAL_OUTPULSE_RULE=2
+APP_SERVER_OPERATOR_ADVANCE_TIMER=50
+APP_SERVER_TOLL_FREE_RESOURCE_GROUP=7
+APP_SERVER_TOLL_FREE_OUTPULSE_RULE=4
+APP_SERVER_VOCAL_RESOURCE_GROUP=ashstghmp01^19, ashstghmp02^20
+APP_SERVER_RULER_RESGROUP_TABLE_TDM=SM_ResourceGroups
+APP_SERVER_RULER_RESGROUP_TABLE_VOIP=SM_ResourceGroups_VoIP
+APP_SERVER_TRANSFORM_INTERNATIONAL=1
+APP_SERVER_OPERATOR_TIMER_PRE_CALL=90
+APP_SERVER_IVR_RESOURCE_GROUP=ashstghmp01^19, ashstghmp02^20
+APP_SERVER_IN_HOUSE_OPERATOR_TIMEOUT=40
+APP_SERVER_INCOMING_ANSWER_TIMEOUT_MILLISECS=0
+APP_SERVER_DO_CALL_TERMINATION_DIRECTLY=0
+APP_SERVER_VOCAL_SOCKET_PORT=9999
+APP_SERVER_UNIQUE_TONE_DIGIT=999
+FRAMEWORK_HOME=C:\Keen
+FRAMEWORK_INTERNATIONAL_PREFIX=011
+FRAMEWORK_TOTAL_VIRTUAL_PORTS=9999
+FRAMEWORK_FIRST_VIRTUAL_PORT=999
+FRAMEWORK_SWITCH_ID=999
+FRAMEWORK_ANSWER_INPULSE_RULE_ISDN=99
+FRAMEWORK_VIRTUAL_PORT_HUNT=1
+
+# Framework LogLevel - Unmanaged DLL
+LOGLEVEL_DETAIL_ON=false
+
+# FaceBook API
+FACEBOOK_API_KEY=11a324f211d4e385fc39d6e9e3d03e3a
+FACEBOOK_API_SECRET=821f9cdd8ead7dc39bf89e18394a07cd
+
+# Fixya Post URI
+FIXYA_POST_URI=http://launchpad.stage.keen.com/TestPages/Post/PartnerPostTest.aspx
+
+# SIPServer SIP Port Number
+SIPSERVER_SIPPORT=5060
+
+# SIPServer AT&T Diversion Header Value
+SIPSERVER_ATTDIVERSIONHEADERVALUE=14152484100
+
+# NumberAllocatorURL
+SIPSERVER_NUMBERALLOCATOR_URL=tcp://ppcnum.stage.keen.com:8100/INumberAllocator
+
+# Carrier Testing ANI
+CARRIER_TESTING_ANI=4152484999
+
+# Calling whitelist for non-Live environments
+CALLING_WHITELIST=1818649[\d]{4}|1818937[\d]{4}|14152484[\d]{3}|1732420[\d]{4}|1415430115[\d]|1415430116[\d]|14153379794|14153708689|14154253749|14152548602|14157940627|16503763256|14153480939|17324201887|17324208733|18597970116|17326648211|17329394150|14044995008|12103680023|17703266007|16784062218|16784801236|13142426554|13142427942|13142427776|13142427814|13142428040|13142428558|13173472165|14152675514|14155641120|14156650203|14158108608|14177811616|14178637333|16204424080|16606275752|16784065281|16784062858|16784065273|16784065277|16784065284|16784065285|18037503950|13123644361|13123646190|19493333988|14049869137|14049868599|17708274655|15302000699|16502350150|16503121550|14088248325|14159944836|14159790102|18182378934|18183195192|18188134669|18182816492|18182813941|18188134692|18188134671|14152547278|14082432244|14083646682|14085291099|14152386170|14157949377
+
+# Black list for payphones
+ANI_BLACKLIST_PPC=718[\d]{7}
+ANI_BLACKLIST_ADVICE=718[\d]{7}
+
+# LiveOp tool path
+LIVEOP_PATH=http://liveoperator.stage.keen.com/tools/liveoperator/liveoperator.asp
+
+# Recording PPC calls
+ASTERISK_DIALING_PREFIX=31
+ASTERISK_IP_ADDRESS=10.3.10.94
+PPC_RECORDING_LOCATION=\\ashstgfs.stage.keen.com\files\recordings
+
+# Telmetrics
+TELMETRICS_RES_GRP=13
+TELMETRICS_SIPSERVER_TERMINATION_NUMBERS=8663117983|4157627845
+TELMETRICS_USERNAME=ingeniows
+TELMETRICS_PASSWORD=#Ingenio
+TELMETRICS_ORDERSERVICE_URL=https://uatwebservice.telmetrics.com/orderservice.asmx
+TELMETRICS_ADVERTISER_ID=116280
+TELMETRICS_MAX_NUMBERS_PER_AD=50
+TELMETRICS_TERMINATION_NUMBER=8663117983
+TELMETRICS_ADVERTISER_NAME=Ingenio
+TELMETRICS_ADVERTISER_ADDRESS=201 Mission Street
+TELMETRICS_ADVERTISER_SUITE=200
+TELMETRICS_ADVERTISER_CITY=San Francisco
+TELMETRICS_ADVERTISER_STATE=CA
+TELMETRICS_ADVERTISER_ZIP=94105
+TELMETRICS_ADVERTISER_CLIENT_CODE=12345
+TELMETRICS_ADVERTISER_PHONE=4152484111
+TELMETRICS_ADVERTISER_CUSTOM_PRINT_CITY=San Francisco
+TELMETRICS_ADVERTISER_CONTACT_NAME=Mehul Jain
+TELMETRICS_AD_DEFINITIONNAME=Get Local Numbers
+TELMETRICS_AD_TYPE=Internet
+TELMETRICS_AD_HEADING=Local Number Provider
+TELMETRICS_TESTAPP_INPUTFILES_PATH=.\
+TELMETRICS_DUMMY_ANI=3034447428
+
+# YPC ORDER LOAD
+YPC_ORDERLOAD_OUTBOUND_ORDERS_DIR=\\ashstgbatch01.stage.keen.com\YPCOrderLoad\Outbound\Orders
+YPCORDERLOAD_INBOUND_ORDERS_DIR=\\ashstgbatch01.stage.keen.com\YPCOrderLoad\Inbound\Orders
+YPCORDERLOAD_INBOUND_REF_DIR=\\ashstgbatch01.stage.keen.com\YPCOrderLoad\inbound\reference
+YPCORDERLOAD_FTP_OL_LOC=ftp://ftp1.yellowpages.com/inbound/orders/
+YPCORDERLOAD_FTP_GRAPHICS_LOC=ftp://ftp1.yellowpages.com/inbound/graphics/
+YPCORDERLOAD_FTP_DIST_GRAPHICS_LOC=ftp://ftp1.yellowpages.com/inbound/graphics/
+YPCORDERLOAD_FTP_STATUS_LOC=ftp://ftp1.yellowpages.com/outbound/orders/
+YPCORDERLOAD_FTP_REF_LOC=ftp://ftp1.yellowpages.com/outbound/reference/
+YPCORDERLOAD_FTP_USERID=igqa1
+YPCORDERLOAD_FTP_PASSWD=$56yp11
+YPCORDERLOAD_FTP_FILES=false
+YPCORDERLOAD_DEDUPE_FILE_LOC=ftp://ftp1.yellowpages.com/Ads_Ingenio_Extract.txt
+YPCORDERLOAD_EMAIL_LIST=soc@yellowpages.com,cho@yellowpages.com,WZhang@yellowpages.com,vsilva@attinteractive.com
+
+# ANI for Test Calls
+TEST_CALLS_ANI_NPA=415
+TEST_CALLS_ANI_NXX=375
+TEST_CALLS_ANI_STATION_CODE_FIRST_TWO_DIGITS=94
+
+# Primary and Secondary Resource Groups
+PRIMARY_RES_GRP=7
+SECONDARY_RES_GRP=0
+
+#cTest settings
+CTEST_SER_IP=10.3.70.94
+CTEST_SBC_IP=10.3.180.50
+CTEST_STGSBC_IP=10.3.180.50
+CTEST_TESTSBC_IP=10.3.180.51
+CTEST_DEVSBC_IP=10.3.180.52
+CTEST_GXINDY_IP=10.3.220.50
+CTEST_LEVEL3_IP=10.3.221.23
+CTEST_HMP_PORTS=10
+CTEST_MAX_IDLE_TIME_IN_MINUTES=5
+CTEST_MAX_LINES_PER_PHONE_FOR_LISTINGAUTH=4096
+CTEST_ENDPOINT_URL=http://ashstgcall01.stage.keen.com:4398/cTest
+CTEST_ENDPOINT_PORT=4398
+CTEST_REST_ENDPOINT_URL=http://ashstgcall01.stage.keen.com:4398/cTest/rest
+CTEST_PATH_TO_DIGIT_VOX=C:\keen\Ivr\prompts\
+CTEST_PATH_TO_AUTH_VOX=C:\keen\Ivr\prompts\Auth\
+
+
+#DNISDialer settings
+DNISDIALER_SIMULTANEOUS_CALLS=4
+DNISDIALER_MAX_RETRY_COUNT=0
+DNISDIALER_RETRY_DELAY=20000
+DNISDIALER_NEXT_NUMBER_DELAY=0
+DNISDIALER_SMTP_RELAY_SERVER=mta.net.keen.com
+DNISDIALER_EMAIL_FROM=DNIsDialer-NoReply@yellowpages.com
+DNISDIALER_EMAIL_NOTIFICATION_LIST=mjain@yellowpages.com
+#DNIS States to be tested -- comma separated values
+DNISDIALER_INCLUDED_STATES=1,2,3,4
+
+#CPMNotification settings
+CPMNOTIFICATION_SMTP_RELAY_SERVER=mta.net.keen.com
+CPMNOTIFICATION_EMAIL_FROM=CPMNotification-NoReply@yellowpages.com
+CPMNOTIFICATION_EMAIL_NOTIFICATION_LIST=wzhang@yellowpages.com,aketkar@yellowpages.com
+CPMNOTIFICATION_PARTNER_CENTER=http://dashboard.stage.keen.com
+
+
+#MDM
+MDM_API_BASE_URI=http://int-mdmnp1.np.wc1.yellowpages.com:4100
+#ITL
+ITL_API_BASE_URI=http://svc-qa1.wc1.yellowpages.com/v1/
+#LDB
+LDB_API_BASE_URI=http://ldbqa4.np.wc1.yellowpages.com:5300
+#Categories
+CATEGORIES_API_BASE_URI=http://cltqa.np.wc1.yellowpages.com:8080/clt/live/select/?version=2.2
+
+#OPM
+OPM_API_BASE_URI=http://apitest.customerinsight.marchex.com/
+OPM_API_KEY=239b7940-4fd2-012d-f4eb-00221951cc37
+
+OPM_Fallback_URL=http://adsolutions.stage.keen.com/Presence/Error/Product
+
+OPM_ORDERLOAD_OUTBOUND_ORDERS_DIR=\\ashstgbatch01.stage.keen.com\VendorFiles\OPM\Outbound
+OPMORDERLOAD_INBOUND_ORDERS_DIR=\\ashstgbatch01.stage.keen.com\VendorFiles\OPM\inbound
+
+OPMORDERLOAD_FTP_SERVER=ftp.ah-ha.com
+OPMORDERLOAD_FTP_USERID=atti
+OPMORDERLOAD_FTP_ENCRYPTEDPASSWD=166-jGQ5la93W2eNME8nJu3g==
+
+OPMORDERLOAD_FTP_OL_LOC=sandbox/incoming/
+OPMORDERLOAD_FTP_STATUS_LOC=sandbox/outgoing/
+
+OPM_TMAIL_USERID=adproducts-site
+OPM_TMAIL_ENCRYPTEDPASSWD=16Q5HJ3FkBlmdIecgKrl01rQ==
+OPM_TMAIL_SERVICE_URL=http://tmail.int.atti.com/1/mailings/adproducts-site/stage
+OPM_TMAIL_DOMAIN=.atti.com
+OPM_TMAIL_EMAILCUSTOMERS=False
+OPM_TMAIL_EMAILRECIPIENT=OPMTransactionalMail@attinteractive.com
+OPM_TMAIL_EMAILTEMPLATE=Mailing.2003.128
+OPM_TMAIL_PRODUCT_UPGRADE_EMAILTEMPLATE=Mailing.2001.2683
+OPM_MAGIC_URL_HOST=adsolutions.stage.keen.com
+OPM_AF_WS_URL=http://afq2.yellowpages.com/selfservice/SelfService
+
+
+#Business Solution Center
+FREE_LISTINGS_URL=http://glndevweb01.yellowpages.local:8085/ListingManagement.asmx
+SINGLESIGNON_URL=https://irvqaauthapp01.yellowpages.local/sf/singlesignon/SingleSignOnWS.asmx
+NSSACCOUNT_URL=http://irvqaweb01.yellowpages.local:18082/NSSAccount.asmx
+SINGLESIGNON_DOMAINID=22
+
+
+#Commerce PCI Compliant File Share Keys -- Placeholder, the value will change for each environment
+WC1.KEK_SHARE=\\irvstgkek01.stage.keen.com\kekshare
+EV1.KEK_SHARE=\\ashstgkek01.stage.keen.com\kekshare
+WC1.KEK_SHARE_BACKUP=\\irvstgkek02.stage.keen.com\kekshare
+EV1.KEK_SHARE_BACKUP=\\ashstgkek02.stage.keen.com\kekshare
+KEK_SHARE_USERNAME=STAGE\svc_pciuser
+KEK_SHARE_PASSWORD=7Tup1d_rhyme42
+WC1.DEK_SHARE=\\irvstgdek01.stage.keen.com\dekshare
+EV1.DEK_SHARE=\\ashstgdek01.stage.keen.com\dekshare
+WC1.DEK_SHARE_BACKUP=\\irvstgdek02.stage.keen.com\dekshare
+EV1.DEK_SHARE_BACKUP=\\ashstgdek02.stage.keen.com\dekshare
+DEK_SHARE_USERNAME=STAGE\svc_pciuser
+DEK_SHARE_PASSWORD=7Tup1d_rhyme42
+
+#Commerce Service Endpoints
+WC1.COMMERCE_CHARGE_ACCOUNTS_URL=https://stage-ccap-svc.g.int.atti.com/ChargeAccount.asmx
+EV1.COMMERCE_CHARGE_ACCOUNTS_URL=https://stage-ccap-svc.g.int.atti.com/ChargeAccount.asmx
+Paymentech.MerchantID=000854
+Paymentech.BIN=000001
+Telecheck.AchexServer=test.achex.com
+Telecheck.AchexUrl=http://test.achex.com/ws/authorization/check/v1.0
+Telecheck.ClearerID=6709560
+Telecheck.ConsentMediumCode=20
+Telecheck.CurrencyTypeCode=$
+Telecheck.MerchantID=yellowpages
+Telecheck.RecurringPeriodCode=
+Telecheck.Username=$6709560_P
+Telecheck.Password=password
+Telecheck.PrivateKey=-----BEGIN PRIVATE KEY-----[CRLF]MIHGAgEAMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80e[CRLF]tKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2[CRLF]nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcb[CRLF]njUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykBBYCFC1osXPu3KNYUUSU[CRLF]1DkFjPrSwOGa[CRLF]-----END PRIVATE KEY-----
+PLATFORM.COMMERCE.SERVICES.TRANSACTIONUPDATERURL.TEST=http://glndevweb01.yellowpages.local:86/UpdaterService.asmx
+PLATFORM.COMMERCE.SERVICES.TRANSACTIONUPDATERURL.SOLO=https://stage-solo.yellowpages.com/WebService/UpdaterService.asmx 
+PLATFORM.COMMERCE.SERVICES.TRANSACTIONUPDATERURL.FMSDASHBOARD=http://irvstgfmsweb01.yellowpages.local/YPC.FMS.UpdaterService/UpdaterService.asmx
+PLATFORM.COMMERCE.SERVICES.TRANSACTIONUPDATERURL.YPCPAYMENTCENTER=http://irvstgfmsweb01.yellowpages.local/YPC.FMS.UpdaterService/UpdaterService.asmx
+PLATFORM.COMMERCE.SERVICES.TRANSACTIONUPDATERURL.AFRONTIER=http://afq1.yellowpages.com/UpdaterService/UpdaterService
+TransactionUpdaterService.UserName=svc_dev_ccapws
+TransactionUpdaterService.Password=ode9Sohukayua
+TransactionUpdaterService.Domain=stage
+
+#Commerce Scheduling Applications
+WC1.ChargeAccount_Url=https://stage-ccap-svc.g.int.atti.com/ChargeAccount.asmx
+EV1.ChargeAccount_Url=https://stage-ccap-svc.g.int.atti.com/ChargeAccount.asmx
+WC1.CommerceWebService_Url=https://stage-ccap-svc.g.int.atti.com/CommerceWebServices.asmx
+EV1.CommerceWebService_Url=https://stage-ccap-svc.g.int.atti.com/CommerceWebServices.asmx
+FMS_DB_CONNECTION=Server=fmsqa.yellowpages.com;User Id=WEBREPORTS;Password=stg1reports
+FMS_HOST= qafmsdb1.wc1.yellowpages.com
+FMS_USERNAME=fmsftp3
+FMS_PASSWORD=TYh0483@@55
+PAYTECH_HOST=netconnectbatchvar1.chasepaymentech.net
+OUTBOUND_FTP_FOLDER=/home/fmsadm2/paymentech/outbound/files
+INBOUND_FTP_FOLDER=/home/fmsadm2/paymentech/inbound
+LOCAL_BACKUP_FOLDER=backup
+LOCAL_ROOT=C:\temp
+MINBATCHID=40000
+MAXBATCHID=1000000
+ISLIVE=0
+LOCAL_OUTBOUND_FOLDER=outbound
+LOCAL_INBOUND_FOLDER=inbound
+LOCAL_BUFFER_FOLDER=buffer
+LOCAL_UPDATED_FOLDER=updated
+LOCAL_ZIP_FOLDER=zip
+LOCAL_UNZIP_FOLDER=unzip
+
+PAYTECH_FTP_USER=SVK5Y8Y8
+PAYTECH_FTP_PWD=NG7YNCG2
+PAYTECH_FTP_FOLDER=.
+ZIP_PWD=7NGYN2CG
+WS_TIMEOUT=14400000
+
+ACHBatchBilling_ErrorThreshold=5
+ACHClearing_ErrorThreshold=5
+
+#Commerce attributes for Accertify
+ACCERTIFY_AUTHCHARGE_URL=https://icnow01.accertify.net/icNowImport/a44a28b9-e2cf-4de5-98d8-42cfbab11c89
+ACCERTIFY_CALLDETAILS_URL=https://icnow01.accertify.net/icNowImport/e8a54555-6bd6-4c52-9021-d5d8fcb753c7
+ACCERTIFY_CHARGEBACK_URL=https://icnow01.accertify.net/icNowImport/6dc31522-f907-48ec-8422-eb3f7ea34839
+ACCERTIFY_REGISTRATION_URL=https://icnow01.accertify.net/icNowImport/b9d69113-ef2d-4db2-85e3-f92320da8bc8
+ACCERTIFY_UPDATES_URL=https://icnow01.accertify.net/icNowImport/4ffeb217-e8b0-40ef-bca4-26531f66cb93
+ACCERTIFY_USERNAME=atti_dev_icnow
+ACCERTIFY_PASSWORD=gBTTeEx2Pf
+
+#TeleCheck connection details
+TELECHECK_IP=204.194.128.18
+BACKUP_TELECHECK_IP=204.194.128.17
+TELECHECK_PORT=28005
+Telecheck.ICAMerchantID=44008565
+Telecheck.PPDMerchantID=44008564
+Telecheck.CBPMerchantID=44008566
+Telecheck.VersionControl=YLLWPG/ATT-NFTF 20100428 WINDOWS2003 SNNK 000
+
+#Solo CCap Login URL
+SOLO_CCAP_LOGIN_URL=https://solo-stage.yellowpages.com/solostaging/Webservice/SoloWebService.asmx
+
+#AFrontier References Lookup Web Service URL
+PLATFORM_COMMERCE_AF_SERVICES_URL=http://afq1.yellowpages.com:80/reference/ReferenceLookup
+
+#CSS - ACRM References Lookup Web Service URL
+CSS_ACRM_SERVICES_URL=http://coreacrm.sbcdo.sbc.com/awsi/services/AcrmSecuredServices
+CSS_ACRM_SERVICES_SECRET=97532468
+
+#Payment Center Connection String and Invoice path
+FMS_DB_CONNECTION_PAYMENTCENTER=Data Source=FMSSTG;user id=pmtcenter;password=pmtcenter;
+PaymentCenterInvoicePath=\\irv800ypc01.yellowpages.local\YPCInvoice\
+
+#MOGILE File System Configurations
+WC1.MOGILE_WEB_HOST=http://mogwai.wc1.yellowpages.com:8080
+EV1.MOGILE_WEB_HOST=http://mogwai.ev1.yellowpages.com:8080
+WC1.MOGILE_PRIVATE_HOST=http://mogwai.wc1.yellowpages.com:8080
+EV1.MOGILE_PRIVATE_HOST=http://mogwai.ev1.yellowpages.com:8080
+WC1.MOGILE_UPLOAD_HOST=http://mogwai.wc1.yellowpages.com:7699
+EV1.MOGILE_UPLOAD_HOST=http://mogwai.ev1.yellowpages.com:7699
+MOGILE_CMR_PUBLIC_DOMAIN=cmr.stage
+MOGILE_CMR_PRIVATE_DOMAIN=cmr.stage
+MOGILE_CMR_TEMP_DOMAIN=cmr.tmp
+
+#Geocoder - http://onewiki.yellowpages.com/display/ACH/Geocoder
+GEOCODER_HOST=http://geosvc.yellowpages.local/
+
+#CMR Configurations
+CUSTOMERMANAGEMENT_SERVICE_URL=https://adssvc.yellowpages.stage.keen.com/CustomerManagement.svc
+CONTRACTMANAGEMENT_SERVICE_URL=https://adssvc.yellowpages.stage.keen.com/ContractManagement.svc
+LISTINGMANAGEMENT_SERVICE_URL=https://adssvc.yellowpages.stage.keen.com/ListingManagement.svc
+PRODUCTMANAGEMENT_SERVICE_URL=https://adssvc.yellowpages.stage.keen.com/ProductManagement.svc
+COMMERCEMANAGEMENT_SERVICE_URL=https://adssvc.yellowpages.stage.keen.com/CommerceManagement.svc
+SALESFORCEMANAGEMENT_SERVICE_URL=https://adssvc.yellowpages.stage.keen.com/SalesforceManagement.svc
+MEDIAMANAGEMENT_SERVICE_URL=https://adssvc.yellowpages.stage.keen.com/MediaManagement.svc
+TICKETMANAGEMENT_SERVICE_URL=https://adssvc.yellowpages.stage.keen.com/TicketManagement.svc
+CMRADMIN_SERVICE_URL=http://adssvc.yellowpages.stage.keen.com/CmrAdmin.svc
+
+#Salesforce Integration Layer
+SALESFORCE_SERVICE_URL_V1=https://adssvc.yellowpages.stage.keen.com/Salesforce/v1.svc
+SALESFORCE_SERVICE_BINARY_URL_V1=https://adssvc.yellowpages.stage.keen.com/Salesforce/binary/v1.svc
+SFDC_AFRONTIER_MIN_CUSTOMERID_TO_SYNC=0
+IRV_RABBIT_NODE_1=rabbit3.np.wc1.yellowpages.com
+IRV_RABBIT_NODE_2=rabbit4.np.wc1.yellowpages.com
+ENVIRONMENT_PORT=5672
+OORCC_VHOST=Salesforce/Cases
+SOLO_VHOST=SoloMQSource
+READER_USER=Messagereader
+READER_PASSWORD=MessageReader
+RABBIT_NODE_LIST=rabbit3.np.wc1.yellowpages.com:5672;rabbit4.np.wc1.yellowpages.com:5672
+RABBIT_SERVERS=rabbit3.np.wc1.yellowpages.com:5671;rabbit4.np.wc1.yellowpages.com:5671
+
+CUSTOMER_CARE_SEARCH_SFLINK_URL=https://cs2.salesforce.com/
+CUSTOMER_CARE_SEARCH_AFLINK_URL=http://afq2.yellowpages.com/main.jsp?ENTITY_ID=119039&amp;ENTITY_TYPE=CUSTOMER&amp;ENTITY_ACTION=S&amp;APP_TYPE=CS&amp;AF_CUSTOMER_ID=
+
+SUB_AF_WEBSERVICES_LOC=http://afq2.yellowpages.com/selfservice/SelfService
+SUB_AF_TRADELISTINGS_PATH=\\irvdma2.yellowpages.local\CMRSelfService$\LLT\CMR.Stage\
+SUB_AF_IMAGES_PATH=\\irvdma2.yellowpages.local\CMRSelfService$\ILT\CMR.Stage\
+
+AF_PlacementWS_LOC=http://afq1.yellowpages.com/placement/Placement
+
+AF_SALESFORCE_SYNC_FREQUENCY_MIN=35
+
+#Services configuration
+SERVICES_INCLUDE_EXCEPTION_DETAIL_IN_FAULTS=true
+
+#Security Mode should be None for local, vm deploys but should be Transport for DEV,TEST,STAGE,LIVE
+SERVICES_SECURITY_MODE=Transport
+SERVICES_HOST_SECURITY_MODE=Transport
+SERVICES_HOST_SECURITY_CONTEXT=true
+
+# SOLO
+SOLO_RETURN_URL=https://stage-solo.yellowpages.com/Default.aspx
+SOLO_DB_CONNECTION_FMS=Data Source=FMSDEV;User Id=solo_user;Password=l0n3r38d;
+SOLO_DB_CONNECTION_AFRONTIER=Data Source=IYP10G;User Id=dev_solo;Password=tofu4u;
+SOLO_DB_CONNECTION=Data Source=IRVSTGCMRDB01.STAGE.KEEN.COM;initial catalog=Solo;Uid=solo;Pwd=xxxxxx;
+SOLO_FILEUPLOAD_LOC_IMG=\\ashstgfs.stage.keen.com\files\contracts\Upload\Listing_Ad_Copy_Banner_Tile_Art\
+SOLO_FILEUPLOAD_LOC_AMEX=\\ashstgfs.stage.keen.com\files\contracts\Upload\amex_doc\
+SOLO_FILEUPLOAD_LOC_SIO=\\ashstgfs.stage.keen.com\files\contracts\Upload\signed_io\
+SOLO_FILEUPLOAD_LOC_VID_AD=\\ashstgfs.stage.keen.com\files\contracts\Upload\video_ad\
+SOLO_FILEUPLOAD_LOC_ACH=\\ashstgfs.stage.keen.com\files\contracts\Upload\ach_io\
+SOLO_FILEUPLOAD_LOC_VID_IO=\\ashstgfs.stage.keen.com\files\contracts\Upload\video_ad\
+SOLO_FILEUPLOAD_LOC_CTN=\\ashstgfs.stage.keen.com\files\contracts\Upload\signed_io\
+SOLO_FILEUPLOAD_LOC_YPCNN=\\ashstgfs.stage.keen.com\files\contracts\Upload\ypconnect\
+SOLO_FILEUPLOAD_LOC_RWEB=\\ashstgfs.stage.keen.com\files\contracts\Upload\realwebsite\
+SOLO_FILEUPLOAD_LOC_YPCLK=\\ashstgfs.stage.keen.com\files\contracts\Upload\ypclicks\
+SOLO_FILEUPLOAD_LOC_YHOO=\\ashstgfs.stage.keen.com\files\contracts\Upload\YahooBanner\
+SOLO_FILE_BACKUP_LOCATION=\\ashstgfs.stage.keen.com\files\contracts\Upload\BackupFiles\
+SOLO_FILE_BULK_USER=\\ashstgfs.stage.keen.com\files\contracts\Upload\BulkUser\
+SOLO_FILEUPLOAD_LOC_YPWEB=\\ashstgfs.stage.keen.com\files\contracts\Upload\YPWebsite\
+SOLO_ENV_URL=https://stage-solo.yellowpages.com/
+SOLO_FILEUPLOAD_MAX_SIZE=2097152
+SOLO_CCAP_URL=https://stage-ccap-web-int.g.int.atti.com/ccapmainui.aspx
+SOLO_CCAP_DOCDOM=yellowpages.com
+SOLO_PPC_PID=Ingenio Dir - YPC: Local Sales Channel
+SOLO_PPC_SECODE=2vTz5-3HzG
+SOLO_PPC_LMUSER=colm
+SOLO_PPC_LMPWD=mcgovern
+SOLO_PPC_VRS=5.0
+SOLO_PPC_LMURL=http://api.stage.keen.com/Er1JCqDu/ListingManagement.asmx
+SOLO_PPC_UMURL=http://api.stage.keen.com/Er1JCqDu/UserManagement.asmx
+SOLO_PPC_MGRID=16363812
+SOLO_RMQ_USR=SOLO
+SOLO_RMQ_PWD=SOLO
+SOLO_RMQ_VHOST=SoloMQSource
+SOLO_RMQ_PATCH=stage-messagebus.wc1.yellowpages.com
+SOLO_RMQ_PORT=80
+SOLO_RMQ_STOG=True
+SOLO_HNDDIALWEB=https://HNDDIALWEB01.YELLOWPAGES.LOCAL
+SOLO_SFA_ADD1=https://adssvc.yellowpages.stage.keen.com/Salesforce/v1.svc
+SOLO_SFA_ADD2=https://adssvc.yellowpages.stage.keen.com/Salesforce/v1.svc
+SOLO_SFA_ADD3=https://adssvc.yellowpages.stage.keen.com/Salesforce/v1.svc
+SOLO_SFA_ADD4=https://adssvc.yellowpages.stage.keen.com/Salesforce/v1.svc
+SOLO_SFA_ADD5=https://adssvc.yellowpages.stage.keen.com/Salesforce/v1.svc
+SOLO_SFA_ADD6=https://adssvc.yellowpages.stage.keen.com/Salesforce/v1.svc
+SOLO_SFA_ADD7=https://adssvc.yellowpages.stage.keen.com/Salesforce/v1.svc
+SOLO_EVN_ICON=../Images/headers/QA.gif
+
+
+# WebLeadApp
+WEBLEADAPP_DB_CONNECTION=Data Source=IRVSTGCMRDB01.STAGE.KEEN.COM;initial catalog=Solo;Uid=solo;Pwd=xxxxxx;
+WEBLEADAPP_RETURN_URL=https://stage-sololead.yellowpages.com/Default.aspx
+
+#Commerce Client Authentication
+COMMERCE_AUTHENTICATION_CCBATCHBILLING=6efc352c-a94e-46d9-8d4a-ca901cc5aa87
+
+#Commerce Services
+WC1.COMMERCE_PAYMENTMANAGEMENT_SERVICE_URL=https://stage-ccap-svc.g.int.atti.com/PaymentManagement.svc/soap/?appid=04ed50de-df1f-49f7-bd04-5b8c74c93632
+EV1.COMMERCE_PAYMENTMANAGEMENT_SERVICE_URL=https://stage-ccap-svc.g.int.atti.com/PaymentManagement.svc/soap/?appid=04ed50de-df1f-49f7-bd04-5b8c74c93632
+WC1.COMMERCE_ACCOUNTMANAGEMENT_SERVICE_URL=https://stage-ccap-svc.g.int.atti.com/AccountManagement.svc/soap/?appid=04ed50de-df1f-49f7-bd04-5b8c74c93632
+EV1.COMMERCE_ACCOUNTMANAGEMENT_SERVICE_URL=https://stage-ccap-svc.g.int.atti.com/AccountManagement.svc/soap/?appid=04ed50de-df1f-49f7-bd04-5b8c74c93632
+WC1.COMMERCE_REPORTINGMANAGEMENT_SERVICE_URL=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/soap/?appid=04ed50de-df1f-49f7-bd04-5b8c74c93632
+EV1.COMMERCE_REPORTINGMANAGEMENT_SERVICE_URL=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/soap/?appid=04ed50de-df1f-49f7-bd04-5b8c74c93632
+WC1.COMMERCE_TRANSACTIONMANAGEMENT_SERVICE_URL=https://stage-ccap-svc.g.int.atti.com/TransactionManagement.svc/soap/?appid=04ed50de-df1f-49f7-bd04-5b8c74c93632
+EV1.COMMERCE_TRANSACTIONMANAGEMENT_SERVICE_URL=https://stage-ccap-svc.g.int.atti.com/TransactionManagement.svc/soap/?appid=04ed50de-df1f-49f7-bd04-5b8c74c93632
+WC1.COMMERCE_TRANSACTIONMANAGEMENT_SERVICE_CCBATCH=https://stage-ccap-svc.g.int.atti.com/TransactionManagement.svc/soap/?appid=6efc352c-a94e-46d9-8d4a-ca901cc5aa87
+EV1.COMMERCE_TRANSACTIONMANAGEMENT_SERVICE_CCBATCH=https://stage-ccap-svc.g.int.atti.com/TransactionManagement.svc/soap/?appid=6efc352c-a94e-46d9-8d4a-ca901cc5aa87
+WC1.COMMERCE_TRANSIENTACCOUNTMANAGEMENT_SERVICE_URL=https://stage-ccap.atti.com/TransientAccountManagement.svc/soap/
+EV1.COMMERCE_TRANSIENTACCOUNTMANAGEMENT_SERVICE_URL=https://stage-ccap.atti.com/TransientAccountManagement.svc/soap/
+
+# DeployMaster
+DEPLOYMASTER_SERVICE_IDENTITY=STAGE\svc_deploy
+DEPLOYMASTER_SERVICE_PASSWORD=nMn4APYpHdgvMVu
+DEPLOYMASTER_WCF_ADDRESS=http://ashstgdeploy01.stage.keen.com:7110/DeployService/
+DEPLOYMASTER_REMOTE_WCF_ADDRESS=http://ashstgdeploy01.stage.keen.com:7110/DeployService/DeployServer
+DEPLOYMASTER_WCF_PORT=7110
+DEPLOYMASTER_DOMAIN=STAGE
+DEPLOYMASTER_DB_CONNECTION=Server=ashstgdb02.stage.keen.com;initial catalog=Deploy;Uid=Stage_DeployUser; Pwd=STAGE$deploy1234;
+DEPLOYMASTER_AD_GROUP=CN=Op Center,;CN=WindowsSystemsAdmins,
+DEPLOYMASTER_SOURCE_EMAIL=SFODeploymentTeam@attinteractive.com
+DEPLOYMASTER_DESTINATION_EMAIL=SFODeploymentTeam@attinteractive.com
+
+SERIES_FILENAME=http://teamcity.yellowpages.local/series.xml
+
+# Finance FTP Downlaods Configurations
+CHARGEBACK_NOTIFICATION_SMTP_RELAY_SERVER=mta.net.keen.com
+CHARGEBACK_NOTIFICATION_EMAIL_FROM=chargebacks@yellowpages.com
+CHARGEBACK_NOTIFICATION_EMAIL_NOTIFICATION_LIST=sselvadurai@yellowpages.com
+CHARGEBACK_FTP_SERVER=localhost
+CHARGEBACK_FTP_USERNAME=ftpuser
+CHARGEBACK_FTP_PASSWORD=keen@123
+CHARGEBACK_FTP_ROOT_DIR=prod/data/883058/
+CHARGEBACK_FTP_DESTINATION_DIR=C:\ftp\
+RECHARGE_FTP_DESTINATION_DIR=C:\finance\
+FINANCE_DOWNLOADS_PUBLIC_KEY=C:\opt\Finance\finance.pub
+FINANCE_DOWNLOADS_PASSWORD=finance123
+
+# Subscriptions Legacy Migration Bundle Tool
+BUNDLE_LEGACY_DB_CONNECTION=Data Source=irvstgcmrdb01.stage.keen.com;Initial Catalog=AdsYP_Legacy;User ID=LegacyDataUser;Pwd=Pa$$word1
+
+
+# IRWS Services
+ATT_IRWS_DB_CONNECTIONSTRING=Data Source=ashstgdb05.stage.keen.com;Initial Catalog=ICC; User id=STAGE_ICCUser; Password=;
+IRWS_UI_SSO_PUBLIC_KEY=~/App_Data/SSO_PublicKey.xml
+IRWS_WS_ENDPOINT=http://irvstgcmrweb01.stage.keen.com:7024/UFTService.svc
+IRWS_SERVICES_IMV_HOST=http://imvapp1.imv.swh.bellsouth.net/cgi-bin/testenv/pushlive-css
+IRWS_UI_SALESFORCE_IFRAME_URL=https://cs2.salesforce.com/servlet/servlet.Integration?lid=01NR0000000DC0K
+SUBSCRIPTIONS_SERVICE_ENDPOINT=https://adssvc.yellowpages.stage.keen.com/ContractManagement.svc
+IRWS_STATE_LOOKUPGROUPID=1
+YP_URL_AUTHORITY=https://stage-uft.atti.com/
+IRWS_UI_SKIP_VERSION=true
+UFT_NET_FRAMEWORK_DIR=C:\WINDOWS\Microsoft.NET\Framework64\v2.0.50727
+ATT_UFT_BINDING_SECURITY_MODE=None
+
+#ATT.IFUlfill.UFT Projects
+ATT_UFT_DB_CONNECTIONSTRING=metadata=res://*/Models.UFTModel.csdl|res://*/Models.UFTModel.ssdl|res://*/Models.UFTModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=Ashtestdb03.test.keen.com; Initial Catalog=UFT_UAT; User id=Test_UFTUser; Password=59h#$23APMc0&quot;
+UFT_TARGET_FILE_FOLDER=C:\UFT\FileUploads
+ATT_UFT_DB_CONNECTIONSTRING_WEB_SERVICE=Data Source=Ashtestdb03.test.keen.com;Initial Catalog=UFT_UAT; User id=Test_UFTUser; Password=59h#$23APMc0;
+UFT_COLLATERAL_SERVICE_ENDPOINT=https://stage-uftapp.atti.com/CollateralService.svc
+UFT_DELETE_INTERVAL_IN_MINUTES=60
+UFT_PREVIEW_IMAGE_SIZE=200
+UFT_ZIP_LEVEL=3
+UFT_UPLOAD_BUFFER_SIZE=20971520
+UFT_UPLOAD_CHUNK_SIZE=41943040
+UFT_DOWNLOAD_PORT=80
+UFT_UPLOAD_MAX_FILES_NUMBER=2
+
+# ATT.Services.CentralMedia
+MOGILE_ICC_PRIVATE_DOMAIN=icc.stage
+MEDIASERVICES_SERVICE_URL=http://irvstgcmrweb01.stage.keen.com:7025/MediaService.svc
+CentralMedia_DB_CONNECTION_STRING=Network=DBMSSOCN; Server=ashstgdb02.stage.keen.com; Uid=Stage_AdsYPUser; Pwd=box417stage; Database=AdsYP
+
+#A-Frontier
+DB_CONNECTION_AFRONTIER=Data Source=QA2IYP;User Id=af_api;Password=39Evu68Q;
+
+WC1.COMMERCE_REPORT_GETTRANSACTIONPROCESSINGTIMES=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getTransactionProcessingTimes
+EV1.COMMERCE_REPORT_GETTRANSACTIONPROCESSINGTIMES=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getTransactionProcessingTimes
+WC1.COMMERCE_REPORT_GETSERVICEUPTIMES=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getServiceUpTimes
+EV1.COMMERCE_REPORT_GETSERVICEUPTIMES=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getServiceUpTimes
+WC1.COMMERCE_REPORT_GETFUNDSADDEDBYHOUR=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getFundsAddedByHour
+EV1.COMMERCE_REPORT_GETFUNDSADDEDBYHOUR=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getFundsAddedByHour
+WC1.COMMERCE_REPORT_GETPAYMENTPROCESSORUSAGES=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getPaymentProcessorUsages
+EV1.COMMERCE_REPORT_GETPAYMENTPROCESSORUSAGES=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getPaymentProcessorUsages
+WC1.COMMERCE_REPORT_GETFUNDATTEMPTSBYDATE=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getFundAttemptsByDate
+EV1.COMMERCE_REPORT_GETFUNDATTEMPTSBYDATE=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getFundAttemptsByDate
+WC1.COMMERCE_REPORT_GETFAILEDFUNDADDITIONSBYCATEGORY=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getFailedFundAdditionsByCategory
+EV1.COMMERCE_REPORT_GETFAILEDFUNDADDITIONSBYCATEGORY=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getFailedFundAdditionsByCategory
+WC1.COMMERCE_REPORT_GETACCOUNTATTEMPTSBYDATE=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getAccountAttemptsByDate
+EV1.COMMERCE_REPORT_GETACCOUNTATTEMPTSBYDATE=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getAccountAttemptsByDate
+WC1.COMMERCE_REPORT_GETFAILEDACCOUNTADDITIONSBYCATEGORY=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getFailedAccountAdditionsByCategory
+EV1.COMMERCE_REPORT_GETFAILEDACCOUNTADDITIONSBYCATEGORY=https://stage-ccap-svc.g.int.atti.com/ReportingManagement.svc/reporting/getFailedAccountAdditionsByCategory
+SERVICE_TIMER_INTERVAL=5
+
+# Distributor queues
+# Distinguish ash colo queues from sf colo queues with a suffix
+QUEUE_NAME_SUFFIX=_ash
+
+#CPM Config
+COMMERCE_CPM_QA_HOST=fdc.stage.keen.com
+COMMERCE_CPM_HOST=fdc.nca.keen.com
+
+#Flowplayer Flash Key
+ASCP_FLOWPLAYER_KEY=#@9ebadca584956de9ffc
+
+#ASCP REPORTS Configurations
+ADREPORTING_SERVICES_URL=http://stage-adrpt-api.v.ev1.atti.com
+OPM_SERVICES_URL=http://stage-adportal-api.v.int.ev1.atti.com/OPM/OPMService.svc
+REPORTS_DASHBOARD_SERVICE_URL=http://stage-adrpt-api.v.ev1.atti.com/DashboardService.svc/ws
+REPORTS_CUSTOMER_SERVICE_URL=http://stage-adrpt-api.v.ev1.atti.com/CustomerService.svc/ws
+REPORTS_CALL_SERVICE_URL=http://stage-adrpt-api.v.ev1.atti.com/CallService.svc/ws
+REPORTS_PRINCIPAL_NAME=svc_ad_report@stage.keen.com
+REPORTING_MAILSERVER=mta.net.keen.com
+
+#ASCP cGate SSO Configs
+ASCP_CGATE_LOGIN_URL=https://ypdev.stage.att.com/ssoLogin.do
+ASCP_SAMLTOKEN_GENERATING_URL=https://ypdev.stage.att.com/auth/ssoPostLoginPage.do
+ASCP_CGATE_RESETPASSWORD_URL=https://systest1-uverse.stage.att.com/uvp/home/password_reset
+ASCP_CGATE_REG_URL=https://ypdev.stage.att.com/ssoRegisterMemberId.do
+ASCP_AMDOCS_SSO_SERVICE_URL=https://ypdev.stage.att.com/axis/services/SpSSOServices
+ASCP_REALYP_LOGOUT_URL=https://ypdev.stage.att.com/auth/ssoLogout.do
+ASCP_SSO_ENABLED=true
+
+#NumberManagerService
+NUMBER_MANAGER_SERVICE_ESTARA_LOGIN=yp.com_api_beta_test@atg.com
+NUMBER_MANAGER_SERVICE_ESTARA_PASSWORD=j3zHeT
+NUMBER_MANAGER_SERVICE_ESTARA_URL=https://as00.estara.com/webcare/phonebuilder/xml.php
+NUMBER_MANAGEMENT_SERVICE_URL=http://numbermanager.ev1.stage.keen.com/NumberManager.svc/soap11
+NUMBER_MANAGER_TELEMETRICS_REPORTING_URL=https://uatwebservice.telmetrics.com/ReportService.asmx
+NUMBER_MANAGER_ESTARA_REPORTING_URL=https://as00.estara.com/webcare/reporting/xml.php
+
+#Phone Manager Service
+PHONE_MANAGEMENT_SERVICE_URL=http://ashstgcall01.stage.keen.com:4398/cTest
+
+
+#Commerce CCWebUI External VIP
+WC1.PLATFORM.COMMERCE.WEB.EXTERNAL.URL=https://stage-ccap.atti.com
+EV1.PLATFORM.COMMERCE.WEB.EXTERNAL.URL=https://stage-ccap.atti.com
+
+#User Passwords File
+USERPASSWORDSHARE=\\ashstgfs.stage.keen.com\Files\userpasskey
+USERPASSWORDSHARE_USER=stage\svc_userpasskey
+USERPASSWORDSHARE_PASSWORD=ReQR34ISztmAANm
+
+#PPC Services
+PPC_SERVICES_URL=http://stage-ppcservices.v.int.ev1.atti.com
+
+#EPC Services
+EPC_SERVICES_URL=http://stage-epcservices.v.int.wc1.atti.com
+
+#Chat Configs
+CHAT_SERVER=chat.dev.keen.com
+CHAT_SERVER_PORT=5222
+
+#CHAT Services
+CHAT_DEFAULTAPPPOOL_IDENTITYTYPE=3
+CHAT_WEB_IDENTITY=Stage\svc_Chat_User
+CHAT_WEB_PASSWORD=???
+
+CHAT_SERVICES_URL=http://ashstagechatweb01.stage.keen.com:7028
+
+#Chat Presence Manager Configs
+CHAT_PRESENCE_SERVICES_URL=http://ashstageweb01.stage.keen.com:7029
+CHAT_PRESENCE_WCF_PORT=7029
+CHAT_PRESENCE_SERVICE_USERNAME=admin
+CHAT_PRESENCE_SERVICE_PASSWORD=password
+CHAT_PRESENCE_SERVICE_TRACELOGGING=false
+
+# Shared Cache Settings
+#
+# Server farm for AEP Replication Cache
+AEP_SHARED_CACHE_SERVERS=ashstgpweb01,ashstgpweb02
+
+# Server settings
+SHARED_CACHE_AMOUNT_OF_OBJECTS=-1
+SHARED_CACHE_CLEANUP_MODE=LRU
+SHARED_CACHE_FILL_FACTOR=90
+SHARED_CACHE_CLEANUP_INTERVAL_MILLISECONDS=60000
+
+SHARED_CACHE_SERVERS=Override Required
+
+# Global settings
+SHARED_CACHE_SERVER_PORT=48888
+SHARED_CACHE_LOGGING_ENABLE=0
+
+#PromptsWithRecordings settings
+PROMPTSWITHRECORDINGS_SMTP_RELAY_SERVER=mta.net.keen.com
+PROMPTSWITHRECORDINGS_EMAIL_FROM=DNIsDialer-NoReply@yellowpages.com
+PROMPTSWITHRECORDINGS_EMAIL_NOTIFICATION_LIST=jmichael@attinteractive.com
+
+#IMFREE Setting
+IMFREE_EXCHANGE_WEB_SERVICE_URL=https://glnexf02.yellowpages.local/EWS/Exchange.asmx
+IMFREE_USER_FOR_READING_CALENDARS=iFullFillTest
+IMFREE_PASSWORD_FOR_READING_CALENDARS=Password1
+IMFREE_WEBPHONEPLUS_WEB_SERVICE_URL=http://irvstgcmrweb01.stage.keen.com:7024/WebPhonePlusService.svc
+
+# Keen Facebook Connect Setting.
+# Note: Try accessing the domain name ending with keen.com . Like local.keen.com, keen.vm.keen.com, keen.dev.keen.com, keen.test.keen.com
+FB_CONNECT_APIKEY=f396e39c71dbcdf9f03442389bf4ec4a
+FB_CONNECT_SECRET=46abcb9a002e4e39a29ce961834c0c08
+FB_CONNECT_APPID=143456372345108
+
+#BAD DEBT REDIRECT Number of ZipCodes to Processed For GetSearchLocation
+ZIP_CODES_COUNT_FOR_BAD_DEBT_REDIRECT=1
+
+#OAS WS Integration
+OASAPI_ACCOUNT=Yelpages
+OASAPI_USER=YelpagesUatApi1
+OASAPI_PASSWORD=greenandyellow123$
+OASAPI_URL=https://edge2.uat.247realmedia.com/oasapi/OaxApi?wsdl
+OASAPI_REPORT_SHARE=\\ashstgfs.stage.keen.com\files\PPCClickReports
+OASAPI_CAMPAIGNMANAGER=PChaudhary
+OASAPI_PRODUCTID=PPClick
+OASAPI_AGENCY=Ingenio
+
+#TMAIL
+TMAIL_QUEUE_VHOST=TMail-Stage
+TMAIL_QUEUE_USERNAME=TMailUser
+TMAIL_QUEUE_PASSWORD=TMailUser
+WC1.TMAIL_QUEUE_URL=amqp://rabbit3.np.wc1.yellowpages.com:5672
+EV1.TMAIL_QUEUE_URL=amqp://rabbit3.np.ev1.yellowpages.com:5672
+WC1.TMAIL_DB_CONNECTION=DBMSSOCN,IrvStgTmldb01.stage.keen.com,1433
+EV1.TMAIL_DB_CONNECTION=DBMSSOCN,AshStgTmldb01.stage.keen.com,1433
+WC1.TMAIL_DB_CONNECTION_FAILOVER=DBMSSOCN,AshStgTmldb01.stage.keen.com,1433
+EV1.TMAIL_DB_CONNECTION_FAILOVER=DBMSSOCN,IrvStgTmldb01.stage.keen.com,1433
+TMAIL_MONITORING=test-monitoring
+TMAIL_MONITORING_NAME=test-monitoring
+TMAIL_MONITORING_ADDRESS=224.2.2.22
+TMAIL_MONITORING_PORT=2222
+TMAIL_AGENT_IDENTITY=STAGE\svc_TMailAgent
+TMAIL_AGENT_PASSWORD=j6ONEfncDMs1YM
+TMAIL_DEFAULTAPPPOOL_IDENTITYTYPE=3
+TMAIL_WEB_IDENTITY=STAGE\svc_TMailWebService
+TMAIL_WEB_PASSWORD=t2UvRsmLiTg0a2
+
+#TELCO - PPC CALL RECORDING
+PPC_CALL_RECORDING_ENABLED=1
+PPC_CALL_RECORDING_DURATION=60000
+PPC_CALL_RECORDING_ENDPOINT=VmgRestApi
+PPC_CALL_RECORDING_DASHBOARD_URL=http://10.3.194.75:9000
+
+#TRIAL PAY on Web
+TP_WEB_REG_TID=VIOOLELJ
+TP_WEB_CUR_TID=ELYJE97O

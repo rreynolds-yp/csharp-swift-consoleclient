@@ -1,0 +1,971 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ATTi.SSO.Client</name>
+    </assembly>
+    <members>
+        <member name="T:ATTi.SSO.Client.Version1.SsoPrincipal">
+            <summary>
+            Authenticated principal corresponding with version 1 of the SSO API.
+            </summary>
+            <remarks><para>More information can be found on the wiki at: <a href="http://onewiki.yellowpages.com/display/ACH/SingleSignOn">Single Sign On</a></para>
+            <para>Issues can be logged against this code in the <a href="http://jira.attinteractive.com/browse/PS/component/10660">Jira/SingleSignOn project</a></para>
+            </remarks>
+        </member>
+        <member name="T:ATTi.SSO.Client.ISsoPrincipal">
+            <summary>
+            Derived interface for SSO principals.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.ISsoPrincipal.GetRawAuthTicketData(System.Boolean)">
+            <summary>
+            Gets the raw authentication ticket for the principal.
+            </summary>
+            <param name="includeSignature">determines whether the digital signature is included with the ticket</param>
+            <returns>the raw auth-ticket</returns>
+        </member>
+        <member name="P:ATTi.SSO.Client.ISsoPrincipal.Version">
+            <summary>
+            Indicates the version of the SSO authentication used for the principal.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.ISsoPrincipal.UserID">
+            <summary>
+            Indicates the user ID as identified by SSO.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.ISsoPrincipal.Timestamp">
+            <summary>
+            Indicates the timestamp when the authentication was issued.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.ISsoPrincipal.ExpirationMinutes">
+            <summary>
+            Indicates the number of minutes the authentication is valid.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.ISsoPrincipal.IPAddress">
+            <summary>
+            Indicates the IPAddress where the authentication originated.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.ISsoPrincipal.UserKind">
+            <summary>
+            Indicates the user kind as identified by SSO { Employee | Contractor | Guest | InternalApplication | ExternalApplication }.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.ISsoPrincipal.AuthKind">
+            <summary>
+            Indicates the authentication kind used by the SSO { ATTInteractive | ATT }.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.ISsoPrincipal.ATTESSECPrivileges">
+            <summary>
+            Contains the privileges maintained by the AT&amp;T CSC folks, taken from the ATTESSEC cookie.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.ISsoPrincipal.IsExpired">
+            <summary>
+            Indicates whether the authentication has expired.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.Version1.SsoPrincipal.GetRawAuthTicketData(System.Boolean)">
+            <summary>
+            Gets the raw authentication ticket for the principal.
+            </summary>
+            <param name="includeSignature">determines whether the digital signature is included with the ticket</param>
+            <returns>the raw auth-ticket</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.Version1.SsoPrincipal.TryParse(System.String,ATTi.SSO.Client.Version1.SsoPrincipal@)">
+            <summary>
+            Tries to parse a token for an authenticated principal.
+            </summary>
+            <param name="value">the auth-token containing the authenticated principal</param>
+            <param name="principal">a reference to a variable that will hold the principal upon success</param>
+            <returns><em>true</em> if the source is successfully parsed and contains a valid authentication; otherwise
+            <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.Version1.SsoPrincipal.IsInRole(System.String)">
+            <summary>
+            Determines whether the current principal belongs to the specified role.
+            </summary>
+            <param name="role">The name of the role for which to check membership.</param>
+            <returns><em>true</em> if the current principal is a member of the role; otherwise <em>false</em></returns>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.Version">
+            <summary>
+            Indicates the version of the SSO authentication used for the principal.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.UserID">
+            <summary>
+            Indicates the user ID as identified by SSO.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.Timestamp">
+            <summary>
+            Indicates the timestamp when the authentication was issued.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.ExpirationMinutes">
+            <summary>
+            Indicates the number of minutes the authentication is valid.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.IPAddress">
+            <summary>
+            Indicates the IPAddress where the authentication originated.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.UserKind">
+            <summary>
+            Indicates the user kind as identified by SSO.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.AuthKind">
+            <summary>
+            Indicates the authentication kind used by the SSO.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.ATTESSECPrivileges">
+            <summary>
+            Contains the privileges maintained by the AT&amp;T CSC folks, taken from the ATTESSEC cookie.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.IsExpired">
+            <summary>
+            Indicates whether the authentication has expired.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.Identity">
+            <summary>
+            Gets the identity of the current principal.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.AuthenticationType">
+            <summary>
+            Gets the type of authentication used.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.IsAuthenticated">
+            <summary>
+            Indicates whether the user has been authenticated.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Version1.SsoPrincipal.Name">
+            <summary>
+            Gets the name of the user.
+            </summary>
+        </member>
+        <member name="T:ATTi.SSO.Client.SHA1Signature">
+            <summary>
+            Utility class for working with SHA1 cryptographic signatures.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.SHA1Signature.DefaultTextEncoding">
+            <summary>
+            Indicates the text encoding used when an encoding is not given for text values.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.SHA1Signature.CreateSignatureAndBase64Encode(System.String,System.Security.Cryptography.RSAParameters)">
+            <summary>
+            Creates an SHA1 signature for the given value and base64 encodes it.
+            </summary>
+            <param name="value">value for which the signature will be created</param>
+            <param name="privateKey">a public/private key pair used for the signature</param>
+            <returns></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.SHA1Signature.CreateSignatureAndBase64Encode(System.String,System.Text.Encoding,System.Security.Cryptography.RSAParameters)">
+            <summary>
+            Creates an SHA1 signature for the given value and base64 encodes it.
+            </summary>
+            <param name="value">value for which the signature will be created</param>
+            <param name="enc">the value's text encoding</param>
+            <param name="privateKey">a public/private key pair used for the signature</param>
+            <returns>an SHA1 siganture, base64 encoded</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.SHA1Signature.CreateSignature(System.String,System.Text.Encoding,System.Security.Cryptography.RSAParameters)">
+            <summary>
+            Creates an SHA1 signature for the given value.
+            </summary>
+            <param name="value">value for which the signature will be created</param>
+            <param name="enc">the value's text encoding</param>
+            <param name="privateKey">a public/private key pair used for the signature</param>
+            <returns>an SHA1 siganture</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.SHA1Signature.CreateSignature(System.Byte[],System.Security.Cryptography.RSAParameters)">
+            <summary>
+            Creates an SHA1 signature for the given cryptographic hash bytes.
+            </summary>
+            <param name="hashBytes">cryptographic hash bytes</param>
+            <param name="privateKey">a public/private key pair used for the signature</param>
+            <returns>an SHA1 siganture</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.SHA1Signature.GetHashBytes(System.String,System.Text.Encoding)">
+            <summary>
+            Gets crytpographic hash bytes for the given value.
+            </summary>
+            <param name="value">value for which the cryptographic hash will be created</param>
+            <param name="enc">the value's text encoding</param>
+            <returns>an array of bytes containing the cryptographic hash</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.SHA1Signature.VerifyBase64EncodedSignature(System.String,System.String,System.Security.Cryptography.RSAParameters)">
+            <summary>
+            Verifies a base64 representation of an SHA1 signature.
+            </summary>
+            <param name="signedValue">a string representation of the value that was signed</param>
+            <param name="base64Signature">base64 representation of the signature</param>
+            <param name="publicKey">a public key used to verify the signature</param>
+            <returns><em>true</em> if the signature is valid; otherwise <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.SHA1Signature.VerifyBase64EncodedSignature(System.String,System.Text.Encoding,System.String,System.Security.Cryptography.RSAParameters)">
+            <summary>
+            Verifies a base64 representation of an SHA1 signature.
+            </summary>
+            <param name="signedValue">a string representation of the value that was signed</param>
+            <param name="enc">the value's text encoding</param>
+            <param name="base64Signature">base64 representation of the signature</param>
+            <param name="publicKey">a public key used to verify the signature</param>
+            <returns><em>true</em> if the signature is valid; otherwise <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.SHA1Signature.VerifySignature(System.String,System.Text.Encoding,System.Byte[],System.Security.Cryptography.RSAParameters)">
+            <summary>
+            Verifies an SHA1 signature.
+            </summary>
+            <param name="signedValue">a string representation of the value that was signed</param>
+            <param name="enc">the value's text encoding</param>
+            <param name="signature">the signature</param>
+            <param name="publicKey">a public key used to verify the signature</param>
+            <returns><em>true</em> if the signature is valid; otherwise <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.SHA1Signature.VerifySignature(System.Byte[],System.Byte[],System.Security.Cryptography.RSAParameters)">
+            <summary>
+            Verifies an SHA1 signature.
+            </summary>
+            <param name="hashBytes">cryptographic hash for the signed value</param>
+            <param name="signatureBytes">the signature</param>
+            <param name="publicKey">a public key used to verify the signature</param>
+            <returns><em>true</em> if the signature is valid; otherwise <em>false</em></returns>
+        </member>
+        <member name="T:ATTi.SSO.Client.Config.RsaPublicKeyConfigElement">
+            <summary>
+            Configuration element for an RSA public key.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Config.RsaPublicKeyConfigElement.Modulus">
+            <summary>
+            The public key's modulus (base64 encoded)
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Config.RsaPublicKeyConfigElement.Exponent">
+            <summary>
+            The public key's exponent (base64 encoded)
+            </summary>
+        </member>
+        <member name="T:ATTi.SSO.Client.UnixTimestamp">
+            <summary>
+            Structure representing a Unix timestamp.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.UnixTimestamp.Epoc">
+            <summary>
+            DateTime representing the epoc used by the Unix platform '1970-01-01 0:00:00:00Z'
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.UnixTimestamp.Empty">
+            <summary>
+            An empty UnixTimestamp.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.UnixTimestamp._timestamp">
+            <summary>
+            Unix timestamp (seconds since 1970-1-1 UTC)
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.#ctor(System.Int64)">
+            <summary>
+            Creates a new instance from a unix timestamp.
+            </summary>
+            <param name="timestamp">Unix timestamp value</param>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.#ctor(System.DateTime)">
+            <summary>
+            Creates a new instance from a .NET DateTime.
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.ToDateTime">
+            <summary>
+            Converts to a .NET DateTime instance (local time).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.ToDateTimeUtc">
+            <summary>
+            Converts to a .NET DateTime instance in UTC.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.Parse(System.String)">
+            <summary>
+            Converts a string representation of a Unix timestamp to its UnixTimestamp equivalent.
+            </summary>
+            <param name="timestampText">a string containing a Unix timestamp to convert.</param>
+            <returns>a UnixTimestamp equivalent to the value contained in timestamp</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.TryParse(System.String,ATTi.SSO.Client.UnixTimestamp@)">
+            <summary>
+            Converts a string representation of a Unix timestap to its UnixTimestamp equivalent; a return 
+            value indicates whether the conversion was successful.
+            </summary>
+            <param name="timestampText"></param>
+            <param name="timestamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.op_Implicit(ATTi.SSO.Client.UnixTimestamp)~System.Int64">
+            <summary>
+            Operator for explicit cast to long.
+            </summary>
+            <param name="timestamp">target instance for the cast</param>
+            <returns>the unix timestamp represented as a long</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.op_Implicit(System.Int64)~ATTi.SSO.Client.UnixTimestamp">
+            <summary>
+            Operator for explicit cast of a long into a unix timestamp.
+            </summary>
+            <param name="timestamp">target long for the cast</param>
+            <returns>the unix timestamp</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.op_Implicit(System.DateTime)~ATTi.SSO.Client.UnixTimestamp">
+            <summary>
+            Operator for explicit cast of a DateTime to a unix timestamp.
+            </summary>
+            <param name="date">target DateTime for the cast</param>
+            <returns>the unix timestamp representation of the DateTime</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.op_Implicit(ATTi.SSO.Client.UnixTimestamp)~System.DateTime">
+            <summary>
+            Operator for explicit cast of a unix timestamp to a DateTime.
+            </summary>
+            <param name="timestamp">target timestamp for the cast</param>
+            <returns>the DateTime representation of the timestamp</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.op_GreaterThan(ATTi.SSO.Client.UnixTimestamp,ATTi.SSO.Client.UnixTimestamp)">
+            <summary>
+            Determines if one timestamp is greater than another.
+            </summary>
+            <param name="lhs">left hand operand</param>
+            <param name="rhs">right hand operand</param>
+            <returns><em>true</em> if <paramref name="lhs"/> is greater than <paramref name="rhs"/>; otherwise
+            <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.op_LessThan(ATTi.SSO.Client.UnixTimestamp,ATTi.SSO.Client.UnixTimestamp)">
+            <summary>
+            Determines if one timestamp is less than another.
+            </summary>
+            <param name="lhs">left hand operand</param>
+            <param name="rhs">right hand operand</param>
+            <returns><em>true</em> if <paramref name="lhs"/> is less than <paramref name="rhs"/>; otherwise
+            <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.op_GreaterThanOrEqual(ATTi.SSO.Client.UnixTimestamp,ATTi.SSO.Client.UnixTimestamp)">
+            <summary>
+            Determines if one timestamp is greater than or equal to another.
+            </summary>
+            <param name="lhs">left hand operand</param>
+            <param name="rhs">right hand operand</param>
+            <returns><em>true</em> if <paramref name="lhs"/> is greater than or equal to <paramref name="rhs"/>; otherwise
+            <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.op_LessThanOrEqual(ATTi.SSO.Client.UnixTimestamp,ATTi.SSO.Client.UnixTimestamp)">
+            <summary>
+            Determines if one timestamp is less than or equal to another.
+            </summary>
+            <param name="lhs">left hand operand</param>
+            <param name="rhs">right hand operand</param>
+            <returns><em>true</em> if <paramref name="lhs"/> is less than or equal to <paramref name="rhs"/>; otherwise
+            <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.op_Equality(ATTi.SSO.Client.UnixTimestamp,ATTi.SSO.Client.UnixTimestamp)">
+            <summary>
+            Determines if one timestamp is equal to another.
+            </summary>
+            <param name="lhs">left hand operand</param>
+            <param name="rhs">right hand operand</param>
+            <returns><em>true</em> if <paramref name="lhs"/> is equal to <paramref name="rhs"/>; otherwise
+            <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.op_Inequality(ATTi.SSO.Client.UnixTimestamp,ATTi.SSO.Client.UnixTimestamp)">
+            <summary>
+            Determines if one timestamp is not equal to another.
+            </summary>
+            <param name="lhs">left hand operand</param>
+            <param name="rhs">right hand operand</param>
+            <returns><em>true</em> if <paramref name="lhs"/> is not equal to <paramref name="rhs"/>; otherwise
+            <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.AddMinutes(System.Int32)">
+            <summary>
+            Adds minutes to a timestamp.
+            </summary>
+            <param name="minutes">minutes to add</param>
+            <returns>A new timestamp with the minutes added</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.AddSeconds(System.Int32)">
+            <summary>
+            Adds minutes to a timestamp.
+            </summary>
+            <param name="seconds">seconds to add</param>
+            <returns>A new timestamp with the seconds added</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.Equals(System.Object)">
+            <summary>
+            Overridden Equals to test for equality with an object.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.GetHashCode">
+            <summary>
+            Overridden GetHashCode to generate a reliable hashcode for the timestamp.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.ToString">
+            <summary>
+            Overridden ToString to get string representation of the timestamp (sortable universal time).
+            </summary>
+            <returns>string containing sortable universal time representation of the timestamp</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.CompareTo(ATTi.SSO.Client.UnixTimestamp)">
+            <summary>
+            Compares this instance to a specified timestamp and returns an indication of their relative values.
+            </summary>
+            <param name="value">a timestamp to compare</param>
+            <returns>A signed number indicating the relative values of this instance and value. Negative number indicates
+            the instance is less than <paramref name="value"/>. Zero indicates that the instance is equal to <paramref name="value"/>.
+            Positive number indicates the instance is greater than <paramref name="value"/>.</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.UnixTimestamp.Equals(ATTi.SSO.Client.UnixTimestamp)">
+            <summary>
+            Compares this instance to a specified value for equality.
+            </summary>
+            <param name="value">a timestamp to compare</param>
+            <returns><em>true</em> if this instance is equal to the value; otherwise <em>false</em>.</returns>
+        </member>
+        <member name="P:ATTi.SSO.Client.UnixTimestamp.UtcNow">
+            <summary>
+            Gets the current unix timestamp.
+            </summary>
+        </member>
+        <member name="T:ATTi.SSO.Client.AuthenticationUtil">
+            <summary>
+            Utility class for working with authorization cookies
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.AuthenticationUtil.TryValidateAuthenticationForRequest(System.Web.HttpContext)">
+            <summary>
+            Tries to validate an authentication for the request context given.
+            </summary>
+            <param name="context">An http context representing a request</param>
+            <returns><em>true</em> if the request can be authenticated by the existence of
+            a valid SSO cookie; otherwise <em>false</em>. If <em>true</em> is returned then
+            the context's User property will contain a principal that represents the authenticated
+            user.</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.AuthenticationUtil.TryValidateAuthenticationForRequest(System.String,System.Web.HttpCookie,System.Security.Principal.IPrincipal@)">
+            <summary>
+            Tries to authenticate a cookie and upon success returns a principal representing
+            the user.
+            </summary>
+            <param name="clientIP">The client's IP address</param>
+            <param name="cookie">the cookie to authenticate</param>
+            <param name="principal">reference to a variable that will hold the principal upon success</param>
+            <returns><em>true</em> if the authentication cookie is valid; otherwise <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.AuthenticationUtil.TryAuthenticate(System.String,System.String,System.Web.HttpCookie@)">
+            <summary>
+            Tries to authenticate a user with the SSO provider.
+            </summary>		
+            <param name="userID">the name (userID) of the user to authenticate</param>
+            <param name="password">password associated with the userID given</param>
+            <param name="authCookie">reference to an HttpCookie that will hold the authentication cookie upon success</param>
+            <returns><em>true</em> if the authentication is successful; otherwise <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.AuthenticationUtil.InvalidateAuthentication(System.Web.HttpContextBase,System.String)">
+            <summary>
+            Invalidates a request by destroying the client's authentication token
+            and redirecting the browser to the url given.
+            </summary>
+            <param name="context">A request context</param>
+            <param name="redirectUrl">A url where the signed-out user will be directed.</param>
+        </member>
+        <member name="M:ATTi.SSO.Client.AuthenticationUtil.InvalidateAuthentication(System.Web.HttpContext,System.String)">
+            <summary>
+            Invalidates a request by destroying the client's authentication token
+            and redirecting the browser to the url given.
+            </summary>
+            <param name="context">A request context</param>
+            <param name="redirectUrl">A url where the signed-out user will be directed.</param>
+        </member>
+        <member name="T:ATTi.SSO.Client.SiteMapAccessKind">
+            <summary>
+            Indicates the kind of access granted by the sitemap.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.SiteMapAccessKind.NotSiteMapSecured">
+            <summary>
+            Indicates the URL is not secured via it's sitemap node.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.SiteMapAccessKind.Authenticated">
+            <summary>
+            Indicates the URL requires a valid authentication ticket.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.SiteMapAccessKind.RoleMembers">
+            <summary>
+            Indicates the URL requires a valid authentication ticket and membership in one or more roles.
+            </summary>
+        </member>
+        <member name="T:ATTi.SSO.Client.SsoConfigurationSection">
+            <summary>
+            Configuration section for SSO; indicates overrides to the default SSO configuration.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.SsoConfigurationSection.ProductionSsoProviderName">
+            <summary>
+            Provider name for production single-sign-on
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.SsoConfigurationSection.SectionName">
+            <summary>
+            The configuration section name.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.SsoConfigurationSection.BaseUriForProductionSso">
+            <summary>
+            Base URI for production SSO
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.SsoConfigurationSection.DevelopmentSsoProviderName">
+            <summary>
+            Provider name for development SSO
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.SsoConfigurationSection.BaseUriForDevelopmentSso">
+            <summary>
+            Base URI for development SSO
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.SsoConfigurationSection.ProviderName">
+            <summary>
+            Indicates the currently configured SSO provider.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.SsoConfigurationSection.AuthDomain">
+            <summary>
+            Indicates the authentication domain (for the SSO cookie)
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.SsoConfigurationSection.NotAuthorizedUrl">
+            <summary>
+            Indicates the URI of the not-authorized page. This page is
+            used as the redirect target when an authenticated user isn't
+            authorized to view a resource.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.SsoConfigurationSection.OverrideReturnUrl">
+            <summary>
+            Overrides the return URL when a redirect to SSO occurs. If blank the
+            return URL will be the same as the page request that triggered the redirect.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.SsoConfigurationSection.EnforceClientIPMatch">
+            <summary>
+            Indicates that Client IP Address must match the IP Address
+            in the security cookie. NOTE: If your clients are going through
+            an NAT then this value should be set to <em>false</em>. The
+            default value is <em>true</em>.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.SsoConfigurationSection.AppID">
+            <summary>
+            Indicates the SSO AppID of this application. Affects role-based
+            security; when role names are not prefixed with an appID token they
+            are assumed to be associated with this appID.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.SsoConfigurationSection.ProviderBaseUri">
+            <summary>
+            Indicates the base URI of the SSO provider.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.SsoConfigurationSection.Locations">
+            <summary>
+            Contains the location security declarations.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.SsoConfigurationSection.ProviderLoginUri">
+            <summary>
+            Indicates the redirect URI for login. This value may contain 1 formatting variable which
+            will be formatted upon use to the return URL.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.SsoConfigurationSection.ProviderPublicKey">
+            <summary>
+            Contains the current SSO provider's private key.
+            </summary>
+        </member>
+        <member name="T:ATTi.SSO.Client.RelativePathUtil">
+            <summary>
+            Utility class for resolving paths.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.RelativePathUtil.MakeRelative(System.Uri,System.String)">
+            <summary>
+            Takes a target URI and returns a string containing the relative
+            path for the resource. This replaces the application path at the
+            beginning of the url with the "~/" for matching against configured
+            paths.
+            </summary>
+            <param name="targetUri">The requested URI</param>
+            <param name="appPath">The current request's application path.</param>
+            <returns>a relative local path</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.RelativePathUtil.ResolveUrl(System.String,System.Uri,System.String)">
+            <summary>
+            Resolves a URL to a fully qualified URI using the current request's
+            URI for missing values (scheme, port, etc).
+            </summary>
+            <param name="targetUrl"></param>
+            <param name="requestUri"></param>
+            <param name="appPath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ATTi.SSO.Client.UserKind">
+            <summary>
+            Indicates the user kind: { Employee | Contractor | Guest | InternalApplication | ExternalApplication }
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.UserKind.Unknown">
+            <summary>
+            Indicates the user kind is unknown.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.UserKind.Employee">
+            <summary>
+            Indicates the user is an employee.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.UserKind.Contractor">
+            <summary>
+            Indicates the user is a contractor.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.UserKind.Guest">
+            <summary>
+            Indicates the user is a guest.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.UserKind.InternalApplication">
+            <summary>
+            Indicates the user is an internal application.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.UserKind.ExternalApplication">
+            <summary>
+            Indicates the user is an external application.
+            </summary>
+        </member>
+        <member name="T:ATTi.SSO.Client.AuthenticationKind">
+            <summary>
+            Indicates the authentication kind: { ATTInteractive | ATT }
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.AuthenticationKind.Unknown">
+            <summary>
+            Indicates the authentication kind is unknown (not valid).
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.AuthenticationKind.ATTInteractive">
+            <summary>
+            Indicates the authentication was achieved against the ATT Interactive authentication realm.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.AuthenticationKind.ATT">
+            <summary>
+            Indicates the authentication was achieved against the ATT authentication realm.
+            </summary>
+        </member>
+        <member name="T:ATTi.SSO.Client.Extensions">
+            <summary>
+            Contains extension methods.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.Extensions.ToUnixTimestamp(System.DateTime)">
+            <summary>
+            Converts a .NET DateTime instance to a UnixTimestamp.
+            </summary>
+            <param name="tthis">an instance to convert</param>
+            <returns>a unix timestamp</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.Extensions.IndexOfAnyExcept(System.String,System.Globalization.UnicodeCategory)">
+            <summary>
+            Gets the index of the first character appearing in the source string 
+            that is not of the given character category (unicode).
+            </summary>
+            <param name="s">a source string</param>
+            <param name="category">the category</param>
+            <returns><em>the index of the first character that is not a member of the unicode character category given;
+            if the string doesn't contain any such characters then -1 is returned.</em></returns>
+        </member>
+        <member name="T:ATTi.SSO.Client.Role">
+            <summary>
+            Structure representing a role.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.Role.#ctor(System.Int32,System.String)">
+            <summary>
+            Creates a new role structure.
+            </summary>
+            <param name="appID"></param>
+            <param name="role"></param>
+        </member>
+        <member name="P:ATTi.SSO.Client.Role.AppID">
+            <summary>
+            Indicates the Application ID that the role is associated with.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Role.RoleName">
+            <summary>
+            Indicates the role name.
+            </summary>
+        </member>
+        <member name="T:ATTi.SSO.Client.Config.LocationsConfigurationElementCollection">
+            <summary>
+            Configuration for a collection of locations secured by SSO.
+            </summary>
+        </member>
+        <member name="T:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2">
+            <summary>
+            Base class for configuration element collections.
+            </summary>
+            <typeparam name="TElement">Element type</typeparam>
+            <typeparam name="TKey">Key type</typeparam>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="addElmName">name used to add an element to the collection (default is 'add')</param>
+            <param name="clearElmName">name used when clearing elements from the collection (default is 'clear')</param>
+            <param name="removeElmName">name used to delete an element from the collection (default is 'remove')</param>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.Add(`0)">
+            <summary>
+            Adds an element.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.Clear">
+            <summary>
+            Clears the elements.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.IndexOf(`0)">
+            <summary>
+            Finds the index of an element.
+            </summary>
+            <param name="item">the element</param>
+            <returns>the index of the element</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.Remove(`0)">
+            <summary>
+            Removes an element.
+            </summary>
+            <param name="item">the element</param>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.Remove(`1)">
+            <summary>
+            Removes an element by key.
+            </summary>
+            <param name="key">the element's key</param>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.RemoveAt(System.Int32)">
+            <summary>
+            Removes an element at the given index.
+            </summary>
+            <param name="index">the element's index</param>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.CreateNewElement">
+            <summary>
+            Creates a new element of type TElement.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element's key.
+            </summary>
+            <param name="element">the element</param>
+            <returns>the element's key</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.PerformGetElementKey(`0)">
+            <summary>
+            Abstract method; gets the element's key.
+            </summary>
+            <param name="element">the element</param>
+            <returns>the element's key</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.GetStrongEnumerator">
+            <summary>
+            Returns a strongly typed enumerator.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.CollectionType">
+            <summary>
+            CollectionType
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.Count">
+            <summary>
+            Number of elements.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.Item(System.Int32)">
+            <summary>
+            Accesses an element by index.
+            </summary>
+            <param name="index">element index</param>
+            <returns>the element at <paramref name="index"/></returns>
+        </member>
+        <member name="P:ATTi.SSO.Client.Config.AbstractConfigurationElementCollection`2.Item(`1)">
+            <summary>
+            Accesses a element by key.
+            </summary>
+            <param name="key">an element's key</param>
+            <returns>the element with the given key</returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.Config.LocationsConfigurationElementCollection.PerformGetElementKey(ATTi.SSO.Client.Config.LocationConfigElement)">
+            <summary>
+            Returns the location's path.
+            </summary>
+            <param name="element">A location element.</param>
+            <returns>The location's path</returns>
+        </member>
+        <member name="T:ATTi.SSO.Client.Config.ResourceAuthorizationKind">
+            <summary>
+            Enumeration of resource authorization kinds.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.Config.ResourceAuthorizationKind.Anonymous">
+            <summary>
+            Indicates anonymous users are allowed to view the resource.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.Config.ResourceAuthorizationKind.Authenticated">
+            <summary>
+            Indicates only authenticated users are allowed to view the resource.
+            </summary>
+        </member>
+        <member name="F:ATTi.SSO.Client.Config.ResourceAuthorizationKind.RoleMembers">
+            <summary>
+            Indicates only role members are allowed to view the resource.
+            </summary>
+        </member>
+        <member name="T:ATTi.SSO.Client.Config.LocationConfigElement">
+            <summary>
+            Configuration element declaring a location's security.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Config.LocationConfigElement.Path">
+            <summary>
+            The path secured by this element. All paths are relative to the root.
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Config.LocationConfigElement.Authorization">
+            <summary>
+            Indicates who is authorized to use the resource. { Anonymous (0) | Authenticated (1) | RoleMembers (2) }
+            </summary>
+        </member>
+        <member name="P:ATTi.SSO.Client.Config.LocationConfigElement.Roles">
+            <summary>
+            If Authorization is ResourceAuthorization.RoleMembers (2) then contains the authorized roles.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.EnumerableKeyValuePairs.#ctor(System.String,System.Char,System.Char)">
+            <summary>
+            Creates a new instance from an input string.
+            </summary>
+            <param name="input">The input string.</param>
+            <param name="pairSep">The character that separates key value pairs</param>
+            <param name="kvpSep">The character that separates keys from values</param>
+        </member>
+        <member name="T:ATTi.SSO.Client.RoleSet">
+            <summary>
+            Structure containing a set of roles.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.RoleSet.ContainsRole(System.Int32,System.String)">
+            <summary>
+            Determines if the role set contains the given role.
+            </summary>
+            <param name="appID">the role's application</param>
+            <param name="role">the role</param>
+            <returns><em>true</em> if <paramref name="role"/> is contained in the role set; 
+            otherwise <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.RoleSet.ContainsRole(System.String)">
+            <summary>
+            Determines if the role set contains the given role.
+            </summary>
+            <param name="role">the role</param>
+            <returns><em>true</em> if <paramref name="role"/> is contained in the role set; 
+            otherwise <em>false</em></returns>
+        </member>
+        <member name="M:ATTi.SSO.Client.RoleSet.TryParse(System.String,ATTi.SSO.Client.RoleSet@)">
+            <summary>
+            Tries to parse the input string as a set of roles.
+            </summary>
+            <param name="input">Input string containing roles</param>
+            <param name="value">reference to a varaible to contain the role set upon success.</param>
+            <returns><em>true</em> if <paramref name="input"/> contains a role set; otherwise <em>false</em></returns>
+            <exception cref="T:System.ArgumentNullException">thrown if the <paramref name="input"/> is null</exception>
+        </member>
+        <member name="M:ATTi.SSO.Client.RoleSet.UserIsInAnyRole(System.Security.Principal.IPrincipal)">
+            <summary>
+            Determines if the current user is in any of the roles
+            </summary>
+            <param name="user">The principal associated with the current operation.</param>
+            <returns><em>true</em> if the user is in any of the roles in this set.</returns>
+        </member>
+        <member name="P:ATTi.SSO.Client.RoleSet.AppID">
+            <summary>
+            Indicates the AppID associated with the currently executing application.
+            </summary>
+        </member>
+        <member name="T:ATTi.SSO.Client.SsoHttpModule">
+            <summary>
+            HttpModule for authentication against the SSO provider.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.SsoHttpModule.Dispose">
+            <summary>
+            Disposes the instance.
+            </summary>
+        </member>
+        <member name="M:ATTi.SSO.Client.SsoHttpModule.Init(System.Web.HttpApplication)">
+            <summary>
+            Initializes the module.
+            </summary>
+            <param name="context"></param>
+        </member>
+    </members>
+</doc>

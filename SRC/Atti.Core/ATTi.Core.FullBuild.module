@@ -1,0 +1,30 @@
+<Project ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MetaBuildBinDir)\MetaBuild.Module.targets" />
+
+  <ItemGroup>
+		<CSharpProject Include="ATTi.Core\ATTi.Core.csproj" />
+		<CSharpProject Include="ATTi.Core.Data\ATTi.Core.Data.csproj" />
+		<CSharpProject Include="ATTi.Core.MessageBus\ATTi.Core.MessageBus.csproj" />
+	</ItemGroup>
+
+	<Target Name="AfterClean">
+		<RemoveDir Directories="ATTi.Core\bin;ATTi.Core\obj" />
+		<RemoveDir Directories="ATTi.Core.Data\bin;ATTi.Core.Data\obj" />
+		<RemoveDir Directories="ATTi.Core.MessageBus\bin;ATTi.Core.MessageBus\obj" />
+	</Target>
+
+  <!-- Allow the msbuild user to specify the zip file name, else default to dist.zip -->
+  <PropertyGroup>
+    <DistZipFile Condition="$(DistZipFile)==''">dist.zip</DistZipFile>  
+  </PropertyGroup>
+
+  <!-- Specify the files that are to be included into the distributable zip file -->
+  <Target Name="BeforeDist">
+    <ItemGroup>
+      <Zip Include="$(ImageDir)\**\*">
+        <BaseDir>$(ImageDir)</BaseDir>
+        <DistPath>$(DistZipFile)</DistPath>
+      </Zip>
+    </ItemGroup>
+  </Target>
+</Project>

@@ -1,0 +1,1366 @@
+<serverconfig version="1.1">
+	<!-- Define the server groups deployed for each buildtype -->
+	<buildtype name="monthly">
+		<servergroups>
+			ashadrapps
+			ashadrwebs
+			ashapis
+			ashbatches
+			ashcalls
+			ashccsvcs
+			ashccwebuis
+			ashchatapps
+			ashchatwss
+			ashcss
+			ashdeploys
+			ashepcwss
+			ashfdcs
+			ashhmps
+			ashmems
+			ashmsmqs
+			ashppcs
+			ashppcmems
+			ashppcnums
+			ashpwebs
+			ashqds
+			ashsdbs
+			ashsips
+			ashstores
+			ashsysmails
+			ashtools
+			ashwebs
+			ashwebsvcs
+			irvccsvcs
+			irvccwebuis
+			irvcmrwebs
+			irvppcmems
+			irvppcnums
+			irvwebsvcs
+		</servergroups>
+	</buildtype>
+
+	<buildtype name="editorial">
+		<servergroups>
+			ashadrwebs
+			ashcss
+			ashpwebs
+			ashtools
+			ashwebs
+			irvcmrwebs
+		</servergroups>
+	</buildtype>
+
+	<buildtype name="horoscopes">
+		<servergroups>
+			ashcss
+			ashwebs
+		</servergroups>
+	</buildtype>
+
+	<buildtype name="news">
+		<servergroups>
+			ashcss
+			ashwebs
+		</servergroups>
+	</buildtype>
+
+	<buildtype name="deploy">
+		<servergroups>
+			ashadrapps
+			ashadrwebs
+			ashbatches
+			ashcalls
+			ashccsvcs
+			ashccwebuis
+			ashchatapps
+			ashchatwss
+			ashcss
+			ashdeploys
+			ashepcwss
+			ashfdcs
+			ashhmps
+			ashlsmtps
+			ashmsmqs
+			ashmems
+			ashppcs
+			ashppcmems
+			ashppcnums
+			ashpwebs
+			ashqds
+			ashsdbs
+			ashsips
+			ashstores
+			ashsysmails
+			ashtools
+			ashwebs
+			ashwebsvcs
+			irvccsvcs
+			irvccwebuis
+			irvcmrwebs
+			irvifapps
+			irvifwebs
+			irvppcmems
+			irvppcnums
+			irvwebsvcs
+		</servergroups>
+	</buildtype>
+
+	<buildtype name="solo">
+		<servergroups>
+			irvcmrwebs
+			irvtrngcmrwebs
+		</servergroups>
+	</buildtype>
+
+	<buildtype name="odin">
+		<servergroups>
+			ashadrapps
+			ashadrwebs
+			ashbatches
+			ashcalls
+			ashccsvcs
+			ashccwebuis
+			ashchatapps
+			ashchatwss
+			ashcss
+			ashdeploys
+			ashepcwss
+			ashfdcs
+			ashhmps
+			ashlsmtps
+			ashmsmqs
+			ashmems
+			ashppcs
+			ashppcmems
+			ashppcnums
+			ashpwebs
+			ashqds
+			ashsdbs
+			ashsips
+			ashstores
+			ashsysmails
+			ashtools
+			ashwebs
+			ashwebsvcs
+			irvccsvcs
+			irvccwebuis
+			irvcmrwebs
+			irvifapps
+			irvifwebs
+			irvppcmems
+			irvppcnums
+			irvwebsvcs
+			tmails
+		</servergroups>
+	</buildtype>
+
+	<buildtype name="ifulfill">
+		<servergroups>
+			ashifapps
+			ashifwebs
+			irvifapps
+			irvifwebs
+		</servergroups>
+	</buildtype>
+
+	<buildtype name="proposalmaker">
+		<servergroups>
+			irvcmrwebs
+			irvppmkwebs
+		</servergroups>
+	</buildtype>
+
+	<buildtype name="tmail">
+		<servergroups>
+			tmails
+		</servergroups>
+	</buildtype>
+	
+	<!-- Essential target group.
+	
+	     This group contains targets that are absolutely essential to the proper
+	     functioning of the system such as any tools required to support automatic
+	     deployment.  It should never contain targets that are discretionary features.
+	     All servers should be configured to have the "essential" target group.
+	     
+	     Enforcing this rule makes it much easier for SOC to be explicit about the
+	     system configuration.  For example, while most servers may require the "odin_agent"
+	     target group, we might not want to install it _everywhere_ or it's conceivable
+	     that SOC might want to selectively remove it from certain machines.  Therefore
+	     "odin_agent" is not _essential_ so it should never be added to this group.
+	-->
+	<targetgroup name="essential">
+		<targets>
+			deploy
+		</targets>
+	</targetgroup>
+
+	<!-- Odin target groups. -->
+
+	<targetgroup name="odin_core">
+		<inheritedtargetgroups>
+			essential
+		</inheritedtargetgroups>
+		<targets>
+			odin.core
+			odin.plugins.generic
+			odin.plugins.scripting
+			odin.plugins.ironpython
+			odin.plugins.windows.common
+			odin.plugins.windows.healthcheck
+			odin.plugins.windows.eventmon
+			odin.plugins.windows.perfmon
+			odin.plugins.jira
+			odin.plugins.clearquest
+			odin.plugins.ingenio
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="odin_agent">
+		<inheritedtargetgroups>
+			odin_core
+		</inheritedtargetgroups>
+		<targets>
+			odin.agent
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="odin_server">
+		<inheritedtargetgroups>
+			odin_core
+		</inheritedtargetgroups>
+		<targets>
+			odin.server
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="odin_dashboard">
+		<inheritedtargetgroups>
+			odin_core
+		</inheritedtargetgroups>
+		<targets>
+			AspNet
+			appPools
+			odin.dashboard
+			odin.plugins.generic.web
+			odin.plugins.windows.eventmon.web
+			odin.plugins.windows.perfmon.web
+			SSLCertificate
+		</targets>
+	</targetgroup>
+
+	<!-- Platform target group.
+	     Contains core non-web platform libraries. -->
+	<targetgroup name="platform">
+		<inheritedtargetgroups>
+			essential
+		</inheritedtargetgroups>
+		<targets>
+			dependencies
+			castle
+			facebookclient
+			keenvb
+			logger
+			platform.cominterface
+			platform.framework
+			NumberAllocationRemote
+			platform.core
+			commerce.contracts
+			cpm_merchant
+			listingserverinterop
+			listingserverremotinglib
+			ppcimpressiontracking
+			platform.reporting
+			Platform.WebProxies
+			platform.contentmanagement
+			platform.hosting
+			Platform.LogParsing
+			Platform.AdSystemsAPI
+			NumberManagement.Reporting
+			SharedCacheInterop
+			SharedCache.WinServiceCommon
+			NLog
+		</targets>
+	</targetgroup>
+
+	<!-- Web core target group.
+	     Contains core web platform libraries. -->
+	<targetgroup name="web_core">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			AspNet
+			appPools
+			UrlRewrite
+			aspxredirect
+			liveadviceredirect
+			stripportonredirect
+			ClientIPRewrite
+			platform.web.core
+			platform.mvc.core
+			platform.web.content.hosting
+			freetextbox
+			aspnetexpertwebcontrols
+			CommunityServerLibs
+			platform.models
+			atti.core.common
+			atti.core.configuration
+			atti.core.data
+			atti.core.logging
+			log4net
+			atti.platform.customer
+			SSLCertificate
+			paypercall.contracts
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="mvc_core">
+		<inheritedtargetgroups>
+			web_core
+		</inheritedtargetgroups>
+		<targets>
+			platform.mvc.core
+		</targets>
+	</targetgroup>
+
+	<!-- Solo target group. -->
+	<targetgroup name="solo">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			AspNet
+			appPools
+			SSLCertificate
+		</targets>
+	</targetgroup>
+
+	<!-- ProposalMaker target group. -->
+	<targetgroup name="proposalmaker">
+		<inheritedtargetgroups>
+			  essential
+		</inheritedtargetgroups>
+		<targets>
+			  proposalmaker
+		</targets>
+   </targetgroup>
+
+	
+	<!-- Accertify Updater target group. -->
+	<targetgroup name="accertify">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			AccertifyUpdater
+			AccertifyUpdaterSchedule
+		</targets>
+	</targetgroup>
+
+
+	<!-- Accertify Listener Service target group. -->
+	<targetgroup name="AccertifyListenerService">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			AccertifyListenerService
+		</targets>
+	</targetgroup>
+
+
+	<!-- Platform.Commerce group for the Commerce Services.
+		We want to restrict the targets deplopyed to these machines
+		as per the PCI requirement -->
+	<targetgroup name="platform_commerce">
+		<inheritedtargetgroups>
+		</inheritedtargetgroups>
+		<targets>
+			deploy
+			dependencies
+			castle
+			logger
+			platform.framework
+			commerce.contracts
+			commerce.services
+			commerce.webservices
+			commerce.webproxies
+			KeyGen
+			cpm_merchant
+			CyberSource
+			SSLCertificate
+			TeleCheck
+		</targets>
+	</targetgroup>
+
+	<!-- Commerce Batch group for the Commerce Proxies.
+		We want to restrict the targets deplopyed to these machines
+		as per the PCI requirement -->
+	<targetgroup name="commerce_batch">
+		<inheritedtargetgroups>
+		</inheritedtargetgroups>
+		<targets>
+			commerce.contracts			
+			commerce.webproxies
+		</targets>
+	</targetgroup>
+
+	<!-- Platform.Commerce group for the Commerce Services Web UI.
+		We want to restrict the targets deplopyed to these machines
+		as per the PCI requirement -->
+	<targetgroup name="platform_commerce_web">
+		<inheritedtargetgroups>
+		</inheritedtargetgroups>
+		<targets>
+			deploy
+			dependencies
+			commerce.contracts			
+			commerce.webproxies
+			commerce.web
+			commerce.transientwebservices
+			platform.framework
+			SSLCertificate
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="session_state">
+		<inheritedtargetgroups>
+		</inheritedtargetgroups>
+		<targets>
+			AspNet
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="web">
+		<inheritedtargetgroups>
+			web_core
+		</inheritedtargetgroups>
+		<targets>
+			convertFileSettings
+			deadLetterReceiver
+			aspSettings
+			thrownet
+			lookUpTable
+			upload
+			domain
+			platform.web.content
+			horoscopes
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="forums">
+		<inheritedtargetgroups>
+			web_core
+		</inheritedtargetgroups>
+		<targets>
+			CommunityServerWeb
+			platform.web.forums_editorial
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="web_services">
+		<inheritedtargetgroups>
+			web_core
+		</inheritedtargetgroups>
+		<targets>
+			Platform.WebService
+			PayPerCall.Services
+			PayPerCall.Contracts
+			NumberManagerService
+			MGQDetector
+			Jayrock.Json
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="us_web">
+		<inheritedtargetgroups>
+			web
+		</inheritedtargetgroups>
+		<targets>
+			mapquest
+			us_editorial
+			us_alerts
+			us_web
+			ingenio
+			ingenio_alerts
+			matchadvice_editorial
+			pro_editorial
+			paypercall_editorial
+			match
+			paypercall
+			match_alerts
+			epicware
+			platform.web
+			platform.web_editorial
+			ether
+			ether_editorial
+			local
+			local_editorial
+			phonemanagement
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="uk_web">
+		<inheritedtargetgroups>
+			web
+		</inheritedtargetgroups>
+		<targets>
+			mapquest
+			uk_editorial_new
+			uk_alerts
+			uk_web
+			platform.web
+			platform.web_editorial
+			SSLCertificate_UK
+			phonemanagement
+		</targets>
+	</targetgroup>
+
+  <targetgroup name="subscriptions_web">
+    <inheritedtargetgroups>
+      web_core
+    </inheritedtargetgroups>
+    <targets>
+      subscriptions.core
+      subscriptions.common
+	  automapper
+	  unity
+	  subscriptions.persistence
+      subscriptions.services
+	  subscriptions.services.salesforce
+      subscriptions.models
+      subscriptions.webservices
+      subscriptions.webservices.salesforce.messaging
+      subscriptions.web
+	  subscriptions.web_editorial
+    </targets>
+  </targetgroup>
+
+  <targetgroup name="adreporting_client">
+    <inheritedtargetgroups>
+      platform
+    </inheritedtargetgroups>
+    <targets>
+      atti.adreporting.services.client
+      atti.adreporting.contracts
+      atti.opm.core
+    </targets>
+  </targetgroup>
+
+	<targetgroup name="ascp_web">
+		<inheritedtargetgroups>
+			web_core
+		</inheritedtargetgroups>
+		<targets>
+			ascp.main
+			ascp.main_editorial
+      			atti.opm.core
+		</targets>
+	</targetgroup>
+	
+	<targetgroup name="adreporting_services">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			adreporting
+			atti.adreporting.services.client
+			atti.adreporting.contracts
+                        Ascp.Database.DBApi
+                        Atti.OPM.Core
+                        Ascp.Services.Hosting.Web
+                        Ascp.Services.Hosting.Partners
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="dialogic">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			convertFileSettings
+			logDataService
+			vos
+			prompts
+			logsearch
+			logparserinterface
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="dialogic_proc">
+		<inheritedtargetgroups>
+			dialogic
+		</inheritedtargetgroups>
+		<targets>
+			vos_proc
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="dialogic_service">
+		<inheritedtargetgroups>
+			dialogic
+		</inheritedtargetgroups>
+		<targets>
+			vos_service
+			platform.telephony
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="convertfile">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			convertFileSettings
+			convertFileReceiver
+		</targets>
+	</targetgroup>
+
+	<!-- 
+	This is a confusingly named target, it deploys the DSUpload assembly, not the
+	ImageUpload virtual or any website
+	-->
+	<targetgroup name="imageupload">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			upload
+		</targets>
+	</targetgroup>
+
+	<!-- The MemberUploads website (hit by CDB), with a vdir called ImageUPload -->
+	<targetgroup name="memberuploads">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			upload
+			memberuploads
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="telecom_framework">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			B2BUA
+			B2BUATest
+			ruler
+			SessionHelper
+			Telecom.Framework
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="sipserver">
+		<inheritedtargetgroups>
+			telecom_framework
+		</inheritedtargetgroups>
+		<targets>
+			deadLetterReceiver
+			initiateCallReceiver
+			initiateCallRecordingReceiver
+			initiateReminderCallReceiver
+			logDataService
+			prompts
+			sipserver
+			logsearch
+			logparserinterface
+			platform.telephony
+			receivertosessionhandler
+			SIPSessions
+			KeenCallAdmin
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="scheduled_tasks">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+      appointmentsScheduler
+      assetexpirer
+      billCreditCard
+      cancelpreauth
+      cjProcess
+      encryptConfInfo
+      emailClientProc
+      emailNotifyCardExpDt
+      inktomiExport
+      ppcScheduler
+      keenScheduler
+      sweeper
+      taskCommon
+      us_domain
+      FLCancelBidEmail
+      WorkFlows_TSTool
+      Velocity_TSTool
+      Telcorefresh
+      Hammer
+      ChargeBack
+      FinanceDownloads
+      UnwantedEmailProcessor
+      BidSystemPausedEmailProcessor
+      logsearch
+      resubmitcalls
+      logsearch
+      logparserinterface
+      RecurrenceProcessor
+      ResetTestListings
+      UpdateRollingWindow
+      sbin
+      MGQDetector
+      ImpressionValueManager
+      UpdateCurrencyRates
+      YPCOrderLoad
+      StandardOrderLoad
+      billCreditCard_NET
+      BSCDataImport
+      B2BUA
+      SessionHelper
+      ruler
+      Telecom.Framework
+      TelmetricsTestApp
+      DNISRecycler
+      AdjustCPMRevenue
+      YPIDSync
+      UpdaterProcessor
+      ACHClearing
+      ACHBatchBilling
+      CcBatchBilling
+      CcBatchBillingTechResp
+      subscriptions.core
+      subscriptions.common
+      subscriptions.services
+      SubscriptionsJobs
+      SalesforceExport
+      PopulateOwnerChargeAccounts
+      Subscriptions.Apps.CreateUsers
+      Subscriptions.Apps.BundleLegacy
+      Subscriptions.Sandbox
+      att.libs
+      ATT.IRWS.Contracts
+      NFSensitiveDataTransfer
+      CSSPrintAdMigration
+      PrintOnlineActivationProcessor
+      BSCListingAuthProcessor
+      AdReportingExtract
+      PromptsWithRecordings
+      prompts
+      OPMOrderLoad
+      Ascp.Database.DBApi
+      Atti.OPM.Core
+      CreateUsers
+      PayPerClickUrlTracking
+    </targets>
+	</targetgroup>
+
+	<targetgroup name="recurrenceprocessorlogfolder">
+		<inheritedtargetgroups>
+		</inheritedtargetgroups>
+		<targets>
+			recurrenceprocessorlogfolder
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="abat_scheduler">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+      appointmentsSchedulerSchedule
+      assetExpirerSchedule
+      billCreditCardSchedule
+      cancelpreauthSchedule
+      cjProcessSchedule
+      EmailClientProcSchedule
+      emailNotifyCardExpDtSchedule
+      encryptConfInfoSchedule
+      keenSchedulerSchedule
+      ppcSchedulerSchedule
+      sweeperSchedule
+      FLCancelBidEmailSchedule
+      WorkFlows_TSToolSchedule
+      Velocity_TSToolSchedule
+      Telcorefreshschedule
+      Hammerschedule
+      ChargeBackSchedule
+      FinanceDownloadsSchedule
+      RecurrenceProcessorSchedule
+      ResubmitCallsSchedule
+      BidSystemPausedEmailProcessorSchedule
+      UpdateRollingWindowSchedule
+      ImpressionValueManagerSchedule
+      UpdateCurrencyRatesSchedule
+      YPCOrderLoadSchedule
+      StandardOrderLoadSchedule
+      billCreditCard_NETSchedule
+      TelmetricsTestAppSchedule
+      DNISRecyclerSchedule
+      AdjustCPMRevenueSchedule
+      YPIDSyncSchedule
+      UpdaterProcessorSchedule
+      ACHClearingSchedule
+      ACHBatchBillingSchedule
+      CcBatchBillingSchedule
+      CcBatchBillingTechRespSchedule
+      SalesforceExportAFrontierSchedule
+      SalesforceExportStandardize
+      PopulateOwnerChargeAccountsSchedule
+      NFSensitiveDataTransferSchedule
+      CSSPrintAdMigrationSchedule
+      PrintOnlineActivationProcessorSchedule
+      BSCListingAuthProcessorSchedule
+      AdReportingExtractSchedule
+      PromptsWithRecordingsAppSchedule
+      OPMOrderLoadSchedule
+      PayPerClickUrlTrackingSchedule
+    </targets>
+	</targetgroup>
+
+	<targetgroup name="abat_sched_Livedata_Only">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			UnwantedEmailProcessorSchedule
+			ResetTestListingsSchedule
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="reporting_service_server">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			reportinterop
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="master_reporting_service_server">
+		<inheritedtargetgroups>
+			reporting_service_server
+		</inheritedtargetgroups>
+		<targets>
+			reports
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="distributors">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			convertFileDistributor
+			genericXMLDistributor
+			initiateCallDistributor
+			initiateCallRecordingDistributor
+			initiateReminderCallDistributor
+			partnerNotifyDistributor
+			systemEmailDistributor
+			paymentMailDistributor
+			nonPaymentMailDistributor
+			offerMailDistributor
+			terminateCallDistributor
+			deadLetterReceiver
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="admin_receivers">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			genericXMLReceiver
+			partnerNotifyReceiver
+			systemEmailReceiver
+			paymentMailReceiver
+			nonPaymentMailReceiver
+			offerMailReceiver
+			terminateCallReceiver
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="tools">
+		<inheritedtargetgroups>
+			web_core
+		</inheritedtargetgroups>
+		<targets>
+			imageUpload
+			aspSettings
+			thrownet
+			lookUpTable
+			upload
+			domain
+			thrownet
+			tools
+			Platform.WebProxies
+			freetextbox
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="livetools">
+		<inheritedtargetgroups>
+			tools
+		</inheritedtargetgroups>
+		<targets>
+			appPools
+			logsearch
+			logparserinterface
+			subscriptions.core
+			subscriptions.common
+			Platform.Web.Partners
+			platform.web.partners_editorial
+			convertfilesettings
+			developersIng
+			developersIng_editorial
+			partnersIngCom
+			partnersIngCom_editorial
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="contenttools">
+		<inheritedtargetgroups>
+			tools
+		</inheritedtargetgroups>
+		<targets>
+			appPools
+			contenttools
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="liveoperator">
+		<inheritedtargetgroups>
+			tools
+		</inheritedtargetgroups>
+		<targets>
+			liveoperator
+			Platform.Telephony
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="massemail">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			keenMailJobInitiate
+			KeenMarkBadEmail
+			KeenMsgArchive
+			KeenMsgBounce
+			KeenMsgClick
+			keenMsgJobComplete
+			KeenMsgRead
+			keenReplyEmail
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="searchdb">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			searchLDMonitor
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="OOS">
+		<inheritedtargetgroups>
+			web_core
+		</inheritedtargetgroups>
+		<targets>
+			oos_pages
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="asynch_systememail_distributor">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			genericxmldistributor
+			systemEmailEventDistributor
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="asynch_systememail_receiver">
+		<inheritedtargetgroups>
+			web_core
+		</inheritedtargetgroups>
+		<targets>
+			genericxmlreceiver
+			systemEmailEventReceiver
+			platform.tools
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="contentmanagementsystem">
+		<inheritedtargetgroups>
+			web_core
+		</inheritedtargetgroups>
+		<targets>
+			appPools
+			platform.tools
+			platform.cms
+			platform.cms.alias
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="contentdb">
+		<inheritedtargetgroups>
+			web_core
+		</inheritedtargetgroups>
+		<targets>
+			platform.tools
+			deploycontentdb
+			emailtemplates
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="listingserver">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			ListingServerService
+			ListingServerRelayerService
+			ListingServerLib
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="number_allocation">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			NumberAllocator
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="launchPad">
+		<inheritedtargetgroups>
+			web_core
+		</inheritedtargetgroups>
+		<targets>
+			web_launchPad
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="logParsers">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			PPCQueryLogParser
+			LocalNumberTestLogParser
+			PPCLogLib
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="appdomainmanager">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			appdomainmanager
+			mgqdetector
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="reportmanager">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			reportmanager.service
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="mgqdetectormanager">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			mgqdetectormanager
+			mgqdetector
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="mgqdetectorservice">
+		<inheritedtargetgroups>
+			platform
+			mgqdetectormanager
+		</inheritedtargetgroups>
+		<targets>
+			mgqdetectorservice
+			mgqdetector
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="AsynchronousEventProcessor">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			AsynchronousEventProcessorLib
+			AsynchronousEventProcessorService
+			ListingServerLib
+			subscriptions.core
+			subscriptions.common
+			salesforcesyncservice
+		</targets>
+	</targetgroup>
+
+
+	<targetgroup name="editor">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			PPCParserRegression
+			PPCCategoryManager
+			PPCKeywordManager
+			SortAdvertiserAPIQueryLog
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="impressiontrackingserver">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			ppcimpressiontracking.service
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="ppcbulkmanagementserver">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			ppcbulkmanagement.service
+			convertfilesettings
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="mediaserver">
+		<inheritedtargetgroups>
+			telecom_framework
+		</inheritedtargetgroups>
+		<targets>
+			logDataService
+			PayPerCall.Services
+			PayPerCall.Contracts
+			mediaserver
+			logsearch
+			logparserinterface
+			prompts
+			GlobalCall
+			TelephonyAPI
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="qescript">
+		<targets>
+			actSamples
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="qetools">
+		<targets>
+			xmlBuild
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="ctest">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			logDataService
+			ctest
+			logsearch
+			logparserinterface
+			prompts
+			GlobalCall
+			TelephonyAPI
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="sharedcache_service">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			SharedCache.WinService
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="dnisdialer">
+		<inheritedtargetgroups>
+			platform
+		</inheritedtargetgroups>
+		<targets>
+			logDataService
+			dnisdialer
+			logsearch
+			logparserinterface
+			prompts
+		</targets>
+	</targetgroup>
+
+	<!--
+	<targetgroup name="att_services_centralmedia_webservices">
+		<inheritedtargetgroups>
+		</inheritedtargetgroups>
+		<targets>
+			deploy
+			att.libs
+			att.services.centralmedia.models
+			att.services.centralmedia.interfaces
+			att.services.centralmedia.providers
+			att.services.centralmedia.webservices
+			SSLCertificate
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="att_irws_services">
+		<inheritedtargetgroups>
+		</inheritedtargetgroups>
+		<targets>
+			deploy
+			att.libs
+			att.irws.domain
+			att.irws.dataaccess
+			att.irws.businesslogic
+			att.irws.contracts
+			att.services.centralmedia.models
+			att.services.centralmedia.interfaces
+			att.services.centralmedia.providers
+			att.irws.services
+			SSLCertificate
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="att_irws_ui">
+		<inheritedtargetgroups>
+		</inheritedtargetgroups>
+		<targets>
+			att.libs
+			att.services.centralmedia.models
+			att.services.centralmedia.interfaces
+			att.services.centralmedia.providers
+			ypc.framework.security
+			intelligencia.urlrewriter
+			att.irws.businesslogic
+			att.irws.dataaccess
+			att.irws.contracts
+			att.irws.domain
+			att.irws.ui
+			SSLCertificate
+			fckeditorv2
+			NetSpell.SpellChecker
+		</targets>
+	</targetgroup>
+	-->
+	
+	<targetgroup name="ifulfill_app">
+		<inheritedtargetgroups>
+		</inheritedtargetgroups>
+		<targets>
+			att.ifulfill.uft.service
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="ifulfill_web">
+		<inheritedtargetgroups>
+		</inheritedtargetgroups>
+		<targets>
+			att.ifulfill.uft.business
+			att.ifulfill.uft.presentation.silverlightclient
+			att.ifulfill.uft.presentation.web
+			att.ifulfill.uft.riahost
+			att.ifulfill.uft.riaproxy
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="ifulfill">
+		<inheritedtargetgroups>
+			ifulfill_app
+			ifulfill_web
+		</inheritedtargetgroups>
+		<targets>
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="soloserver">
+		<inheritedtargetgroups>
+		</inheritedtargetgroups>
+		<targets>
+			solo
+			webleadapp
+		</targets>
+	</targetgroup>
+
+	<!-- Master deployment server targets. -->
+	<targetgroup name="master">
+		<inheritedtargetgroups>
+			platform
+			mgqdetectormanager
+		</inheritedtargetgroups>
+		<targets>
+			sbin
+			deploymaster
+		</targets>
+	</targetgroup>
+
+	<!-- Temporary holdover of the "all" target.
+	     To be removed once everything is configured on SOC's side to explicitly
+	     specify "essential" and "odin_agent" for all servers. -->
+	<targetgroup name="all">
+		<inheritedtargetgroups>
+			essential
+			odin_agent
+		</inheritedtargetgroups>
+	</targetgroup>
+
+	<targetgroup name="tmail">
+		<targets>
+			tmail
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="chat_app">
+		<targets>
+			Chat.Contracts
+			Chat.EjabberdAuth
+			platform.framework
+			castle
+			logger
+			dependencies
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="chat_ws">
+		<targets>
+			chat.services
+			chat.contracts
+			chat.presence.server
+			castle
+			dependencies
+			platform.framework
+		</targets>
+	</targetgroup>
+
+	<targetgroup name="epc_ws">
+		<targets>
+			earnpercall.services
+			earnpercall.contracts
+			castle
+			dependencies
+			platform.framework
+		</targets>
+	</targetgroup>
+</serverconfig>

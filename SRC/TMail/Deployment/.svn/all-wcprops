@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/Deployment
+END
+tmail-db-location-dev.reg
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/Deployment/tmail-db-location-dev.reg
+END
+tmail-db-location-live.reg
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/Deployment/tmail-db-location-live.reg
+END
+tmail-db-location-test.reg
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/Deployment/tmail-db-location-test.reg
+END
+tmail-db-location-stage.reg
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/Deployment/tmail-db-location-stage.reg
+END

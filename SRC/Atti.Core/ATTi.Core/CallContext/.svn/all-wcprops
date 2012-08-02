@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/CallContext
+END
+ContextServerSink.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/CallContext/ContextServerSink.cs
+END
+ContextUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/CallContext/ContextUtil.cs
+END
+IClientSinkListener.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/CallContext/IClientSinkListener.cs
+END
+ContextClientSink.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/CallContext/ContextClientSink.cs
+END
+IServerSinkListener.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/CallContext/IServerSinkListener.cs
+END

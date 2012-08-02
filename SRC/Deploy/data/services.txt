@@ -1,0 +1,7 @@
+# This is a list of services that have dependencies on KeenVB and need to be
+# shut down before KeenVB is installed.  
+#W3SVC
+#SMTPSVC
+#IISAdmin
+
+

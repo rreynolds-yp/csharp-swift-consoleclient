@@ -1,0 +1,7 @@
+# Accounts for logging into other domains
+# In the form: domain;username;password
+dev.keen.com;dev\deploy;depl0y
+test.keen.com;test\deploy;depl0y
+stage.keen.com;stage\svc_deployshare;uRiRqQgHJbsi-ut
+nca.keen.com;nca\svc_deployshare;nnWKZi19ESq4wXO
+keencorp.keen.com;keencorp\toolsadmin;keencom

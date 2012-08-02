@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/KeenDev/!svn/ver/82209/Monthly/trunk/SRC/Deploy
+END
+deploy.module
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/KeenDev/!svn/ver/79791/Monthly/trunk/SRC/Deploy/deploy.module
+END
+deploy.target
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/KeenDev/!svn/ver/78762/Monthly/trunk/SRC/Deploy/deploy.target
+END
+test.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/KeenDev/!svn/ver/78762/Monthly/trunk/SRC/Deploy/test.txt
+END

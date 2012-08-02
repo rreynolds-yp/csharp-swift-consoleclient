@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TMail">
+</Property><Property Name="Solution File" Value="D:\Yellowpages\TMail\trunk\SRC\TMail\TMail.sln">
+</Property><Property Name="Date" Value="Thursday, September 16, 2010">
+</Property><Property Name="Time" Value="11:23 AM">
+</Property></Properties><Event ErrorLevel="0" Project="ATTi.TMail.Service.Implementation" Source="ATTi.TMail.Service.Implementation\ATTi.TMail.Service.Implementation.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ATTi.TMail.Service.Implementation" Source="ATTi.TMail.Service.Implementation\ATTi.TMail.Service.Implementation.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ATTi.TMail.Common" Source="ATTi.TMail.Common\ATTi.TMail.Common.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ATTi.TMail.Common" Source="ATTi.TMail.Common\ATTi.TMail.Common.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ATTi.TMail.Common.Tests" Source="ATTi.TMail.Common\ATTi.TMail.Common.Tests\ATTi.TMail.Common.Tests.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ATTi.TMail.Common.Tests" Source="ATTi.TMail.Common\ATTi.TMail.Common.Tests\ATTi.TMail.Common.Tests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ATTi.Core" Source="..\Atti.Core\ATTi.Core\ATTi.Core.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ATTi.Core" Source="..\Atti.Core\ATTi.Core\ATTi.Core.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ATTi.Core.Tests" Source="..\Atti.Core\ATTi.Core\ATTi.Core.Tests\ATTi.Core.Tests.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ATTi.Core.Tests" Source="..\Atti.Core\ATTi.Core\ATTi.Core.Tests\ATTi.Core.Tests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ATTi.Core.Data" Source="..\Atti.Core\ATTi.Core.Data\ATTi.Core.Data.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ATTi.Core.Data" Source="..\Atti.Core\ATTi.Core.Data\ATTi.Core.Data.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ATTi.Core.Data.Tests" Source="..\Atti.Core\ATTi.Core.Data\ATTi.Core.Data.Tests\ATTi.Core.Data.Tests.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ATTi.Core.Data.Tests" Source="..\Atti.Core\ATTi.Core.Data\ATTi.Core.Data.Tests\ATTi.Core.Data.Tests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ATTi.TMail.Service.Implementation.Tests" Source="ATTi.TMail.Service.Implementation\ATTi.TMail.Service.Implementation.Tests\ATTi.TMail.Service.Implementation.Tests.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ATTi.TMail.Service.Implementation.Tests" Source="ATTi.TMail.Service.Implementation\ATTi.TMail.Service.Implementation.Tests\ATTi.TMail.Service.Implementation.Tests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ATTi.Core.MessageBus" Source="..\Atti.Core\ATTi.Core.MessageBus\ATTi.Core.MessageBus.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ATTi.Core.MessageBus" Source="..\Atti.Core\ATTi.Core.MessageBus\ATTi.Core.MessageBus.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ATTi.Core.MessageBus.Tests" Source="..\Atti.Core\ATTi.Core.MessageBus\ATTi.Core.MessageBus.Tests\ATTi.Core.MessageBus.Tests.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ATTi.Core.MessageBus.Tests" Source="..\Atti.Core\ATTi.Core.MessageBus\ATTi.Core.MessageBus.Tests\ATTi.Core.MessageBus.Tests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TMailRestService" Source="TMailRestService\TMailRestService.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TMailRestService" Source="TMailRestService\TMailRestService.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TMailRestService.Tests" Source="TMailRestService.Tests\TMailRestService.Tests.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TMailRestService.Tests" Source="TMailRestService.Tests\TMailRestService.Tests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TMailAgent_debug_console" Source="ATTi.TMail.Service.Implementation\TMailAgent_debug_console\TMailAgent_debug_console.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TMailAgent_debug_console" Source="ATTi.TMail.Service.Implementation\TMailAgent_debug_console\TMailAgent_debug_console.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TMailAgentWinService" Source="TMailAgentWinService\TMailAgentWinService.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TMailAgentWinService" Source="TMailAgentWinService\TMailAgentWinService.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TMail.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TMail.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ATTi.Core" Source="..\Atti.Core\ATTi.Core\ATTi.Core.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="3" Project="" Source="TMail.vsmdi" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TMail.vsmdi" Description="The file was converted to the current format.">
+</Event><Event ErrorLevel="0" Project="ATTi.Core.Tests" Source="..\Atti.Core\ATTi.Core\ATTi.Core.Tests\ATTi.Core.Tests.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ATTi.Core.Data" Source="..\Atti.Core\ATTi.Core.Data\ATTi.Core.Data.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ATTi.Core.Data.Tests" Source="..\Atti.Core\ATTi.Core.Data\ATTi.Core.Data.Tests\ATTi.Core.Data.Tests.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ATTi.Core.MessageBus" Source="..\Atti.Core\ATTi.Core.MessageBus\ATTi.Core.MessageBus.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ATTi.Core.MessageBus.Tests" Source="..\Atti.Core\ATTi.Core.MessageBus\ATTi.Core.MessageBus.Tests\ATTi.Core.MessageBus.Tests.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ATTi.TMail.Service.Implementation" Source="ATTi.TMail.Service.Implementation\ATTi.TMail.Service.Implementation.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ATTi.TMail.Common" Source="ATTi.TMail.Common\ATTi.TMail.Common.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ATTi.TMail.Common.Tests" Source="ATTi.TMail.Common\ATTi.TMail.Common.Tests\ATTi.TMail.Common.Tests.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ATTi.TMail.Service.Implementation.Tests" Source="ATTi.TMail.Service.Implementation\ATTi.TMail.Service.Implementation.Tests\ATTi.TMail.Service.Implementation.Tests.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TMailRestService" Source="TMailRestService\TMailRestService.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TMailRestService.Tests" Source="TMailRestService.Tests\TMailRestService.Tests.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TMailAgent_debug_console" Source="ATTi.TMail.Service.Implementation\TMailAgent_debug_console\TMailAgent_debug_console.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TMailAgentWinService" Source="TMailAgentWinService\TMailAgentWinService.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/ATTi.Core.Tests/Factory/Classes
+END
+ClassWithDefaultConstructor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/ATTi.Core.Tests/Factory/Classes/ClassWithDefaultConstructor.cs
+END
+INoDefaultImplementation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/ATTi.Core.Tests/Factory/Classes/INoDefaultImplementation.cs
+END
+IClassWithID.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/ATTi.Core.Tests/Factory/Classes/IClassWithID.cs
+END

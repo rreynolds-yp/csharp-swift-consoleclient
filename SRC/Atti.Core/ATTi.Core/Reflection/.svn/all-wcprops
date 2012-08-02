@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Reflection
+END
+AssemblyExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Reflection/AssemblyExtensions.cs
+END
+MemberInfoEx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Reflection/MemberInfoEx.cs
+END
+TypeExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Reflection/TypeExtensions.cs
+END
+MemberInfoExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Reflection/MemberInfoExtensions.cs
+END

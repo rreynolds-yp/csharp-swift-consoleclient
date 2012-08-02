@@ -1,0 +1,4 @@
+# Contains data about which binaries we need paths to for build to work.
+# In the form binary name;path hint.  Will search both c:path hint and d:path hint
+nmake.exe;\Program Files
+regasm.exe;\Windows\Microsoft.NET\Framework\v2.0.50727,\Winnt\Microsoft.NET\Framework\v2.0.50727

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory
+END
+AbstractFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/AbstractFactory.cs
+END
+IFactoryBinding.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/IFactoryBinding.cs
+END
+ClassFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/ClassFactory.cs
+END
+IFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/IFactory.cs
+END
+Exceptions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Exceptions.cs
+END
+IFactoryEvents.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/IFactoryEvents.cs
+END
+Enums.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Enums.cs
+END
+Factory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Factory.cs
+END
+Factory_1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Factory_1.cs
+END
+FactoryStrategy.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/FactoryStrategy.cs
+END

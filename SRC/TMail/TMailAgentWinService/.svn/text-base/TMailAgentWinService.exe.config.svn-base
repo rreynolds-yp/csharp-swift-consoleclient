@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<configSections>
+		<section name="wireup" type ="ATTi.Core.Wireup.WireupConfigurationSection,ATTi.Core"/>
+		<section name="tmail" type="ATTi.TMail.Service.Implementation.Configuration.TMailConfigurationSection, ATTi.TMail.Service.Implementation"/>
+		<section name="strongMail" type="ATTi.TMail.Service.Implementation.Configuration.StrongMailConfigurationSection, ATTi.TMail.Service.Implementation"/>
+		<section name="messagebus" type="ATTi.Core.MessageBus.Configuration.MessageBusConfigurationSection, ATTi.Core.MessageBus"/>
+		<!--<section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net"/>-->
+		<section name="lwes" type="Org.Lwes.Config.LwesConfigurationSection, Org.Lwes"/>
+    <section name="atti-core-trace" type="ATTi.Core.Trace.TraceConfigurationSection,ATTi.Core" />
+    <section name="tmailAgentSetting" type="TMailAgentWinService.Configuration.WinServiceConfigurationSection, TMailAgentWinService
+             "/>
+	</configSections>
+	<connectionStrings>
+		<add name="tmail-data" providerName="System.Data.SqlClient" connectionString="Data Source=tmail;Initial Catalog=TMail;Integrated Security=SSPI;MultipleActiveResultSets=True;Pooling=True;"/>
+
+	</connectionStrings>
+	<tmail submissionMode="DirectToStrongMail" isAgentMode="true" traceExecutionContext="false"/>
+  <atti-core-trace component="ATTi.TMailAgent.WindowsService" defaultTraceSource="TMailAgent" environment="DEV"/>
+	<strongMail messageStudioApiUrl="https://mailhub1.yellowpages.com/sm/services/mailing/2009/03/02"
+							easTransactionalApiUrl="http://mailhub1.yellowpages.com:9000/SOAP/sm_tmailing"
+							easBatchApiUrl="http://mailhub1.yellowpages.com:9000/SOAP/sm-client-v2"
+							userName="apiuser"
+							password="Ap1user"
+							/>
+	<wireup>
+		<assemblies>
+			<add assembly="ATTi.TMail.Service.Implementation" />
+		</assemblies>
+	</wireup>
+	
+	<messagebus>
+		<connections>
+      <add name="tmail-connection" virtualHost="TMail-Dev" userName="TMailUser" password="TMailUser">
+        <!-- $BUILDVAL(virtualHost, $(TMAIL_QUEUE_VHOST)) -->
+        <!-- $BUILDVAL(userName, $(TMAIL_QUEUE_USERNAME)) -->
+        <!-- $BUILDVAL(password, $(TMAIL_QUEUE_PASSWORD)) -->
+        <endpoints>
+					<add uri="amqp://rabbit5.np.wc1.yellowpages.com:5672" protocol="AMQP_0_8" /><!-- $BUILDVAL(uri, $(TMAIL_QUEUE_URL)) -->
+				</endpoints>
+			</add>
+		</connections>
+		<exchanges>
+			<add name="tmail-mailing-exchange"
+					 exchangeType="direct"
+					 isPassive="false"
+					 isInternal="false"
+					 isDurable="true"
+					 isAutoDelete="true"
+					 noWait ="false"
+							 />
+		</exchanges>
+		<queues>
+			<add name="tmail-mailing-queue" queueName="tmail-mailing-queue" exchangeName="tmail-mailing-exchange"
+					 isPassive="false"
+					 isExclusive="false"
+					 isDurable="true"
+					 isAutoDelete="true"
+					 noWait ="false"
+							 />
+		</queues>
+	</messagebus>
+
+	<lwes>
+		<emitters>
+			<!-- See: http://onewiki.yellowpages.com/display/TO/Multicast+Registry -->
+			<add name="dev-monitoring" multicast="true" address="224.1.2.22" port="1222" multicastTimeToLive="12" />
+			<!-- $BUILDVAL(name, $(TMAIL_MONITORING)) -->
+			<!-- $BUILDVAL(address, $(TMAIL_MONITORING_ADDRESS)) -->
+			<!-- $BUILDVAL(port, $(TMAIL_MONITORING_PORT)) -->
+		</emitters>
+	</lwes>
+	<system.diagnostics>
+		<sources>
+			<source name="Org.Lwes" switchName="errorsOnly" switchType="System.Diagnostics.SourceSwitch" >
+				<listeners>
+					<!-- WARNING! LWES cannot log to itself; therefore direct lwes trace output to a local file. -->
+					<add name="lwes-local" />
+				</listeners>
+			</source>
+      <source name="ATTi.TMailAgent.WindowsService" switchName="info" switchType="System.Diagnostics.SourceSwitch" >
+        <listeners>
+          <add name="lwes" />
+          <add name="winevent" />
+        </listeners>
+      </source>
+		</sources>
+		<switches>
+			<add name="info" value="Information" />
+			<add name="verbose" value="Verbose" />
+			<add name="warn" value="Warning" />
+			<add name="errorsOnly" value="Error" />
+		</switches>
+		<sharedListeners>
+			<add name="lwes" type="Org.Lwes.LwesTraceListener, Org.Lwes"
+					 BindEmitterByName="dev-monitoring" /><!-- $BUILDVAL(BindEmitterByName, $(TMAIL_MONITORING)) -->
+			<add name="logfile"
+          type="System.Diagnostics.TextWriterTraceListener"
+          initializeData="debugging-trace-output.log" />
+			<add name="lwes-local"
+          type="System.Diagnostics.TextWriterTraceListener"
+          initializeData="lwes-local.log" />
+			<add name="console"
+          type="System.Diagnostics.ConsoleTraceListener" />
+      <add name="winevent" type="System.Diagnostics.EventLogTraceListener"
+     initializeData="TMailAgent" />
+		</sharedListeners>
+		<trace autoflush="true" indentsize="2" />
+	</system.diagnostics>
+
+</configuration>

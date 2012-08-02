@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Implementer
+END
+ImplementerAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Implementer/ImplementerAttribute.cs
+END
+IImplementer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Implementer/IImplementer.cs
+END
+ImplementerRegistry.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Factory/Implementer/ImplementerRegistry.cs
+END

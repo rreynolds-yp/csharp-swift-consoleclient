@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/DB%20Scripts
+END
+ASH Initialize TMail Database.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/DB%20Scripts/ASH%20Initialize%20TMail%20Database.sql
+END
+Initialize TMail Database - single.sql
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/DB%20Scripts/Initialize%20TMail%20Database%20-%20single.sql
+END
+IRV Initialize TMail Database.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/DB%20Scripts/IRV%20Initialize%20TMail%20Database.sql
+END
+Insert MailTrackingStatus.sql
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/DB%20Scripts/Insert%20MailTrackingStatus.sql
+END
+Authorize Environment.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/DB%20Scripts/Authorize%20Environment.sql
+END

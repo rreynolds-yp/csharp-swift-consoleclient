@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/KeenDev/!svn/ver/80247/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests
+END
+sample-json.js
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests/sample-json.js
+END
+AgentProtocolTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests/AgentProtocolTests.cs
+END
+ATTi.TMail.Service.Implementation.Tests.dll.config
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests/ATTi.TMail.Service.Implementation.Tests.dll.config
+END
+ATTi.TMail.Service.Implementation.Tests.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/KeenDev/!svn/ver/80247/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests/ATTi.TMail.Service.Implementation.Tests.csproj
+END
+sample request.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests/sample%20request.xml
+END
+MessageTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests/MessageTests.cs
+END
+TMailServiceTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Service.Implementation/ATTi.TMail.Service.Implementation.Tests/TMailServiceTests.cs
+END

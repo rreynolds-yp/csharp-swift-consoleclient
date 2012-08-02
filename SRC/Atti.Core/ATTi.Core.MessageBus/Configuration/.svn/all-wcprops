@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/Configuration
+END
+MessageBusConfigurationSection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/Configuration/MessageBusConfigurationSection.cs
+END
+AmqpItemConfigurationElement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/Configuration/AmqpItemConfigurationElement.cs
+END
+AmqpConnectionConfigurationElement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/Configuration/AmqpConnectionConfigurationElement.cs
+END
+AmqpEndpointConfigurationElement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/Configuration/AmqpEndpointConfigurationElement.cs
+END
+AmqpExchangeConfigurationElement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/Configuration/AmqpExchangeConfigurationElement.cs
+END
+AmqpQueueConfigurationElement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/Configuration/AmqpQueueConfigurationElement.cs
+END
+Enums.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.MessageBus/Configuration/Enums.cs
+END

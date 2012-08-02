@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Configuration
+END
+ConfigurableTypeConfigurationSection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Configuration/ConfigurableTypeConfigurationSection.cs
+END
+AbstractConfigurationElementCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Configuration/AbstractConfigurationElementCollection.cs
+END
+XmlSerializedInstance.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Configuration/XmlSerializedInstance.cs
+END
+ConfigurableType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Configuration/ConfigurableType.cs
+END
+ConfigurationUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Configuration/ConfigurationUtil.cs
+END
+IConfigurable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Configuration/IConfigurable.cs
+END

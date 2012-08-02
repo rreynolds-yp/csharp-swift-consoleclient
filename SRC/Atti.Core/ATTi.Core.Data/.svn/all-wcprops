@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/KeenDev/!svn/ver/80215/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data
+END
+DbContextCache.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/DbContextCache.cs
+END
+TransactionScopeHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/TransactionScopeHelper.cs
+END
+DbDataReaderExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/DbDataReaderExtensions.cs
+END
+DbConnectionExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/DbConnectionExtensions.cs
+END
+SharedConnection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/SharedConnection.cs
+END
+IDbProviderExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/IDbProviderExtensions.cs
+END
+DbContext.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/DbContext.cs
+END
+ATTi.Core.Data.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/KeenDev/!svn/ver/80215/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/ATTi.Core.Data.csproj
+END
+DbProviderHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/DbProviderHelper.cs
+END
+DbCommandExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/DbCommandExtensions.cs
+END
+DbExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/DbExtensions.cs
+END
+DbTypeTranslation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/DbTypeTranslation.cs
+END
+ITransactionResource.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/ITransactionResource.cs
+END
+ExplicitDbAuthorization.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/ExplicitDbAuthorization.cs
+END
+DbProviderFactoryExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/DbProviderFactoryExtensions.cs
+END
+DbParameterBinder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/DbParameterBinder.cs
+END

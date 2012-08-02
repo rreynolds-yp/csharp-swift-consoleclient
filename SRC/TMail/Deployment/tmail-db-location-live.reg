@@ -1,0 +1,3 @@
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\ConnectTo]
+"tmail"="DBMSSOCN,ASHtmldb01a.nca.keen.com,1433"
+"tmail-failover"="DBMSSOCN,IRVtmldb01a.nca.keen.com,1433"

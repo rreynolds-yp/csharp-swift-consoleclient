@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/Properties
+END
+AssemblyInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/Properties/AssemblyInfo.cs
+END
+Versioning.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/Properties/Versioning.xml
+END
+AssemblyInfo.version.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/Properties/AssemblyInfo.version.cs
+END
+AssemblyInfo.version.tt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/Properties/AssemblyInfo.version.tt
+END
+CompilerHack.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core.Data/Properties/CompilerHack.cs
+END

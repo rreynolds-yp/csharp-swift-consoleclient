@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Contracts
+END
+ContractUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Contracts/ContractUtil.cs
+END
+Invariant.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Contracts/Invariant.cs
+END
+Require.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Contracts/Require.cs
+END
+InvariantContractAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Contracts/InvariantContractAttribute.cs
+END
+Exceptions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Contracts/Exceptions.cs
+END
+Enums.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Contracts/Enums.cs
+END
+InvariantContractHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Contracts/InvariantContractHelper.cs
+END
+Intermediate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Contracts/Intermediate.cs
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel
+END
+TaskCompletion.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/TaskCompletion.cs
+END
+ParallelTask.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/ParallelTask.cs
+END
+Exceptions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/Exceptions.cs
+END
+IFuture.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/IFuture.cs
+END
+ITaskCompletion.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/ITaskCompletion.cs
+END
+StrategizedParallelTask.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/StrategizedParallelTask.cs
+END
+ExecutionStrategy.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/ExecutionStrategy.cs
+END
+TaskBoundary.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/TaskBoundary.cs
+END
+Enums.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/Enums.cs
+END
+ParallelFunc.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/ParallelFunc.cs
+END
+Future.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/Future.cs
+END
+ParallelAction.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/Atti.Core/ATTi.Core/Parallel/ParallelAction.cs
+END

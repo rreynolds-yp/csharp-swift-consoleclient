@@ -1,0 +1,7 @@
+
+<config version="1.0">
+	<image>
+		<dir imgdir="deploy\bin" />
+		<dir imgdir="deploy\data" />
+	</image>
+</config>

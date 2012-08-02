@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/KeenDev/!svn/ver/81779/TMail/trunk/SRC/TMail/ATTi.TMail.Common
+END
+ExceptionHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Common/ExceptionHandler.cs
+END
+ITMailService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Common/ITMailService.cs
+END
+ModelExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/KeenDev/!svn/ver/81779/TMail/trunk/SRC/TMail/ATTi.TMail.Common/ModelExtensions.cs
+END
+Exceptions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/KeenDev/!svn/ver/80132/TMail/trunk/SRC/TMail/ATTi.TMail.Common/Exceptions.cs
+END
+ATTi.TMail.Common.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/KeenDev/!svn/ver/80247/TMail/trunk/SRC/TMail/ATTi.TMail.Common/ATTi.TMail.Common.csproj
+END

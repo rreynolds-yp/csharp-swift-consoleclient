@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/KeenDev/!svn/ver/82209/Monthly/trunk/SRC/Deploy/data
+END
+configdefines_dev.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/KeenDev/!svn/ver/82209/Monthly/trunk/SRC/Deploy/data/configdefines_dev.txt
+END
+configdefines_live.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/KeenDev/!svn/ver/82209/Monthly/trunk/SRC/Deploy/data/configdefines_live.txt
+END
+configdefines_test.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/KeenDev/!svn/ver/82209/Monthly/trunk/SRC/Deploy/data/configdefines_test.txt
+END
+netuse.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/KeenDev/!svn/ver/79504/Monthly/trunk/SRC/Deploy/data/netuse.txt
+END
+services.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/KeenDev/!svn/ver/78762/Monthly/trunk/SRC/Deploy/data/services.txt
+END
+smtp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/KeenDev/!svn/ver/80205/Monthly/trunk/SRC/Deploy/data/smtp.txt
+END
+configdefines_vm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/KeenDev/!svn/ver/82038/Monthly/trunk/SRC/Deploy/data/configdefines_vm.txt
+END
+recipients.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/KeenDev/!svn/ver/78762/Monthly/trunk/SRC/Deploy/data/recipients.txt
+END
+configdefines_stage.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/KeenDev/!svn/ver/82209/Monthly/trunk/SRC/Deploy/data/configdefines_stage.txt
+END
+server_config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/KeenDev/!svn/ver/82085/Monthly/trunk/SRC/Deploy/data/server_config.xml
+END
+configdefines_local.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/KeenDev/!svn/ver/82209/Monthly/trunk/SRC/Deploy/data/configdefines_local.txt
+END
+steps.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/KeenDev/!svn/ver/78762/Monthly/trunk/SRC/Deploy/data/steps.txt
+END
+paths.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/KeenDev/!svn/ver/78762/Monthly/trunk/SRC/Deploy/data/paths.txt
+END
